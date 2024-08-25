@@ -3,7 +3,7 @@
 No contexto atual de transformação digital e mudanças nas dinâmicas de trabalho, o modelo de coworking e as salas de reunião têm ganhado destaque como soluções flexíveis e econômicas para empresas e profissionais. Com a adoção crescente do sistema híbrido de trabalho, que combina o trabalho remoto com o presencial, a demanda por espaços compartilhados tem crescido exponencialmente em todo o mundo. Este sistema oferece um ambiente propício para networking, inovação e colaboração entre profissionais de diversas áreas, sem os altos custos de manutenção de um escritório tradicional.
 
 ## Problema
-NCom o aumento da demanda por salas de coworking e reuniões, surge a necessidade de um sistema eficiente que facilite o processo de reserva desses espaços. Atualmente, muitos desses processos são feitos de forma manual ou através de sistemas descentralizados, o que pode causar problemas como overbooking, falta de organização e dificuldade em gerenciar a disponibilidade de salas. Esse cenário cria desafios para tanto as empresas que oferecem esses serviços quanto para os usuários que precisam de uma solução ágil e confiável.
+Com o aumento da demanda por salas de coworking e reuniões, surge a necessidade de um sistema eficiente que facilite o processo de reserva desses espaços. Atualmente, muitos desses processos são feitos de forma manual ou através de sistemas descentralizados, o que pode causar problemas como overbooking, falta de organização e dificuldade em gerenciar a disponibilidade de salas. Esse cenário cria desafios para tanto as empresas que oferecem esses serviços quanto para os usuários que precisam de uma solução ágil e confiável.
 
 ## Objetivos
 
@@ -22,4 +22,5 @@ O sistema de reservas de salas para coworking e reuniões é direcionado a uma v
 4.	Startups: Empresas em fase de crescimento que necessitam de flexibilidade tanto em termos de espaço quanto de custos, optando por salas de coworking para economizar e concentrar recursos no desenvolvimento de seus produtos e serviços.
 5.	Organizações Corporativas: Grandes empresas que buscam espaços para eventos, treinamentos, workshops e reuniões fora de suas sedes, aproveitando a flexibilidade e a praticidade dos coworkings.
 6.	Cidades Menores e Regiões Metropolitanas: Profissionais e empresas localizados em cidades menores ou regiões metropolitanas onde a oferta de espaços de coworking ainda é emergente, mas em crescimento, beneficiando-se da expansão desse mercado para acesso a infraestrutura moderna e a oportunidades de networking.
+
 Este sistema, portanto, atende tanto a indivíduos que precisam de um espaço de trabalho temporário quanto a empresas que desejam flexibilidade, praticidade e redução de custos em suas operações diárias.
