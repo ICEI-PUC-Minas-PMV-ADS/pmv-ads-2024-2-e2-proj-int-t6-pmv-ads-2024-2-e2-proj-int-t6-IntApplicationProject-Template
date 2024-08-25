@@ -1,7 +1,3 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+PUENTE, Beatriz. cnnbrasil.com, 2022. Procura por espaços de coworking sobe mais de 90% em todo o mundo, diz pesquisa. Disponível em: <https://www.cnnbrasil.com.br/economia/macroeconomia/procura-por-espacos-de-coworking-sobe-mais-de-90-em-todo-o-mundo-diz-pesquisa/>. Acesso em: 18/08/2024. 

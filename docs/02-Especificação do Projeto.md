@@ -1,10 +1,57 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+<table>
+    <tbody>
+        <tr align=center>
+            <th colspan="2">Perfil 1: Administrador dos Espaços / Dono das Salas</th>
+        </tr>
+        <tr>
+            <td width="150px"><b>Descrição</b></td>
+            <td width="600px">Responsável pela gestão dos espaços de coworking e salas de reunião. Este perfil pode pertencer ao proprietário dos espaços ou a um gestor designado para administrar o uso, manutenção e a rentabilidade das salas. O administrador tem a responsabilidade de gerenciar a disponibilidade das salas, processar reservas, lidar com pagamentos e manter a qualidade do ambiente para os usuários.</td>
+        </tr>
+        <tr>
+            <td><b>Necessidades</b></td>
+            <td>
+                <ol>
+                    <li>Autenticar no sistema.</li>
+                    <li>Gerenciar a disponibilidade das salas (reservas, horários, manutenção).</li>
+                    <li>Informar pagamento da sala no sistema.</li>
+                    <li>Gerenciar o sistema de pagamento diferido, garantindo que os valores sejam descontados no dia da reserva.</li>
+                    <li>Gerenciar a comunicação com os usuários (avisos sobre regras, manutenção, etc).</li>
+                    <li>Personalizar o ambiente e as regras de uso das salas.</li>
+                    <li>Acompanhar o feedback dos usuários para melhorias.</li>
+                </ol> 
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+<table>
+    <tbody>
+        <tr align=center>
+            <th colspan="2">Perfil 2: Usuário Final</th>
+        </tr>
+        <tr>
+            <td width="150px"><b>Descrição</b></td>
+            <td width="600px">Profissionais, empresas ou freelancers que necessitam alugar salas de coworking ou reuniões por períodos específicos. Este perfil representa o cliente que busca um espaço para trabalhar ou realizar reuniões, com a expectativa de facilidade na reserva, conforto e qualidade do ambiente.</td>
+        </tr>
+        <tr>
+            <td><b>Necessidades</b></td>
+            <td>
+                <ol>
+                    <li>Autenticar no sistema.</li>
+                    <li>Visualizar a disponibilidade das salas e escolher a mais adequada. </li>
+                    <li>Reservar salas para períodos específicos.</li>
+                    <li>Realizar cadastro de cartão de crédito como forma de pagamento.</li>
+                    <li>Receber confirmações de reservas (voucher).</li>
+                    <li>Visualizar e gerenciar suas reservas (alterações, cancelamentos).</li>
+                    <li>Avaliar as salas e serviços após o uso.</li>
+                    <li>Receber suporte em caso de problemas ou dúvidas.</li>
+                </ol> 
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Personas
 
@@ -51,49 +98,127 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>        
+            <th>Descrição</th>        
+            <th>Prioridade</th>        
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RF- 01</td>
+            <td>Deve ter uma tela de Login com distinção de perfil do usuário (Administrador dos Espaços e Usuário Final).</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 02</td>
+            <td>CRUD de Salas (Deve ser possível cadastrar, editar, visualizar e excluir informações sobre as salas).</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 03</td>
+            <td>Usuários finais devem conseguir visualizar a disponibilidade das salas em tempo real.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 04</td>
+            <td>Deve ser possível realizar reservas de salas para períodos específicos, com confirmação imediata.	</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 05</td>
+            <td>Usuários finais devem poder cadastrar um cartão de crédito para pagamento diferido no dia da reserva.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 06</td>
+            <td>O sistema deve processar automaticamente os pagamentos no dia da reserva, debitando o valor do cartão cadastrado.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 07</td>
+            <td>CRUD de Usuários (Deve ser possível cadastrar, editar, visualizar e excluir perfis de usuários).</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RF- 08</td>
+            <td>Administradores devem poder cancelar reservas e notificar usuários sobre o cancelamento.</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RF- 09</td>
+            <td>O sistema deve enviar notificações de confirmação e lembretes de reservas para os usuários finais.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 10</td>
+            <td>O sistema deve permitir que os usuários alterem ou cancelem suas reservas com um prazo determinado antes da data da reserva.</td>
+            <td>Alta</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>        
+            <th>Descrição</th>        
+            <th>Prioridade</th>        
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>RNF-01</td>
+            <td>O sistema deve garantir a segurança dos dados dos alunos e usuários</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RNF-02</td>
+            <td>A interface do usuário deve ser intuitiva e de fácil utilização</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RNF-03</td>
+            <td>O sistema deve ser compatível com diferentes dispositivos e navegadores web</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RNF-04</td>
+            <td>O código deve ser bem estruturado e documentado para fácil manutenção.</td>
+            <td>Alta</td>
+        </tr>
+    </tbody>
+</table>
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+**Prioridade: Alta / Média / Baixa. 
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>        
+            <th>Descrição</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td> RE-01</td>
+            <td>A aplicação deve ser entregue de forma plenamente funcional até 08/12/2024.</td>
+     </tr>
+     <tr>
+            <td> RE-02</td>
+            <td>Cada integrante da equipe ficará responsável pelo desenvolvimento completo (Back-End e Front-End) das funcionalidades pelas quais ficou responsável.</td>
+     </tr>
+    </tbody>
+</table>
 
 ## Diagrama de Casos de Uso
 
