@@ -55,24 +55,149 @@
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+As personas levantadas durante o processo de entendimento do problema são apresentadas nas tabelas que se seguem:
 
-Utilize também como referência o exemplo abaixo:
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>1</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>João</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 35 anos</td>
+            <td>Ocupação: Gerente de Projetos em uma empresa de tecnologião</td>
+        </tr>
+        <tr>
+            <td>Objetivos: João precisa frequentemente reservar salas para reuniões de equipe, apresentações para clientes e sessões de planejamento de projetos. Ele valoriza a facilidade e rapidez na reserva e precisa de ferramentas para agendar reuniões recorrentes.</td>
+            <td>Frustrações: Encontrar salas disponíveis em horários de pico e a dificuldade de gerenciar alterações de última hora nas reservas.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuário avançado de ferramentas de produtividade, usa principalmente o computador para gerenciar seu trabalho.</td>
+            <td>Necessidades: Notificações de alterações nas reservas, integração com calendário, e opção de reserva antecipada.</td> 
+        </tr>
+    </tbody>
+</table>
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>2</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Mariana</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 22 anos</td>
+            <td>Ocupação: Estudante de engenharia</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Mariana precisa reservar salas de estudo para trabalhos em grupo, sessões de revisão antes de provas, e apresentações de projetos. Ela valoriza a disponibilidade de salas silenciosas e bem equipadas.</td>
+            <td>Frustrações: Dificuldade em encontrar salas disponíveis durante a época de provas e em locais próximos ao campus.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuária de smartphone, utiliza o sistema principalmente por aplicativos móveis.</td>
+            <td>Necessidades: Interface intuitiva, fácil navegação, opção de busca por proximidade e disponibilidade em tempo real.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>3</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Carlos</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 28 anos</td>
+            <td>Ocupação: Designer Gráfico Freelancer</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Carlos precisa de um espaço para trabalhar em projetos de design, realizar videochamadas com clientes, e conduzir workshops. Ele valoriza salas com boa iluminação e equipamento audiovisual de qualidade.</td>
+            <td>Frustrações: Dificuldade em encontrar salas equipadas e problemas com a qualidade da conexão de internet nas salas.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuário de laptop e smartphone, utiliza o sistema em ambas as plataformas.</td>
+            <td>Necessidades: Filtragem de salas por equipamentos disponíveis, acesso fácil ao histórico de reservas e suporte a reservas de última hora.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>4</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Ana</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 42 anos</td>
+            <td>Ocupação: Secretária Executiva em uma empresa de consultoria</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Ana é responsável por agendar reuniões para os executivos da empresa, coordenar videoconferências, e garantir que as salas estejam preparadas para eventos. Ela precisa de um sistema confiável que permita gerenciar várias reservas ao mesmo tempo.</td>
+            <td>Frustrações: Inconsistências na disponibilidade das salas e falta de informações detalhadas sobre os recursos das salas.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuária de desktop, usa o sistema principalmente em um computador no escritório.</td>
+            <td>Necessidades: Acesso rápido a todas as reservas, opção de gerenciamento de múltiplas reservas e notificações para atualizações de última hora.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>5</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Lucas</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 45 anos</td>
+            <td>Ocupação: Pesquisador em uma universidade</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Lucas precisa de salas para conduzir seminários, grupos de discussão e reuniões com colaboradores de pesquisa. Ele valoriza a privacidade e a disponibilidade de recursos para apresentações acadêmicas.</td>
+            <td>Frustrações: Concorrência pelas salas de seminários e dificuldade em agendar salas para períodos prolongados.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuário de laptop e tablet, prefere usar o sistema em dispositivos que possa levar para suas reuniões.</td>
+            <td>Necessidades: Reserva de longos períodos, opção de bloqueio de horário para atividades contínuas, e filtragem de salas por recursos específicos.</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Histórias de Usuários
 
@@ -80,8 +205,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|João       | Como gerente de projetos, preciso reservar salas de reunião de forma rápida e eficiente.Ele deseja receber notificações sobre alterações nas reservas e integrar essas reservas com seu calendário para melhor organização.                  | Garantir que sua equipe tenha um espaço adequado para reuniões de planejamento e apresentações para clientes. |
+|Mariana       | Precisa reservar salas de estudo silenciosas e bem equipadas.                 | Para trabalhos em grupo e sessões de revisão antes das provas. |
+|Carlos       | Precisa de um espaço de trabalho com boa iluminação e equipamento audiovisual de qualidade.                  | Para realizar videochamadas com clientes e conduzir workshops. |
+|Ana       | Precisa agendar reuniões para os executivos da empresa e coordenar videoconferências.                  | Garantir que as salas estejam preparadas para eventos. Ela quer um sistema confiável que permita gerenciar múltiplas reservas ao mesmo tempo e receber notificações para atualizações de última hora |
+|Lucas       | Precisa reservar salas para seminários, grupos de discussão e reuniões com colaboradores de pesquisa.                  | Ele valoriza a privacidade e a disponibilidade de recursos para apresentações acadêmicas e deseja reservar salas por longos períodos. |
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
