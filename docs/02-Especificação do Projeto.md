@@ -239,52 +239,52 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
     <tbody>
         <tr>
             <td>RF- 01</td>
-            <td>Deve ter uma tela de Login com distinção de perfil do usuário (Administrador dos Espaços e Usuário Final).</td>
+            <td>Desenvolver tela de Login com módulo de autênticação.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 02</td>
-            <td>CRUD de Salas (Deve ser possível cadastrar, editar, visualizar e excluir informações sobre as salas).</td>
+            <td>Desenvolver tela de gerenciamento de Salas, permitindo cadastro, edição, visualização e exclusão de informações.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 03</td>
-            <td>Usuários finais devem conseguir visualizar a disponibilidade das salas em tempo real.</td>
+            <td>Desenvolver tela para visualização da disponibilidade das salas em tempo real pelos usuários finais.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 04</td>
-            <td>Deve ser possível realizar reservas de salas para períodos específicos, com confirmação imediata.	</td>
+            <td>Desenvolver tela para realização de reservas de salas para períodos específicos, com confirmação imediata.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 05</td>
-            <td>Usuários finais devem poder cadastrar um cartão de crédito para pagamento diferido no dia da reserva.</td>
+            <td>Desenvolver tela para cadastro de cartão de crédito para pagamento diferido no dia da reserva pelos usuários finais.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 06</td>
-            <td>O sistema deve processar automaticamente os pagamentos no dia da reserva, debitando o valor do cartão cadastrado.</td>
+             <td>Desenvolver funcionalidade para processamento automático de pagamentos no dia da reserva, debitando o valor do cartão cadastrado.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 07</td>
-            <td>CRUD de Usuários (Deve ser possível cadastrar, editar, visualizar e excluir perfis de usuários).</td>
+            <td>Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis.</td>
             <td>Média</td>
         </tr>
         <tr>
             <td>RF- 08</td>
-            <td>Administradores devem poder cancelar reservas e notificar usuários sobre o cancelamento.</td>
+            <td>Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento.</td>
             <td>Média</td>
         </tr>
         <tr>
             <td>RF- 09</td>
-            <td>O sistema deve enviar notificações de confirmação e lembretes de reservas para os usuários finais.</td>
+            <td>Desenvolver funcionalidade para envio de notificações de confirmação de reservas para os usuários finais.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RF- 10</td>
-            <td>O sistema deve permitir que os usuários alterem ou cancelem suas reservas com um prazo determinado antes da data da reserva.</td>
+            <td>Desenvolver tela que permita aos usuários alterarem ou cancelarem suas reservas com um prazo determinado antes da data da reserva.</td>
             <td>Alta</td>
         </tr>
     </tbody>
@@ -302,25 +302,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
         </tr>
     </thead>
     <tbody>
-     <tr>
+        <tr>
             <td>RNF-01</td>
-            <td>O sistema deve garantir a segurança dos dados dos alunos e usuários</td>
+            <td>Desenvolver mecanismos para garantir a segurança dos dados dos usuários.</td>
             <td>Alta</td>
         </tr>
         <tr>
             <td>RNF-02</td>
-            <td>A interface do usuário deve ser intuitiva e de fácil utilização</td>
+            <td>Desenvolver interface do usuário intuitiva e de fácil utilização.</td>
             <td>Média</td>
         </tr>
         <tr>
             <td>RNF-03</td>
-            <td>O sistema deve ser compatível com diferentes dispositivos e navegadores web</td>
-            <td>Alta</td>
+            <td>Desenvolver sistema compatível com diferentes dispositivos e navegadores web.</td>
+            <td>Média</td>
         </tr>
         <tr>
             <td>RNF-04</td>
-            <td>O código deve ser bem estruturado e documentado para fácil manutenção.</td>
-            <td>Alta</td>
+            <td>Desenvolver código bem estruturado e documentado para fácil manutenção.</td>
+            <td>Média</td>
         </tr>
     </tbody>
 </table>
