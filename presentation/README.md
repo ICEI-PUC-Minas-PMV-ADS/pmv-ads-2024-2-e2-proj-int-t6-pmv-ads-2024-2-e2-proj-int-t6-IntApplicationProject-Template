@@ -2,4 +2,6 @@
 
 Vídeo de apresentação da solução do Office Roomie:
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/blob/main/Apresentacao%20-%20OfficeRoomie.mp4
+https://github.com/user-attachments/assets/4b3acbc3-d35e-43a9-b0b4-d3b9ec85697f
+
+
