@@ -1,24 +1,29 @@
-# TÍTULO DO PROJETO
+# Office Roomie
 
-`CURSO`
+<img src="docs/img/OFFICE-ROOMIE-LOGO.png" alt="Logo Office Roomie" width="300" height="300"/>
 
-`DISCIPLINA`
+<br>
 
-`SEMESTRE`
+`Análise e Desenvolvimento de Sistemas`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
+
+`Eixo 2`
+
+Este projeto tem como objetivo desenvolver um sistema eficiente e intuitivo para a reserva de salas em espaços de coworking, tanto para uso coletivo quanto para trabalho individual. O sistema permitirá que usuários realizem reservas em tempo real, verificando a disponibilidade de salas, escolhendo o ambiente que melhor atenda às suas necessidades e efetuando pagamentos de forma segura. O projeto também incluirá funcionalidades como a gestão de reservas e notificações automáticas visando otimizar a utilização dos espaços e melhorar a experiência dos usuários.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Brena Aparecida Ferreira
+* Caio de Souza Araujo
+* Farley Rodrigues Souza
+* Fernando Vinicius Sousa Moura
+* Kevin Lucas Andrade Dos Santos
+* Marcelly Thais Freitas Neves
 
 ## Orientador
 
-* Nome completo do professor 1
+* Bernardo Jeunon de Alencar
 
 ## Instruções de utilização
 

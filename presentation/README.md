@@ -1,3 +1,7 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Vídeo de apresentação da solução do Office Roomie:
+
+<video src="docs\img\Apresentacao - OfficeRoomie.mp4" controls="controls" style="max-width: 100%;">
+  Your browser does not support the video tag.
+</video>
