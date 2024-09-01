@@ -339,26 +339,31 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
         </tr>
     </thead>
     <tbody>
-     <tr>
-            <td> RE-01</td>
+        <tr>
+            <td>RE-01</td>
             <td>A aplicação deve ser entregue de forma plenamente funcional até 08/12/2024.</td>
-     </tr>
-     <tr>
-            <td> RE-02</td>
+        </tr>
+        <tr>
+            <td>RE-02</td>
             <td>Cada integrante da equipe ficará responsável pelo desenvolvimento completo (Back-End e Front-End) das funcionalidades pelas quais ficou responsável.</td>
-     </tr>
+        </tr>
     </tbody>
 </table>
 
-## Diagrama de Casos de Uso
+<h2>Diagrama de Casos de Uso</h2>
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+<p>O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.</p>
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+<p>As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.</p>
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+<p><strong>Links Úteis:</strong></p>
+<ul>
+    <li><a href="https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases">Criando Casos de Uso</a></li>
+    <li><a href="https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/">Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo</a></li>
+    <li><a href="https://www.lucidchart.com/">Lucidchart</a></li>
+    <li><a href="https://astah.net/">Astah</a></li>
+    <li><a href="https://app.diagrams.net/">Diagrams</a></li>
+</ul>
+
+<p><img src="/docs/img/diagrama_caso_uso.PNG" alt="Diagrama de Caso de Uso"></p>
+
