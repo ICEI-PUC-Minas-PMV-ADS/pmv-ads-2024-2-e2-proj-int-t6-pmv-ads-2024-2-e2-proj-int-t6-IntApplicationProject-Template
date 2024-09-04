@@ -16,12 +16,15 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O Objetivo deste trabalho é desenvolver um sistema online intuitivo e eficiente que permita aos usuários localizar e cadastrar animais para doação com facilidade. O sistema deve oferecer funcionalidades como:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- **Busca Avançada:** Ferramentas de pesquisa e filtros detalhados para ajudar os usuários a encontrar animais com características específicas, como tamanho, idade, e necessidades especiais.
+
+- **Informações Detalhadas:** Perfis completos dos animais, incluindo fotos, descrições, e informações sobre o estado de saúde e comportamento.
+
+- **Interface Intuitiva:** Um design amigável e fácil de usar, que permita uma navegação fluida e uma experiência satisfatória para os usuários.
+
+
 
 ## Justificativa
 
