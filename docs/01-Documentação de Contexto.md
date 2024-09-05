@@ -17,13 +17,17 @@ Atualmente, muitas pessoas enfrentam dificuldades para encontrar e adotar animai
 3. **Falta de Plataforma Centralizada**:
    - Não há uma plataforma centralizada e intuitiva que facilite a conexão entre adotantes e animais disponíveis para adoção.
   
-4. **Dificuldade de Acesso às Informações:** Os interessados em adotar animais muitas vezes enfrentam dificuldades para encontrar informações atualizadas sobre os animais disponíveis, incluindo suas características, condições de saúde e necessidades especiais.
+4. **Dificuldade de Acesso às Informações:**
+   - Os interessados em adotar animais muitas vezes enfrentam dificuldades para encontrar informações atualizadas sobre os animais disponíveis, incluindo suas características, condições de saúde e necessidades especiais.
 
-5. **Processo de Filtragem Ineficiente:** A ausência de filtros de pesquisa específicos e eficientes pode tornar a busca por um animal adequado uma tarefa demorada e frustrante.
+5. **Processo de Filtragem Ineficiente:**
+   - A ausência de filtros de pesquisa específicos e eficientes pode tornar a busca por um animal adequado uma tarefa demorada e frustrante.
 
-6. **Falta de Comunicação Eficiente:** Não há um meio centralizado para facilitar a comunicação entre adotantes e responsáveis pelos animais, o que pode levar a atrasos e a falta de clareza no processo de adoção.
+6. **Falta de Comunicação Eficiente:**
+   - Não há um meio centralizado para facilitar a comunicação entre adotantes e responsáveis pelos animais, o que pode levar a atrasos e a falta de clareza no processo de adoção.
 
-7. **Informações Desatualizadas:** Sem uma atualização constante, os dados sobre os animais disponíveis podem rapidamente se tornar desatualizados, criando expectativas falsas e potenciais frustrações.
+8. **Informações Desatualizadas:**
+   - Sem uma atualização constante, os dados sobre os animais disponíveis podem rapidamente se tornar desatualizados, criando expectativas falsas e potenciais frustrações.
 
 
 ## Objetivos
