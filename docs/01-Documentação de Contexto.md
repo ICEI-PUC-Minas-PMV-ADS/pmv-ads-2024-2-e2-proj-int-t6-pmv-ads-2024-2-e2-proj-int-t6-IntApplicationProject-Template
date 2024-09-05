@@ -3,16 +3,20 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Atualmente, muitas pessoas enfrentam dificuldades para encontrar e adotar animais de estimação que se encaixem em suas necessidades e preferências específicas. Além disso, organizações e indivíduos que resgatam animais frequentemente têm dificuldade em divulgar esses animais para adoção de maneira eficiente. Esse problema é agravado pela falta de uma plataforma centralizada e intuitiva que facilite a conexão entre adotantes e animais disponíveis para adoção.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+## Problemas que a Aplicação Deve Resolver
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+1. **Dificuldade em Encontrar Animais de Estimação**:
+   - Muitas pessoas têm dificuldade em encontrar animais de estimação que se encaixem em suas necessidades e preferências específicas.
+
+2. **Divulgação Ineficiente de Animais para Adoção**:
+   - Organizações e indivíduos que resgatam animais enfrentam desafios para divulgar esses animais de maneira eficiente.
+
+3. **Falta de Plataforma Centralizada**:
+   - Não há uma plataforma centralizada e intuitiva que facilite a conexão entre adotantes e animais disponíveis para adoção.
+
 
 ## Objetivos
 
