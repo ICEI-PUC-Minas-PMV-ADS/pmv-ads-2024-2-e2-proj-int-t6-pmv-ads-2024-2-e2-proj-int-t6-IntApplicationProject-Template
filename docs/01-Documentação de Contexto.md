@@ -45,12 +45,10 @@ O Objetivo deste trabalho é desenvolver um sistema online intuitivo e eficiente
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo. Ou, o grupo poderá consultar e justificar o impacto do problema para o público-alvo por meio de pesquisas em outras fontes. Neste caso, é essencial que todos os dados apresentados estejam acompanhados de suas fontes (conforme padrão ABNT).
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A escolha de desenvolver um sistema para facilitar a adoção de pets vem da necessidade urgente de melhorar a conexão entre pessoas que tem interesse em adotar pets e os lugares que abrigam esses animais. O número de abrigos e animais nestes abrigos cresce bastante ao decorrer do tempo, enquanto a quantidade de adoções segue abaixo do que deveria ser, o que quando colocado na balança, fica desigual. Nossa motivação é poder contribuir para a solução de todo este problema e aumentar o número de adoções, trazendo benefícios para os animais e pessoas que os adotarão.
+Segundo dados da Organização Mundial da Saúde (OMS), estima-se que possui cerca de 30 milhões de animais abandonados no Brasil, e a expectativa é de crescer mais ainda. Muitos desses animais abandonados vivem em péssimas condições, precisando urgentemente serem adotados. Enquanto isso, muitas pessoas tem interesse em adotar animais, mas por não ser tão fácil o contato com abrigos, entidades, ONGs, acabam desistindo e não adotando. Isso mostra e comprova o fato de que está faltando algo que facilite todo esse processo, fazendo com que o processo de adoção seja prático, rápido e eficiente.
+Temos como objetivos, centralizar informações, conseguindo oferecer detalhes atualizados de cada animal para os possíveis adotantes; facilitar a comunicação, conseguindo com que as instituições consigam um contato prático e fácil com os adotantes; promoveremos a conscientização, vamos apresentar recursos educativos sobre os cuidados com os animais, para que diminua o número de devoluções e problemas; e por ultimo, fazer a integração com as redes sociais, permitindo que alcancemos um público maior, e consequentemente, aumentando o número de adoções. 
+Acreditamos que o impacto do nosso projeto será significativo. Com ele poderemos melhorar bastante o processo de adoção, e com isso aumentando o número de adoções. Conseguiremos conscientizar mais as pessoas em adotar e cuidar bem dos pets e contribuir para a melhor qualidade de vida de tantos animais e até dos futuros adotantes.
 
 ## Público-Alvo
 
