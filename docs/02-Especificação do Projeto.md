@@ -10,12 +10,12 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 | João Silva    |                                    |                |
 |--------------------|------------------------------------|----------------------------------------|
-|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/joaomarques.png)|**Idade:** 60 anos - **Ocupação:** Ocupação: Designer Gráfico |Aplicativos: Facebook, Whatsapp, Instagram.|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/joaomarques.png)|**Idade:** 60 anos - **Ocupação:**  Designer Gráfico |Aplicativos: Facebook, Whatsapp, Instagram.|
 |**Descrição:** João mora em um apartamento e está à procura de um animal de estimação para adoção. Ele prefere cães de porte médio e está preocupado com questões como o comportamento do animal e a compatibilidade com seu estilo de vida. Tem pouca experiência com adoção e busca informações sobre cuidados com animais. |**Necessidades:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Objetivos:** Adotar um animal compatível com seu estilo de vida e acessar uma área informativa com dicas sobre cuidados e adoção.| 
 
 | Maria Fernandes   |                                    |                |
 |--------------------|------------------------------------|----------------------------------------|
-|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/claralima.png)|**Idade:** 45 anos - **Ocupação:** Ocupação: Responsável por um abrigo de animais |Aplicativos: Facebook, Whatsapp, Instagram.|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/claralima.png)|**Idade:** 45 anos - **Ocupação:**  Responsável por um abrigo de animais |Aplicativos: Facebook, Whatsapp, Instagram.|
 |**Descrição:** Maria administra um abrigo para animais abandonados. Ela é responsável por gerenciar os perfis dos animais no sistema, cadastrar novos animais e responder aos interessados em adoção. Tem pouco tempo disponível e busca um sistema que facilite o gerenciamento das informações e a comunicação com os adotantes. |**Necessidades:** Cadastrar e editar informações sobre os animais disponíveis, receber notificações quando alguém demonstrar interesse em um animal e facilitar a comunicação com adotantes.|**Objetivos:** Promover a adoção dos animais de maneira rápida e eficiente e gerenciar o abrigo e as informações dos animais de forma simples.| 
 
 ## Histórias de Usuários
