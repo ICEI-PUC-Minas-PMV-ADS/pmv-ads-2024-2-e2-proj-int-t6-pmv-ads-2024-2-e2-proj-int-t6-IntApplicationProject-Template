@@ -33,8 +33,19 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+| Adotante| cadastrar-me no site | conseguir acesso a plataforma para adotar.      |
+| Adotante| realizar login no site    | conseguir adotar.      |
+| Dono de abrigo de animais| cadastrar-me no site | conseguir acesso a plataforma e  mostrar os animais disponiveis.    |
+| Dono de abrigo de animais| realizar login no site | conseguir disponibilizar os animais para adoção.   |
+| Usuário | visualizar minhas informações cadastradas   |   possibilitar o acesso as minhas informações.    |
+| Adotante / Dono de abrigo de animais | de um filtro de busca personalisado       | encontrar rapidamente um animal que atenda às minhas preferências.            |
+| Dono de abrigo de animais | cadastrar animais para adoção    |  possibilitar a adoção dos animais disponíveis e cadastrados       |
+| Dono de abrigo de animais | editar as informações dos meus animais cadastrados |  possibilitar a edição de informações e cadastro.     |
+| Adotante| conseguir visualizar os animais disponíveis para adoção e suas caracteristicas   |  conseguir escolher a melhor opção para adoção.      |
+| Dono de abrigo de animais| receber notificações quando alguém demonstrar interesse no meu animal cadastrado  |  conseguir contato com o interessado e sanar possiveis dúvidas sobre o animal e a adoção.     |
+| Adotante | demonstrar interesse no animal atráves de um formulário   |  possibilitar o dono de abrigo de animais saber do interesse na adoção.     |
+| Usuário | de uma área informativa com conteúdos sobre cuidados com animais e dicas de adoção. |  aumentar o conhecimento sobre o assunto.  |
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
