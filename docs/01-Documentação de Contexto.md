@@ -52,7 +52,19 @@ Acreditamos que o impacto do nosso projeto será significativo. Com ele poderemo
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+Para criar uma plataforma eficaz que conecte adotantes a animais disponíveis para adoção, é fundamental compreender os diferentes perfis de público-alvo. Abaixo estão os principais grupos que seriam beneficiados e servidos por essa aplicação:
+
+1. Adotantes Potenciais
+Famílias e Indivíduos: Pessoas que desejam adotar um animal de estimação, seja para companhia, proteção ou por motivos pessoais. Esse grupo inclui:
+
+Famílias com Crianças: Procuram animais que sejam amigáveis e seguros para crianças.
+Indivíduos Sozinhos: Pessoas que desejam um animal como companheiro, podendo ter preferências específicas quanto ao tamanho, idade e temperamento do animal.
+Aposentados: Pessoas que buscam a companhia de um animal para preencher o tempo e trazer alegria à sua vida.
+
+2. Organizações e Abrigos
+Abrigos de Animais: Instituições que cuidam e abrigam animais em situação de rua ou abandonados, buscando uma forma eficiente de divulgar os animais disponíveis e aumentar as taxas de adoção.
+Resgates Independentes e ONGs: Grupos que trabalham de forma independente ou como ONGs para resgatar e reabilitar animais, frequentemente precisando de uma plataforma para ampliar sua visibilidade e conectar-se com potenciais adotantes.
+Veterinários e Clínicas: Profissionais que podem ter animais para adoção ou colaborar na divulgação e na promoção da adoção responsável.
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
