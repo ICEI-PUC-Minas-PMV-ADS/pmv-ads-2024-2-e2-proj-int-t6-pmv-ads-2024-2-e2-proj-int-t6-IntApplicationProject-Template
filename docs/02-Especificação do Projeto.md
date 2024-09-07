@@ -8,24 +8,15 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+| João Silva    |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/joaomarques.png)|**Idade:** 60 anos - **Ocupação:** Ocupação: Designer Gráfico |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Descrição:** João mora em um apartamento e está à procura de um animal de estimação para adoção. Ele prefere cães de porte médio e está preocupado com questões como o comportamento do animal e a compatibilidade com seu estilo de vida. Tem pouca experiência com adoção e busca informações sobre cuidados com animais. |**Necessidades:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Objetivos:** Adotar um animal compatível com seu estilo de vida e acessar uma área informativa com dicas sobre cuidados e adoção.| 
 
-Utilize também como referência o exemplo abaixo:
-
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| Maria Fernandes   |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/claralima.png)|**Idade:** 45 anos - **Ocupação:** Ocupação: Responsável por um abrigo de animais |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Descrição:** Maria administra um abrigo para animais abandonados. Ela é responsável por gerenciar os perfis dos animais no sistema, cadastrar novos animais e responder aos interessados em adoção. Tem pouco tempo disponível e busca um sistema que facilite o gerenciamento das informações e a comunicação com os adotantes. |**Necessidades:** Cadastrar e editar informações sobre os animais disponíveis, receber notificações quando alguém demonstrar interesse em um animal e facilitar a comunicação com adotantes.|**Objetivos:** Promover a adoção dos animais de maneira rápida e eficiente e gerenciar o abrigo e as informações dos animais de forma simples.| 
 
 ## Histórias de Usuários
 
@@ -33,17 +24,17 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| Adotante| cadastrar-me no site | conseguir acesso a plataforma para adotar.      |
-| Adotante| realizar login no site    | conseguir adotar.      |
-| Dono de abrigo de animais| cadastrar-me no site | conseguir acesso a plataforma e  mostrar os animais disponiveis.    |
-| Dono de abrigo de animais| realizar login no site | conseguir disponibilizar os animais para adoção.   |
+| Jõao Silva| cadastrar-me no site | conseguir acesso a plataforma para adotar.      |
+| Jõao Silva| realizar login no site    | conseguir adotar.      |
+| Maria Fernandes| cadastrar-me no site | conseguir acesso a plataforma e  mostrar os animais disponiveis.    |
+| Maria Fernandes| realizar login no site | conseguir disponibilizar os animais para adoção.   |
 | Usuário | visualizar minhas informações cadastradas   |   possibilitar o acesso as minhas informações.    |
-| Adotante / Dono de abrigo de animais | de um filtro de busca personalisado       | encontrar rapidamente um animal que atenda às minhas preferências.            |
-| Dono de abrigo de animais | cadastrar animais para adoção    |  possibilitar a adoção dos animais disponíveis e cadastrados       |
-| Dono de abrigo de animais | editar as informações dos meus animais cadastrados |  possibilitar a edição de informações e cadastro.     |
-| Adotante| conseguir visualizar os animais disponíveis para adoção e suas caracteristicas   |  conseguir escolher a melhor opção para adoção.      |
-| Dono de abrigo de animais| receber notificações quando alguém demonstrar interesse no meu animal cadastrado  |  conseguir contato com o interessado e sanar possiveis dúvidas sobre o animal e a adoção.     |
-| Adotante | demonstrar interesse no animal atráves de um formulário   |  possibilitar o dono de abrigo de animais saber do interesse na adoção.     |
+| Jõao Silva / Maria Fernandes | de um filtro de busca personalisado       | encontrar rapidamente um animal que atenda às minhas preferências.            |
+| Maria Fernandes  | cadastrar animais para adoção    |  possibilitar a adoção dos animais disponíveis e cadastrados       |
+| Maria Fernandes  | editar as informações dos meus animais cadastrados |  possibilitar a edição de informações e cadastro.     |
+| Jõao Silva| conseguir visualizar os animais disponíveis para adoção e suas caracteristicas   |  conseguir escolher a melhor opção para adoção.      |
+| Maria Fernandes| receber notificações quando alguém demonstrar interesse no meu animal cadastrado  |  conseguir contato com o interessado e sanar possiveis dúvidas sobre o animal e a adoção.     |
+|  Jõao Silva | demonstrar interesse no animal atráves de um formulário   |  possibilitar o dono de abrigo de animais saber do interesse na adoção.     |
 | Usuário | de uma área informativa com conteúdos sobre cuidados com animais e dicas de adoção. |  aumentar o conhecimento sobre o assunto.  |
 
 ## Requisitos
