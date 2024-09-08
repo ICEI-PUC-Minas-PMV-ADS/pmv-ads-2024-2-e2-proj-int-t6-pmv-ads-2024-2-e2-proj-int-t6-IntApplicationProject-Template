@@ -45,16 +45,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| O sistema deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha. | ALTA |
+|RF-002| O sistema deve permitir ao usuário verificar as informações registradas no cadastro, após fazer seu login. | ALTA |
+|RF-003| O sistema deve fornecer feedback claro para ações do usuário, como confirmações de formulários e mensagens de erro. | ALTA |
+|RF-004| O sistema deve permitir cadastrar animais disponíveis para adoção. | ALTA |
+|RF-005| O Sistema deve permitir editar as informações dos animais cadastrados. | MEDIA |
+|RF-006| O sistema deve ter uma página de perfil detalhada para cada animal como: histórico de saúde, comportamento, características específicas e fotos. | MEDIA |
+|RF-007| O sistema deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar os animais. | ALTA |
+|RF-008| O sistema deve permitir o adotante/usuário demonstrar interesse em um animal. | ALTA |
+|RF-009| O sistema deve notificar ao abrigo quando um usuário demonstrar interesse em um animal cadastrado. | ALTA |
+|RF-010| O sistema deverá permitir fazer o acompanhamento do status de adoções: pendentes, em processo ou concluídas. | MEDIA |
+|RF-011| O sistema deve oferecer conteúdo com cuidados aos animais e dicas de adoções. | MEDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku). | ALTA |
+|RNF-002| A aplicação deve ser responsiva, tendo boas exibições em diversos tamanhos de tela. Como em tablets, celulares e computadores. | ALTA |
+|RNF-003| O código-fonte deve ser de fácil compreensão e seguir as convenções de codificação estabelecidas pela equipe de desenvolvimento. Isso inclui a utilização de comentários claros e descritivos, nomes de variáveis e funções significativos, e a aderência a um estilo de codificação consistente que é documentado e compartilhado entre a equipe. | ALTA |
+|RNF-004| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA |
+|RNF-005| O sistema deve implementar políticas de senha robustas, incluindo requisitos de complexidade, Como um mínimo de 8 caracteres, com pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial. | ALTA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
