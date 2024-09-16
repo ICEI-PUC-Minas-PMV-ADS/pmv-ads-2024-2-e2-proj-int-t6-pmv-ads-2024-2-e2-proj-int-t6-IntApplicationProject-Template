@@ -8,11 +8,15 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-<img src="docs/img/ricardo-alves.png" alt="Persona1"/>
-<img src="docs/img/pedro-henrique.png" alt="Persona2"/>
-<img src="docs/img/maria-clara.png" alt="Persona3"/>
-<img src="docs/img/marcos-rodrigues.png" alt="Persona4"/>
-<img src="docs/img/renata.png" alt="Persona5"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/ricardo-alves.png" alt="Persona1"/>
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/pedro-henrique.png" alt="Persona2"/>
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/maria-clara.png" alt="Persona3"/>
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/marcos-rodrigues.png" alt="Persona4"/>
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/200310ee85dc693c3093dcc699c5e55e8d2e0a58/docs/img/renata.png" alt="Persona5"/>
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
