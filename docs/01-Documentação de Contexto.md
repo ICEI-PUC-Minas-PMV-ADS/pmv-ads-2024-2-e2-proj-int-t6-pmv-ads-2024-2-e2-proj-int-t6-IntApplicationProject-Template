@@ -30,7 +30,10 @@ Nesse contexto, nossa aplicação surge com uma solução inovadora e abrangente
 
 ## Público-Alvo
 
-A aplicação tem como público-alvo pessoas envolvidas direta ou indiretamente no processo de gerenciamento de estoque de um varejo, atendendo assim as necessidades de cada profissional. 
+A aplicação tem como público-alvo pessoas envolvidas direta ou indiretamente no processo de gerenciamento de estoque de um varejo, atendendo assim as necessidades de cada profissional.
+- Gerentes de Estoque: Encarregados do controle operacional do estoque, onde necessitam de informações precisas sobre quantidades, prazos de entrega e histórico de cada item para realizar compras eficientes.
+- Vendedor: Precisa de acesso rápido a informações sobre disponibilidade de produtos para atender os clientes, onde pode usar o sistema para registrar vendas e gerar relatórios para a gestão.
+- Repositor: Facilitam a visualização do que está em falta e o que precisa ser reposto.
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
