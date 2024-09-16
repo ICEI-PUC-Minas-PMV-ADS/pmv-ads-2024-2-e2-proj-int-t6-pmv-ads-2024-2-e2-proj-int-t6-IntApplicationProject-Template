@@ -43,13 +43,13 @@ A equipe adotou abordagens ágeis para o desenvolvimento do projeto, reconhecend
 
 Dentro dessa estrutura, a equipe se organiza de acordo com os papéis tradicionais do Scrum:
 
-• Scrum Master: ;
+- Scrum Master: ;
 
-• Product Owner: ;
+- Product Owner: ;
 
-• Equipe de Desenvolvimento: ;
+-  Equipe de Desenvolvimento: Patrícia Ester Ferreira Rodrigues ;
 
-• Equipe de Design: ;
+- Equipe de Design: Patrícia Ester Ferreira Rodrigues;
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
