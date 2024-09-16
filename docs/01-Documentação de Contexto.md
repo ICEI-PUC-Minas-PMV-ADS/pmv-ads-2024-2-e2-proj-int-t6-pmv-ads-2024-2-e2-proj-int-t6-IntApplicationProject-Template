@@ -1,6 +1,8 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+É inquestionável que a tecnologia trouxe grandes melhorias para aprimorar ainda mais a execução das atividades empresariais, mas um gargalo como o controle de estoque, uma peça-chave no planejamento de vários negócios, ainda pode ser um desafio para os empresários, pois uma má gestão dele pode provocar um caos no gerenciamento dos negócios com prejuízos e até a perda do negócio.  
+
+De acordo com Oriontec em seu blog “Com o uso de ferramentas e metodologias avançadas, é possível melhorar a prestação de serviço e fazer a empresa crescer.”
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
@@ -16,25 +18,19 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Diante disto a implementação de software de gestão de estoque – StockUp, gera mais segurança ao apurar e apontar as informações sobre vendas, bem como analisar e prever as necessidades de compras futuras, o crescimento do empreendimento, norteando novas aquisições, tanto na quantidade, quanto na frequência de cada item.  
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Outro fator é favorecer ao cliente uma maior portabilidade, pois seus dados podem ser acessados a partir de qualquer computador, em qualquer lugar, e com a segurança do acesso por login e senha.  
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Apenas 38% dos varejistas investem em sistemas de gestão de estoques, sendo esta porcentagem ainda menor entre os pequenos negócios, é o que aponta um levantamento feito pela H2R Pesquisas Avançadas, denominado Índice de Produtividade Tecnológica (IPT) de logística, apresentado no site Terra (2023). O estudo ainda “revelou que o investimento em tecnologia para integrar a logística e o estoque ainda é baixo no Brasil.” (TERRA, 2023).  
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo. Ou, o grupo poderá consultar e justificar o impacto do problema para o público-alvo por meio de pesquisas em outras fontes. Neste caso, é essencial que todos os dados apresentados estejam acompanhados de suas fontes (conforme padrão ABNT).
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Nesse contexto, nossa aplicação surge com uma solução inovadora e abrangente, oferecendo a simplificação e eficiência na gestão de controle de estoques, com segurança e portabilidade necessários para atender as demandas de grandes e pequenos negócios.  
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+A aplicação tem como público-alvo pessoas envolvidas direta ou indiretamente no processo de gerenciamento de estoque de um varejo, atendendo assim as necessidades de cada profissional. 
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
