@@ -105,7 +105,7 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
-![Diagrama de casos de uso](https://github.com/user-attachments/assets/c45e8822-8eaa-4f7c-88a5-38c24073e3bd)
+![diagrama](https://github.com/user-attachments/assets/f8b2e33b-5046-4a38-8544-58afc3627f65)
 
 
 > **Links Úteis**:
