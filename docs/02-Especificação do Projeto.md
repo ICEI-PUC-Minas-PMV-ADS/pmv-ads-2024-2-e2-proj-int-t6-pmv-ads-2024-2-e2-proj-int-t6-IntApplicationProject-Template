@@ -57,16 +57,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| O usuário deve poder criar sua conta na aplicação. | ALTA | 
+|RF-002| O usuário registrado deve poder fazer login utilizando suas credenciais (e-mail e senha). | ALTA |
+|RF-003| O usuário deve poder gerenciar seus dados pessoais. | MÉDIA |
+|RF-004| O usuário deve poder gerenciar os produtos em estoque. | ALTA |
+|RF-005| O usuário deve poder ter acesso aos registros de entradas e saídas. | MÉDIA |
+|RF-006| O usuário deve poder acessar o relatório de estoque mínimo. | BAIXO |
+|RF-007| O usuário deve poder consultar a quantidade de produtos em estoque. | ALTA |
+|RF-008| O usuário deve poder listar os produtos. | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A aplicação deve se adaptar a diferentes tamanhos de tela e dispositivos. | ALTA | 
+|RNF-002| O site deve ser compatível com os principais navegadores da web, como Chrome, Firefox, Safari e Edge. |  ALTA |
+|RNF-002| A aplicação deve processar requisições do usuário em no máximo 5 segundos. |  MÉDIA | 
+|RNF-002| O backend do sistema deve ser desenvolvido em linguagem C# e rodar em servidor Windows ou Linux, com o framework Microsoft .NET 5 |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
