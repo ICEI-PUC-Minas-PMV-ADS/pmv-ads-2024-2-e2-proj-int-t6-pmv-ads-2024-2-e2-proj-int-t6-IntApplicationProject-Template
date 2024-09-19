@@ -60,7 +60,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| O usuário deve poder criar sua conta na aplicação. | ALTA | 
 |RF-002| O usuário registrado deve poder fazer login utilizando suas credenciais (e-mail e senha). | ALTA |
 |RF-003| O usuário deve poder gerenciar seus dados pessoais. | MÉDIA |
-|RF-004| O usuário deve poder gerenciar os produtos em estoque. | ALTA |
+|RF-004| O usuário deve poder gerenciar seus produtos. | ALTA |
 |RF-005| O usuário deve poder ter acesso aos registros de entradas e saídas. | MÉDIA |
 |RF-006| O usuário deve poder acessar o relatório de estoque mínimo. | BAIXO |
 |RF-007| O usuário deve poder consultar a quantidade de produtos em estoque. | ALTA |
