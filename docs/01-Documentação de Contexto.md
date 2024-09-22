@@ -5,11 +5,15 @@
 De acordo com Oriontec em seu blog “Com o uso de ferramentas e metodologias avançadas, é possível melhorar a prestação de serviço e fazer a empresa crescer.”
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Muitas famílias enfrentam desafios recorrentes relacionados à gestão de seus estoques domésticos, o que resulta em diversas consequências indesejadas:
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+- Compras desnecessárias devido à falta de controle sobre o que já está disponível em casa.
+- Desperdício de alimentos por esquecimento de produtos na despensa ou geladeira, levando à deterioração.
+- Dificuldade em manter um estoque adequado de itens essenciais, o que gera desorganização e falta de previsibilidade.
+- Desorganização e falta de planejamento, resultando em consumo excessivo e compras impulsivas.
+- Ausência de um sistema prático e acessível para monitorar o consumo e planejar compras futuras.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Esses problemas afetam diretamente o orçamento familiar, comprometem a organização doméstica e geram estresse no cotidiano. Dessa forma, a necessidade de um sistema eficaz para gerenciar o estoque familiar se torna evidente, promovendo economia e maior controle sobre o consumo.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
