@@ -30,10 +30,13 @@ Nesse contexto, nossa aplicação surge com uma solução inovadora e abrangente
 
 ## Público-Alvo
 
-A aplicação tem como público-alvo pessoas envolvidas direta ou indiretamente no processo de gerenciamento de estoque de um varejo, atendendo assim as necessidades de cada profissional.
-- Gerentes de Estoque: Encarregados do controle operacional do estoque, onde necessitam de informações precisas sobre quantidades, prazos de entrega e histórico de cada item para realizar compras eficientes.
-- Vendedor: Precisa de acesso rápido a informações sobre disponibilidade de produtos para atender os clientes, onde pode usar o sistema para registrar vendas e gerar relatórios para a gestão.
-- Repositor: Facilitam a visualização do que está em falta e o que precisa ser reposto.
+A aplicação tem como público-alvo: 
+- Famílias: Para gerenciar o estoque de alimentos, produtos de limpeza e outros itens domésticos.
+- Indivíduos que vivem sozinhos: Para ajudar no controle de gastos e evitar desperdícios.
+- Estudantes: Para gerenciar suprimentos escolares e alimentos em repúblicas ou dormitórios.
+- Idosos ou cuidadores: Para controlar medicamentos e suprimentos médicos.
+
+O StockUp visa atender às necessidades de organização e controle de estoque pessoal, proporcionando uma ferramenta versátil e fácil de usar para diversos perfis de usuários. 
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
