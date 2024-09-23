@@ -5,7 +5,7 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+
 
 ## Diagrama de Fluxo
 ```mermaid
@@ -36,28 +36,93 @@ graph TD;
     K --> L[Revisar e Confirmar Adoção]
     L --> M[Receber Confirmação]
 ```
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+# Wireframes do Fluxo de Adoção de Pets
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
+## 1. Página Inicial
+- **Elementos:**
+  - **Título:** "Bem-vindo ao Adote um Pet"
+  - **Botões:**
+    - Login
+    - Cadastro
+    - Ver Pets Disponíveis
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+---
 
-## Wireframes
+## 2. Tela de Login
+- **Elementos:**
+  - **Título:** "Login"
+  - **Campos:**
+    - **Email** (Campo de texto)
+    - **Senha** (Campo de texto com ocultação)
+  - **Botão:**
+    - Entrar
+  - **Link:**
+    - Esqueceu a Senha?
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+- **Mensagens:**
+  - Mensagem de erro abaixo do botão se o login falhar: "Email ou senha incorretos."
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+---
+
+## 3. Tela de Cadastro
+- **Elementos:**
+  - **Título:** "Cadastro"
+  - **Campos:**
+    - **Nome** (Campo de texto)
+    - **Email** (Campo de texto)
+    - **Senha** (Campo de texto com ocultação)
+    - **Confirmar Senha** (Campo de texto com ocultação)
+  - **Botão:**
+    - Registrar
+
+- **Mensagens:**
+  - Mensagem de erro abaixo do botão se os dados forem inválidos: "Verifique os campos e tente novamente."
+
+---
+
+## 4. Tela de Ver Pets Disponíveis
+- **Elementos:**
+  - **Título:** "Pets Disponíveis"
+  - **Lista de Pets:**
+    - **Pet 1**
+      - Imagem do pet
+      - Nome do pet
+      - **Botão:** Adotar
+    - **Pet 2**
+      - Imagem do pet
+      - Nome do pet
+      - **Botão:** Adotar
+
+---
+
+## 5. Tela de Seleção de Pet
+- **Elementos:**
+  - **Título:** "Selecionar Pet"
+  - Imagem do pet selecionado
+  - Nome do pet
+  - **Botão:** Próximo
+
+---
+
+## 6. Formulário de Adoção
+- **Elementos:**
+  - **Título:** "Formulário de Adoção"
+  - **Campos:**
+    - **Nome Completo** (Campo de texto)
+    - **Endereço** (Campo de texto)
+    - **Telefone** (Campo de texto)
+    - **Observações** (Campo de texto longo)
+  - **Botão:** Enviar Adoção
+
+---
+
+## 7. Tela de Confirmação
+- **Elementos:**
+  - **Título:** "Adoção Confirmada!"
+  - **Mensagem:** "Obrigado por adotar! Um de nossos atendentes entrará em contato em breve."
+  - **Botão:** Voltar à Página Inicial
+
+
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
