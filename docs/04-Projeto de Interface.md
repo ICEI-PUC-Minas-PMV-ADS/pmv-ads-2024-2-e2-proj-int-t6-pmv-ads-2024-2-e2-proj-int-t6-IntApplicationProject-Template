@@ -15,15 +15,20 @@ graph TD;
     A --> D[Ver Pets Disponíveis]
     
     B --> E[Preencher Email e Senha]
-    B --> F[Botão: Entrar]
-    E --> F
-    
+    E --> F[Botão: Entrar]
     F -->|Sucesso| D
+    F -->|Não Sucesso| N[Mostrar Mensagem de Erro]
+
+    N --> O[Repetir Login]
+    O --> E
     
     C --> G[Preencher Nome, Email, Senha, Confirmar Senha]
     G --> H[Botão: Registrar]
-    
     H -->|Sucesso| D
+    H -->|Dados Incorretos| P[Mostrar Mensagem de Erro]
+
+    P --> Q[Repetir Cadastro]
+    Q --> G
     
     D --> I[Lista de Pets com Botão: Adotar]
     I --> J[Selecionar Pet]
