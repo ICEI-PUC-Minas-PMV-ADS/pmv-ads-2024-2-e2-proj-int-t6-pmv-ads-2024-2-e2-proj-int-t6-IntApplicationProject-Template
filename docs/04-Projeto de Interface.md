@@ -42,7 +42,7 @@ graph TD;
 
 ## 1. Página Inicial
 - **Elementos:**
-  - **Título:** "Bem-vindo ao Adote um Pet"
+  - **Título:** "Bem-vindo ao PetMatch"
   - **Botões:**
     - Login
     - Cadastro
