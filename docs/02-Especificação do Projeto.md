@@ -354,6 +354,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 <p>O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.</p>
 
+<p><img src="/docs/img/diagrama_caso_uso.PNG" alt="Diagrama de Caso de Uso"></p>
+
 <p>As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.</p>
 
 <p><strong>Links Úteis:</strong></p>
@@ -365,5 +367,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
     <li><a href="https://app.diagrams.net/">Diagrams</a></li>
 </ul>
 
-<p><img src="/docs/img/diagrama_caso_uso.PNG" alt="Diagrama de Caso de Uso"></p>
 
