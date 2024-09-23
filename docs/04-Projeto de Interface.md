@@ -8,7 +8,29 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
  Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## Diagrama de Fluxo
-
+```mermaid
+graph TD;
+    A[Pagina Inicial] --> B[Login]
+    A --> C[Cadastro]
+    A --> D[Ver Pets Disponíveis]
+    
+    B --> E[Preencher Email e Senha]
+    B --> F[Botão: Entrar]
+    E --> F
+    
+    F -->|Sucesso| D
+    
+    C --> G[Preencher Nome, Email, Senha, Confirmar Senha]
+    G --> H[Botão: Registrar]
+    
+    H -->|Sucesso| D
+    
+    D --> I[Lista de Pets com Botão: Adotar]
+    I --> J[Selecionar Pet]
+    J --> K[Preencher Formulário de Adoção]
+    K --> L[Revisar e Confirmar Adoção]
+    L --> M[Receber Confirmação]
+```
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
 O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
