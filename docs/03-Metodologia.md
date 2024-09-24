@@ -45,9 +45,9 @@ Dentro dessa estrutura, a equipe se organiza de acordo com os papéis tradiciona
 
 - Scrum Master: ;
 
-- Product Owner: ;
+- Product Owner: Breno Santos Figueiredo;
 
--  Equipe de Desenvolvimento: Patrícia Ester Ferreira Rodrigues ;
+- Equipe de Desenvolvimento: Patrícia Ester Ferreira Rodrigues, Breno Santos Figueiredo;
 
 - Equipe de Design: Patrícia Ester Ferreira Rodrigues;
 
@@ -57,9 +57,15 @@ Dentro dessa estrutura, a equipe se organiza de acordo com os papéis tradiciona
 > - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Gitub Project, onde as tarefas são alocadas em sprints, classificadas de acordo com sua prioridade, listadas no backlog e dividas entre os integrantes da equipe para que sejam realizadas, testadas e finalizadas. O quadro de tarefas está estruturado da seguinte forma:
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
+• Backlog: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando e mostra as tarefas e metas a serem cumpridas e suas prioridades.
+
+• In Progress: Lista que contém as tarefas que estão em andamento. É importante que a equipe atualize o status das tarefas para que o Scrum Master possa acompanhar o andamento do projeto e garantir que tudo esteja caminhando conforme o planejado.
+
+• In Review: Esta lista engloba as tarefas que estão em fase de revisão e testes. Os testadores devem verificar as documentações, códigos e funcionalidades implementadas, garantindo que estão corretas, funcionando perfeitamente e identificando possíveis erros para correção.
+
+• Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
 > - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
