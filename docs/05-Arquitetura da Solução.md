@@ -1,4 +1,4 @@
-![gerenciador de estoque](https://github.com/user-attachments/assets/0216cc4b-ce88-4543-bee0-efa027fec868)# Arquitetura da Solução
+# Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
@@ -16,7 +16,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
-![Diagrama ER](https://github.com/user-attachments/assets/7dca6bf7-c972-4b7c-882d-cc50b8870336)
+![Diagrama ER](https://github.com/user-attachments/assets/ce1dc311-dad3-4ea6-ab14-ab1101f535f9)
 
 ## Projeto da Base de Dados
 ![gerenciador de estoque](https://github.com/user-attachments/assets/b928a5af-fce9-4cdf-8a47-dc7cd9ae5e0e)
