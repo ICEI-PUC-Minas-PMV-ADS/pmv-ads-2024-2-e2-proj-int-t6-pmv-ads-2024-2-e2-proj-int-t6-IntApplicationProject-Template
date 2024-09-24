@@ -1,4 +1,4 @@
-# Arquitetura da Solução
+![gerenciador de estoque](https://github.com/user-attachments/assets/0216cc4b-ce88-4543-bee0-efa027fec868)# Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
@@ -19,7 +19,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 ![Diagrama ER](https://github.com/user-attachments/assets/7dca6bf7-c972-4b7c-882d-cc50b8870336)
 
 ## Projeto da Base de Dados
-![diagrama der](https://github.com/user-attachments/assets/03d0bb5f-f284-4f7f-a413-9e652e39083e)
+![gerenciador de estoque](https://github.com/user-attachments/assets/b928a5af-fce9-4cdf-8a47-dc7cd9ae5e0e)
 
 ## Tecnologias Utilizadas
 
