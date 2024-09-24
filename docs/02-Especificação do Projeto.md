@@ -64,7 +64,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| O usuário deve poder ter acesso aos registros de entradas e saídas. | MÉDIA |
 |RF-006| O usuário deve poder acessar o relatório de estoque mínimo. | BAIXO |
 |RF-007| O usuário deve poder consultar a quantidade de produtos em estoque. | ALTA |
-|RF-008| O usuário deve poder listar os produtos. | ALTA |
+|RF-008| O sistema deve cadastrar fornecedores, e o relacionar aos produtos. | MÉDIA |
 
 ### Requisitos não Funcionais
 
