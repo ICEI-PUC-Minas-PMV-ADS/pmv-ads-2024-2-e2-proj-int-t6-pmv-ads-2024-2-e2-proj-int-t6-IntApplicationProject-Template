@@ -10,7 +10,8 @@ Por exemplo:
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-001 - O sistema deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha. | RF-003 - O sistema deve fornecer feedback claro para ações do usuário, como confirmações de formulários e mensagens de erro. |
+|	Requisito Associado 	| <li>RF-001 - O sistema deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha.</li>
+<li>RF-003 - O sistema deve fornecer feedback claro para ações do usuário, como confirmações de formulários e mensagens de erro.</li>| 
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Visualizar a página inicial. <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
 |Critério de Êxito | O usuário deve fazer o cadastro, preenchendo informações solicitadas com base no cadastro de Pessoa Física ou Pessoa Jurídica. |
