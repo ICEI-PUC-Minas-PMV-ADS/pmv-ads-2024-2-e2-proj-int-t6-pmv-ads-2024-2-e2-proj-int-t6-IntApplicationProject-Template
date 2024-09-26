@@ -1,26 +1,19 @@
 CREATE DATABASE officeroomie COLLATE Latin1_General_100_CI_AS_SC_UTF8;
 
--- Tabela enderecos
-CREATE TABLE enderecos (
-    id INT PRIMARY KEY IDENTITY(1,1),
-    logradouro VARCHAR(255) NOT NULL,
-    numero VARCHAR(10),
-    complemento VARCHAR(100),
-    cep VARCHAR(20),
-    bairro VARCHAR(100),
-    cidade VARCHAR(100),
-    estado VARCHAR(50),
-    pais VARCHAR(50)
-);
-
 -- Tabela clientes
 CREATE TABLE clientes (
     id INT PRIMARY KEY IDENTITY(1,1),
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     cpf VARCHAR(11) NOT NULL UNIQUE,
-    endereco_id INT NOT NULL,
-    CONSTRAINT fk_clientes_enderecos FOREIGN KEY (endereco_id) REFERENCES enderecos(id)
+    endereco_logradouro VARCHAR(255) NOT NULL,
+    endereco_numero VARCHAR(10),
+    endereco_complemento VARCHAR(100),
+    endereco_cep VARCHAR(20),
+    endereco_bairro VARCHAR(100),
+    endereco_cidade VARCHAR(100),
+    endereco_estado VARCHAR(50),
+    endereco_pais VARCHAR(50)
 );
 
 -- Tabela administradores
@@ -33,21 +26,14 @@ CREATE TABLE administradores (
     permissoes VARCHAR(100) NOT NULL
 );
 
--- Tabela categorias_sala
-CREATE TABLE categorias_sala (
-    id INT PRIMARY KEY IDENTITY(1,1),
-    nome VARCHAR(255) NOT NULL
-);
-
 -- Tabela salas
 CREATE TABLE salas (
     id INT PRIMARY KEY IDENTITY(1,1),
     nome VARCHAR(255) NOT NULL,
     descricao VARCHAR(100),
     capacidade INT,
-    categoria_id INT NOT NULL,
+    categoria VARCHAR(255) NOT NULL,
     status VARCHAR(50) NOT NULL,
-    CONSTRAINT fk_salas_categorias FOREIGN KEY (categoria_id) REFERENCES categorias_sala(id)
 );
 
 -- Tabela reservas
