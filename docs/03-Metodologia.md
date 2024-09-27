@@ -79,6 +79,6 @@ As ferramentas empregadas no projeto são:
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/tree/main/src |
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/tree/main/docs |
-| Projeto de Interface                | Figma                              |[ https://https://www.figma.com/](https://www.figma.com/)
+| Projeto de Interface                | Figma                            |(https://www.figma.com/design/3sYlzirXLECGmdRDdLup3m/Gest%C3%A3o-de-Estoques?node-id=0-1&t=6Mr8MPvBynmaAUyJ-1))
 | Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1480 |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
