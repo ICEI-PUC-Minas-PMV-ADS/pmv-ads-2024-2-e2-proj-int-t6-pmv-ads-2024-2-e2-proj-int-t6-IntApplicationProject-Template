@@ -21,9 +21,7 @@ Segue abaixo uma visualização do User Flow baseada no relacionamento da págin
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-Abaixo, segue os Wireframes do app Office Roomie:
+## Abaixo, segue os Wireframes do app Office Roomie:
 
 
 ### Tela de Login Usuário
@@ -34,6 +32,52 @@ Abaixo, segue os Wireframes do app Office Roomie:
 ### Página Inicial Usuário
 
 ![Página Inicial Usuário](img/interface/pagina_inicial_usuario.png)
+
+
+### Informação da Reserva
+
+![Informação da Reserva](img/interface/informacao_reserva.png)
+
+
+### Informação da Sala
+
+![Informação da Sala](img/interface/informacao_sala.png)
+
+
+### Dados para realizar a reserva
+
+![Dados para realizar a reserva](img/interface/dados_para_reservar.png)
+
+
+### Reserva realizada
+
+![Reserva realizada](img/interface/reserva_realizada.png)
+
+
+### Minhas reservas (Usuário)
+
+![Minhas reservas - Usuário](img/interface/minhas_reservas_usuario.png)
+
+
+### Tela de Login ADM
+
+![Tela de Login ADM](img/interface/tela_login_adm.png)
+
+
+
+### Página inicial ADM
+
+![Página inicial ADM](img/interface/pagina_inicial_adm.png)
+
+
+### Painel ADM
+
+![Painel ADM](img/interface/painel_adm.png)
+
+
+
+
+
 
 
 
