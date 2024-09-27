@@ -2,9 +2,30 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+<h3>Perfis de usuários</h3>
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+|Perfis de usuários|  |                |
+|--------------------|------------------------------------|----------------------------------------|
+|Perfil 1: Famílias|
+|Descrição  | Casal com a vida agitada, equilibrando carreira e responsabilidades familiares.     |
+|Necessidades  | - Gerenciar eficientemente o estoque de alimentos para toda a família e manter um estoque adequado de produtos de limpeza e higiene. |   |
+|Perfil 2: Indivíduos que vivem sozinhos|
+|Descrição  | Mora sozinho(a) em apartamento na cidade, carreira em crescimento, com pouco tempo livre.     |
+|Necessidades  |     Controlar gastos pessoais e evitar compras impulsivas;  Gerenciar estoque de alimentos para uma pessoa; Manter um estoque mínimo de itens essenciais; Otimizar tempo gasto com compras e organização doméstica. |   |
+|Perfil 3: Estudantes|
+|Descrição  | Jovem com orçamento limitado e pouca experiência em gestão doméstica.      |
+|Necessidades  | Gerenciar suprimentos escolares e livros; Planejar compras dentro de um orçamento apertado; Organizar espaço limitado de forma eficiente.|   |
+|Perfil 4: Idosos ou cuidadores|
+|Descrição  | Pessoa acima de 65 anos ou cuidador responsável, pode ter limitações físicas ou de memória.      |
+|Necessidades  | Planejar reposição de itens essenciais para saúde. |   |
+
+
+    
+
+    
+
+    
+
 
 ## Personas
 
