@@ -26,7 +26,7 @@ Para uma compreensão mais completa do wireframe, sugerimos acessar a versão in
  
 ### Landing Page
 
-![Tela de início]([https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/e6852f1ce936c99c0773766dc7b5f2553489abfc/docs/img/tela-de-login.PNG](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/ed7656ba29b0912982603dffc05579084939687e/docs/img/tela-inicio.PNG)
+![Tela de início](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/00643f689f522cbeb17d50651dc7f1f59674c93e/docs/img/tela-inicio.PNG)
 
 ![Tela de login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/ed7656ba29b0912982603dffc05579084939687e/docs/img/tela-de-login.PNG)
 
