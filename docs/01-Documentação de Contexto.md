@@ -1,8 +1,6 @@
 # Introdução
 
-É inquestionável que a tecnologia trouxe grandes melhorias para aprimorar ainda mais a execução das atividades empresariais, mas um gargalo como o controle de estoque, uma peça-chave no planejamento de vários negócios, ainda pode ser um desafio para os empresários, pois uma má gestão dele pode provocar um caos no gerenciamento dos negócios com prejuízos e até a perda do negócio.  
-
-De acordo com Oriontec em seu blog “Com o uso de ferramentas e metodologias avançadas, é possível melhorar a prestação de serviço e fazer a empresa crescer.”
+No mundo de hoje, organizar sua vida pessoal é tão importante quanto gerenciar seus negócios. A tecnologia fez uma grande mudança em muitas áreas de nossas vidas, mas manter o controle de nossas próprias coisas e outras de coisas ainda pode ser difícil. A tecnologia pode ajudar as pessoas a economizarem tempo e recursos. 
 
 ## Problema
 Muitas famílias enfrentam desafios recorrentes relacionados à gestão de seus estoques domésticos, o que resulta em diversas consequências indesejadas:
@@ -22,15 +20,17 @@ Esses problemas afetam diretamente o orçamento familiar, comprometem a organiza
 
 ## Objetivos
 
-Diante disto a implementação de software de gestão de estoque – StockUp, gera mais segurança ao apurar e apontar as informações sobre vendas, bem como analisar e prever as necessidades de compras futuras, o crescimento do empreendimento, norteando novas aquisições, tanto na quantidade, quanto na frequência de cada item.  
-
-Outro fator é favorecer ao cliente uma maior portabilidade, pois seus dados podem ser acessados a partir de qualquer computador, em qualquer lugar, e com a segurança do acesso por login e senha.  
+Muitas pessoas têm dificuldade para administrar seus itens pessoais, alimentos, remédios e outras coisas importantes em casa. Isso pode leva-las a comprar demais, jogar fora restos de comida, guardar remédios velhos e sentirem-se bagunçadas. Assim, buscam uma maneira de:  
+- Evitar gastos excessivos com itens já possuídos. 
+- Lembrar de repor itens essenciais. 
+- Planejar compras e orçamento pessoal.  
+- Evitar o estresse e a perda de tempo procurando itens. 
 
 ## Justificativa
 
-Apenas 38% dos varejistas investem em sistemas de gestão de estoques, sendo esta porcentagem ainda menor entre os pequenos negócios, é o que aponta um levantamento feito pela H2R Pesquisas Avançadas, denominado Índice de Produtividade Tecnológica (IPT) de logística, apresentado no site Terra (2023). O estudo ainda “revelou que o investimento em tecnologia para integrar a logística e o estoque ainda é baixo no Brasil.” (TERRA, 2023).  
+O desperdício de alimentos é um desafio global crescente, com implicações significativas para a sustentabilidade e a economia doméstica. De acordo com o Relatório do Índice de Desperdício de Alimentos 2024 do PNUMA (Food Waste Index Report), em 2022 foram gerados 1,05 bilhão de toneladas de resíduos alimentares. Mais alarmante ainda é o fato de que 60% desse desperdício ocorreu no âmbito doméstico, evidenciando uma clara necessidade de intervenção no nível do consumidor individual. 
 
-Nesse contexto, nossa aplicação surge com uma solução inovadora e abrangente, oferecendo a simplificação e eficiência na gestão de controle de estoques, com segurança e portabilidade necessários para atender as demandas de grandes e pequenos negócios.  
+Nesse contexto, nossa aplicação surge com uma solução inovadora e abrangente, oferecendo a simplificação e eficiência na gestão de controle de estoques, com segurança e portabilidade necessários para atender as necessidades das pessoas. 
 
 ## Público-Alvo
 
