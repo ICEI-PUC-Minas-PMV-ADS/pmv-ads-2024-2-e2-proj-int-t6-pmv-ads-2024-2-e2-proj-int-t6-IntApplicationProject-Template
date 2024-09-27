@@ -72,7 +72,7 @@ Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub, Trel
 
 | Ambiente | Plataforma | Link de acesso | 
 |:--------------------|:---------------------|:--------------------|
-| Repositório de código fonte | GitHub |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie.git |
+| Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/blob/main/src/README.md |
 | Documentos do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/tree/main/docs |
 | Projeto de interface e wireframes | Figma | https://www.figma.com/design/RFnGBlg7dOkRw1XzQqsUdR/Projeto---Sala-de-Reuni%C3%A3o |
 | Gerenciamento do projeto | Trello | https://trello.com/b/qLCwklTt/projeto-office-roomie |
