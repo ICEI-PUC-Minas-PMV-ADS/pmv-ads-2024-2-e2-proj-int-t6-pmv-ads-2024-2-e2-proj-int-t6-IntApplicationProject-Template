@@ -51,7 +51,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 </ul>
 O quadro kanban do grupo no Trello está presente no link: https://trello.com/b/qLCwklTt/projeto-office-roomie e está apresentado no estado atual da seguinte forma:
 
-![Imagem Kanban](docs\img\Kanban.PNG)
+![Imagem Kanban](img/Kanban.PNG)
 
 
 
