@@ -26,7 +26,7 @@ Segue abaixo uma visualização do User Flow baseada no relacionamento da págin
 
 ## Wireframes
 
-# Abaixo, segue os Wireframes do app Office Roomie:
+Abaixo, segue os Wireframes do app Office Roomie: 
 
 
 ### Tela de Login Usuário
