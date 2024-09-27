@@ -27,11 +27,11 @@ Abaixo, segue os Wireframes do app Office Roomie:
 
 ### Tela de Login Usuário
 
-![Tela de Login Usuário](img\tela_login_usuario.png)
+![Tela de Login Usuário](img\interface/tela_login_usuario.png)
 
 ### Página Inicial Usuário
 
-![Página Inicial Usuário](img\pagina_inicial_usuario.png)
+![Página Inicial Usuário](img\interface/pagina_inicial_usuario.png)
 
 
 
