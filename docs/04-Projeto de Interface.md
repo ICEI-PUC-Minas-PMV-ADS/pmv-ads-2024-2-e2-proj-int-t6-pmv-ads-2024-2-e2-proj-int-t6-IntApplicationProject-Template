@@ -29,12 +29,13 @@ Abaixo, segue os Wireframes do app Office Roomie:
 
 ![Tela de Login Usuário](img\interface/tela_login_usuario.png)
 
+![Tela de Login Usuário](img/interface/tela_login_usuario.png)
+
 ### Página Inicial Usuário
 
 ![Página Inicial Usuário](img\interface/pagina_inicial_usuario.png)
 
-![Página Inicial Usuário]("C:\Users\brena\Desktop\PROJETOS\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\docs\img\interface\dados_para_reservar.png")
-
+![Página Inicial Usuário]
 
 
  
