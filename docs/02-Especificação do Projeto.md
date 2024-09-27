@@ -38,8 +38,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Pedro  | Aplicativo fácil de usar uso e com interface amigável.     | Evitar perda de tempo.   |
 |João    | Um sistema que me permita criar listas personalizadas de produtos veganos.      | Ajudar a planejar minhas refeições de forma mais eficiente.    |
 |João   | Que permita gerenciar meu estoque.      | Para otimizar meu tempo e manter minha dieta saudável.    |
-|Karla  | Um sistema de gerenciamento de estoque que seja prático e seguro.       | Me permitirá acompanhar os produtos da dispensa,
-evitar desperdícios, organizar melhor as compras e não perder tempo com configurações complexas     |
+|Karla  | Um sistema de gerenciamento de estoque que seja prático e seguro. | Me permitirá acompanhar os produtos da dispensa,evitar desperdícios, organizar melhor as compras e não perder tempo com configurações complexas     |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
