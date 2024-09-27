@@ -30,17 +30,30 @@
 <b>Descrição: </b> Solteiro, pai de um filho, mora sozinho. É supervisor de vendas de uma fábrica de autopeças. Trabalha até 12h por dia. Gosta de soluções práticas e simples. Utiliza smartphone Android e notebook Windows em casa e no trabalho. Não gosta de ler manuais extensos de configurações personalizadas em apps e softwares.</br>  
 <b>Dores: </b> Tem dificuldade para gerenciar o estoque de casa, pois passa muito tempo fora. Vai às compras de supermercado sem lista e acaba comprando coisas supérfluas ou itens duplicados, que já se encontram na dispensa.<br/>  
 <b>Expectativas: </b> Conseguir gerenciar o estoque da dispensa remotamente, de maneira objetiva e prática.</br> 
+<br/>
 <b>Persona 2: </b>  João<br/>
 <b>Idade: </b>   28 anos<br/> 
 <b>Profissão: </b>  Designer Gráfico<br/> 
 <b>Localização: </b>  Belo Horizonte, Brasil<br/> 
 <b>Objetivo: </b>  Organizar as compras e criar uma lista personalizada de alimentos veganos<br/> 
 <p><img src="img/joao.png"/></p>
+<b>Descrição:</b> Solteiro, mora com os pais. É vegano. Trabalha em home-office e um dia na semana se reúne com os colegas de trabalho na empresa. Gosta de soluções completas e customizáveis. Gosta de configurações personalizadas nos apps e softwares, e ler manuais quando precisa de informações detalhadas. Usa um iPhone e um MacBook.<br/>
+<b>Dores:</b> Gasta muito tempo planejando sua dieta da semana.<br/>  
+<b>Expectativas: </b>Gostaria de otimizar o seu tempo, criando dietas personalizadas de produtos veganos, e ir variando ao longo da semana. Gostaria de gerenciar o estoque.<br/> 
 
-<img src="img/Karla.png"/>
+<br/>
+<b>Persona 3:</b> Karla<br/> 
+<b>Idade:</b>  42 anos<br/> 
+<b>Profissão:</b> Vendedora<br/> 
+<b>Localização:</b> Belo Horizonte, Brasil<br/> 
+<b>Objetivo:</b> Organizar o estoque de alimentos de sua casa<br/> 
+<p><img src="img/Karla.png"/></p>
+<b>Descrição: </b>Karla é vendedora de uma concessionária de veículo. É casada e tem dois filhos. Trabalha até 10h por dia. Tem um smartphone Android, um computador desktop Windows, e um notebook Windows no trabalho. Gosta de configurar apps e softwares, porém é muito cautelosa e teme que algo dê errado.<br/> 
+<b>Dores:  </b>Tem dificuldade de gerenciar o estoque de casa, por passar muito tempo fora. Não tem tempo para planejar as compras da semana, e acaba comprando muitos itens do mesmo produto, ou perdendo produtos vencidos. <br/>  
+<b>Expectativas: </b>Um sistema que possibilite gerenciar o estoque de casa de maneira remota.<br/><br/> 
 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+<p>Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:</p>
 
 > **Links Úteis**:
 > 
