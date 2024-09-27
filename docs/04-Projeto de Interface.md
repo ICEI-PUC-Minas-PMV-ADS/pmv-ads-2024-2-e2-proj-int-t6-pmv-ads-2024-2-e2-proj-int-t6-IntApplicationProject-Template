@@ -5,8 +5,6 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
-
 ## Diagrama de Fluxo
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
@@ -22,7 +20,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
-![Wireframe interativo (falta incluir](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
+![Wireframe interativo](https://www.figma.com/proto/3sYlzirXLECGmdRDdLup3m/Gest%C3%A3o-de-Estoques?node-id=8-169&node-type=frame&t=MwVH6TucEln1VNhV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1)
 
 Para uma compreensão mais completa do wireframe, sugerimos acessar a versão interativa no Figma. Abaixo, apresentamos algumas das interfaces do wireframe para uma visão geral.
  
