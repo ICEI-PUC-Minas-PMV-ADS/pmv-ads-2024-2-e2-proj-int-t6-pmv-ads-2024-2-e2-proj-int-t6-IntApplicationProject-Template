@@ -13,10 +13,10 @@ O fluxo do usuário terá início na tela de login, onde após a devida autentic
 
 Segue abaixo uma visualização do User Flow baseada no relacionamento da página inicial e das telas referentes à cada funcionalidade:
 
-Diagrama de Fluxo Usuário Final
+### Diagrama de Fluxo Usuário Final
 ![Diagrama de Fluxo Usuário Final](img/diagramafluxousuariofinal.jpg)
 
-Diagrama de Fluxo Administrador
+### Diagrama de Fluxo Administrador
 ![Diagrama de Fluxo Admin](img/diagramafluxoadmin.jpg)
 
 ## Wireframes
