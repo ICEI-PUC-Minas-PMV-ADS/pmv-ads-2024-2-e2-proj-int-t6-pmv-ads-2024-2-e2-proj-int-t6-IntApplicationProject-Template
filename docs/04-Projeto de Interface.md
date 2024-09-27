@@ -20,7 +20,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
-![Wireframe interativo](https://www.figma.com/proto/3sYlzirXLECGmdRDdLup3m/Gest%C3%A3o-de-Estoques?node-id=8-169&node-type=frame&t=MwVH6TucEln1VNhV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1)
+![Wireframe interativo](https://www.figma.com/proto/3sYlzirXLECGmdRDdLup3m/Gest%C3%A3o-de-Estoques?node-id=8-169&node-type=canvas&t=PCCuZJYrJs10xICO-1&scaling=contain&content-scaling=fixed&page-id=0%3A1)
 
 Para uma compreensão mais completa do wireframe, sugerimos acessar a versão interativa no Figma. Abaixo, apresentamos algumas das interfaces do wireframe para uma visão geral.
  
