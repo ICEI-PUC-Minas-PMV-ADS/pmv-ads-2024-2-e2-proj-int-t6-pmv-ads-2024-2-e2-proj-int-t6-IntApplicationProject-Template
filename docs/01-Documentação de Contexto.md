@@ -34,11 +34,11 @@ Nesse contexto, nossa aplicação surge com uma solução inovadora e abrangente
 
 ## Público-Alvo
 
-A aplicação tem como público-alvo: 
-- Famílias: Para gerenciar o estoque de alimentos, produtos de limpeza e outros itens domésticos.
-- Indivíduos que vivem sozinhos: Para ajudar no controle de gastos e evitar desperdícios.
-- Estudantes: Para gerenciar suprimentos escolares e alimentos em repúblicas ou dormitórios.
-- Idosos ou cuidadores: Para controlar medicamentos e suprimentos médicos.
+A aplicação tem como público-alvo pessoas interessadas em organizar seu estoque de itens pessoais ou de um família. 
+- Famílias: Encarregadas do controle operacional do estoque, onde necessitam de informações precisas sobre quantidades, prazos de entrega e histórico de cada item para realizar compras eficientes. 
+- Indivíduos que moram sozinhos: Precisam de acesso rápido a informações sobre disponibilidade de produtos para planejar suas compras, onde pode usar o sistema para registrar compras e gerar relatórios. 
+- Estudantes: Precisam gerenciar seu estoque de materiais escolares e itens de estoque pessoal dentro de uma república. 
+- Idosos ou cuidadores: Precisam gerenciar estoque de medicamentos e itens de higiene pessoal. 
 
 O StockUp visa atender às necessidades de organização e controle de estoque pessoal, proporcionando uma ferramenta versátil e fácil de usar para diversos perfis de usuários. 
 
