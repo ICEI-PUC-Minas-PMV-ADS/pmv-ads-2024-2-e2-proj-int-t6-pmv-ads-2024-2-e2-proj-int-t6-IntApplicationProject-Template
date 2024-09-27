@@ -10,34 +10,29 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## Diagrama de Fluxo
 ```mermaid
 graph TD;
-    a[Pagina Inicial] --> b[Login]
-    a --> d[Ver Pets Disponíveis]
+    A[Pagina Inicial] --> B[Login]
+    A --> C[Cadastro]
+    A --> D[Ver Pets Disponíveis]
     
-    b --> e[Preencher Email e Senha]
-    e --> f[Botão: Entrar]
-    f -->|Sucesso| d
-    f -->|Não Sucesso| n[Mostrar Mensagem de Erro]
-
-    n --> o[Repetir Login]
-    o --> e
+    B --> E[Preencher Email e Senha]
+    E --> F[Botão: Entrar]
+    F -->|Sucesso| D
+    F -->|Não Sucesso| N[Mostrar Mensagem de Erro]
+    N --> O[Repetir Login]
+    O --> E
     
-    d --> i[Lista de Pets com Botão: Adotar]
-    i --> j[Selecionar Pet]
-    j --> k[Preencher Formulário de Adoção]
-    k --> l[Revisar e Confirmar Adoção]
-    l --> m[Receber Confirmação]
-
-    %% Adicionando a parte de cadastro de pets apenas para administradores
-    b --> r[Login Administrador]
-    r --> s[Preencher Email e Senha Admin]
-    s --> t[Botão: Entrar Admin]
-    t -->|Sucesso| u[Área do Administrador]
-    t -->|Não Sucesso| v[Mostrar Mensagem de Erro Admin]
-
-    u --> w[Cadastrar Novo Pet]
-    w --> x[Preencher Informações do Pet]
-    x --> y[Botão: Salvar Pet]
-    y --> z[Pet Cadastrado com Sucesso]
+    C --> G[Preencher Nome, Email, Senha, Confirmar Senha]
+    G --> H[Botão: Registrar]
+    H -->|Sucesso| D
+    H -->|Dados Incorretos| P[Mostrar Mensagem de Erro]
+    P --> Q[Repetir Cadastro]
+    Q --> G
+    
+    D --> I[Lista de Pets com Botão: Adotar]
+    I --> J[Selecionar Pet]
+    J --> K[Preencher Formulário de Adoção]
+    K --> L[Revisar e Confirmar Adoção]
+    L --> M[Receber Confirmação]
 ```
 
 
