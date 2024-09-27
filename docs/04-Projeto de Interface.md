@@ -19,9 +19,14 @@ Segue abaixo uma visualização do User Flow baseada no relacionamento da págin
 ### Diagrama de Fluxo Administrador
 ![Diagrama de Fluxo Admin](img/diagramafluxousuariofinal.jpg)
 
+
+
+
+
+
 ## Wireframes
 
-## Abaixo, segue os Wireframes do app Office Roomie:
+# Abaixo, segue os Wireframes do app Office Roomie:
 
 
 ### Tela de Login Usuário
@@ -64,7 +69,6 @@ Segue abaixo uma visualização do User Flow baseada no relacionamento da págin
 ![Tela de Login ADM](img/interface/tela_login_adm.png)
 
 
-
 ### Página inicial ADM
 
 ![Página inicial ADM](img/interface/pagina_inicial_adm.png)
@@ -73,6 +77,24 @@ Segue abaixo uma visualização do User Flow baseada no relacionamento da págin
 ### Painel ADM
 
 ![Painel ADM](img/interface/painel_adm.png)
+
+
+### Excluir reserva
+
+![Excluir reserva](img/interface/excluir_reserva.png)
+
+
+### Confirmar exclusão
+
+![Confirmar exclusão](img/interface/confirmar_exclusao.png)
+
+
+### Calendário
+
+![Calendário](img/interface/ver_calendario.png)
+
+
+____________________
 
 
 
