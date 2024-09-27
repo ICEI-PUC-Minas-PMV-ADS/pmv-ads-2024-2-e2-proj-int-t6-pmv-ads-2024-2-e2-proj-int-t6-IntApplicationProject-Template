@@ -8,15 +8,12 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/ricardo-alves.png" alt="Persona1"/>
+<img src="."/>
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/pedro-henrique.png" alt="Persona2"/>
+<img src="."/>
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/maria-clara.png" alt="Persona3"/>
+<img src="."/>
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/c1bc0fedfa2a35b4b85c90711623ae624bfd38b7/docs/img/marcos-rodrigues.png" alt="Persona4"/>
-
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-gerenciador_de_estoque/blob/200310ee85dc693c3093dcc699c5e55e8d2e0a58/docs/img/renata.png" alt="Persona5"/>
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -37,8 +34,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Pedro  | Um aplicativo de que permita monitorar remotamente o que tenho em casa.     | Evitar desperdícios e compras desnecessárias, e economizar tempo nas minhas compras semanais.                |
+|Pedro  | Aplicativo fácil de usar uso e com interface amigável.     | Evitar perda de tempo.   |
+|João    | Um sistema que me permita criar listas personalizadas de produtos veganos.      | Ajudar a planejar minhas refeições de forma mais eficiente.    |
+|João   | Que permita gerenciar meu estoque.      | Para otimizar meu tempo e manter minha dieta saudável.    |
+|Karla  | Um sistema de gerenciamento de estoque que seja prático e seguro.       | Me permitirá acompanhar os produtos da dispensa,
+evitar desperdícios, organizar melhor as compras e não perder tempo com configurações complexas     |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
