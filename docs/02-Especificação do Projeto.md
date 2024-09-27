@@ -20,20 +20,24 @@
 |Necessidades  | Planejar reposição de itens essenciais para saúde. |   |
 
 
-    
-
-    
-
-    
-
-
 ## Personas
+<b>Persona 1:</b> Pedro</br> 
+<b>Idade:</b>   52 anos<br/> 
+<b>Profissão:</b>  Supervisor de produção<br/> 
+<b>Localização:</b>  Belo Horizonte, Brasil</br> 
+<b>Objetivo: </b> Organizar as compras da semana e evitar o desperdício<br/> 
+<p><img src="img/pedro.png"/></p>
+<b>Descrição: </b> Solteiro, pai de um filho, mora sozinho. É supervisor de vendas de uma fábrica de autopeças. Trabalha até 12h por dia. Gosta de soluções práticas e simples. Utiliza smartphone Android e notebook Windows em casa e no trabalho. Não gosta de ler manuais extensos de configurações personalizadas em apps e softwares.</br>  
+<b>Dores: </b> Tem dificuldade para gerenciar o estoque de casa, pois passa muito tempo fora. Vai às compras de supermercado sem lista e acaba comprando coisas supérfluas ou itens duplicados, que já se encontram na dispensa.<br/>  
+<b>Expectativas: </b> Conseguir gerenciar o estoque da dispensa remotamente, de maneira objetiva e prática.</br> 
+<b>Persona 2: </b>  João<br/>
+<b>Idade: </b>   28 anos<br/> 
+<b>Profissão: </b>  Designer Gráfico<br/> 
+<b>Localização: </b>  Belo Horizonte, Brasil<br/> 
+<b>Objetivo: </b>  Organizar as compras e criar uma lista personalizada de alimentos veganos<br/> 
+<p><img src="img/joao.png"/></p>
 
-<img src="."/>
-
-<img src="."/>
-
-<img src="."/>
+<img src="img/Karla.png"/>
 
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
