@@ -9,22 +9,100 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
+O fluxo do usuário terá início na tela de login, onde após a devida autenticação (com e-mail e senha), o mesmo poderá acessar a home page de acordo com o seu perfil, seja ele de usuário final ou administrador. A página inicial para ambos os perfis permite a visualização das opções/funcionalidades disponíveis para cada um.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
+Segue abaixo uma visualização do User Flow baseada no relacionamento da página inicial e das telas referentes à cada funcionalidade:
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+### Diagrama de Fluxo Usuário Final
+![Diagrama de Fluxo Usuário Final](img/diagramafluxoadmin.jpg)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
+### Diagrama de Fluxo Administrador
+![Diagrama de Fluxo Admin](img/diagramafluxousuariofinal.jpg)
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+
+
+
+
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Abaixo, segue os Wireframes do app Office Roomie: 
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+
+### Tela de Login Usuário
+
+![Tela de Login Usuário](img/interface/tela_login_usuario.png)
+
+
+### Página Inicial Usuário
+
+![Página Inicial Usuário](img/interface/pagina_inicial_usuario.png)
+
+
+### Informação da Reserva
+
+![Informação da Reserva](img/interface/informacao_reserva.png)
+
+
+### Informação da Sala
+
+![Informação da Sala](img/interface/informacao_sala.png)
+
+
+### Dados para realizar a reserva
+
+![Dados para realizar a reserva](img/interface/dados_para_reservar.png)
+
+
+### Reserva realizada
+
+![Reserva realizada](img/interface/reserva_realizada.png)
+
+
+### Minhas reservas (Usuário)
+
+![Minhas reservas - Usuário](img/interface/minhas_reservas_usuario.png)
+
+
+### Tela de Login ADM
+
+![Tela de Login ADM](img/interface/tela_login_adm.png)
+
+
+### Página inicial ADM
+
+![Página inicial ADM](img/interface/pagina_inicial_adm.png)
+
+
+### Painel ADM
+
+![Painel ADM](img/interface/painel_adm.png)
+
+
+### Excluir reserva
+
+![Excluir reserva](img/interface/excluir_reserva.png)
+
+
+### Confirmar exclusão
+
+![Confirmar exclusão](img/interface/confirmar_exclusao.png)
+
+
+### Calendário
+
+![Calendário](img/interface/ver_calendario.png)
+
+
+____________________
+
+
+
+
+
+
+
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)

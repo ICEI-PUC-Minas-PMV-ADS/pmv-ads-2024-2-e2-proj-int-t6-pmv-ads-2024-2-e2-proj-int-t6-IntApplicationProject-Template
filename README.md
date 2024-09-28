@@ -16,7 +16,7 @@ Este projeto tem como objetivo desenvolver um sistema eficiente e intuitivo para
 
 * Brena Aparecida Ferreira
 * Caio de Souza Araujo
-* Farley Rodrigues Souza
+* Farley Rodrigues De Souza
 * Fernando Vinicius Sousa Moura
 * Kevin Lucas Andrade Dos Santos
 * Marcelly Thais Freitas Neves
