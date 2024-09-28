@@ -1,282 +1,93 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plano de Testes</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: left;
-            width: 25%; /* Ajusta a largura de todas as colunas */
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
+# Plano de Testes de Software
 
-<h1>Plano de Testes de Software</h1>
+<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-<p><span style="color:red">Pré-requisitos:</span> <a href="2-Especificação do Projeto.md">Especificação do Projeto</a>, <a href="3-Projeto de Interface.md">Projeto de Interface</a></p>
+Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-<p>Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.</p>
+Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
 
-<p>Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto".</p>
+| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-01 - Desenvolver tela de Login com módulo de autenticação. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar a autenticação no sistema. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar no botão "Entrar" <br> - Preencher os campos de e-mail e senha <br> - Clicar em "Login" |
+| Critério de Êxito | - O login é realizado com sucesso, e o usuário é direcionado à página inicial. |
+|  	|  	|
 
-<!-- Caso de Teste CT-01 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-01 – Cadastrar perfil**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue se cadastrar na aplicação.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar"</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- O cadastro foi realizado com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-02 – Gerenciamento de Salas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-02 - Desenvolver tela de gerenciamento de Salas, permitindo cadastro, edição, visualização e exclusão de informações. |
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar, editar, visualizar e excluir informações sobre salas. |
+| Passos 	| - Acessar a funcionalidade "Gerenciamento de Salas" <br> - Cadastrar uma nova sala <br> - Editar as informações da sala cadastrada <br> - Visualizar os dados da sala <br> - Excluir a sala cadastrada |
+| Critério de Êxito | - Todas as operações (cadastrar, editar, visualizar, excluir) são realizadas com sucesso. |
+|  	|  	|
 
-<!-- Caso de Teste CT-02 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-02 – Efetuar login**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue realizar login.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login"</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- O login foi realizado com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-03 – Visualizar disponibilidade das salas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-03 - Desenvolver tela para visualização da disponibilidade das salas em tempo real pelos usuários finais. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar a disponibilidade das salas em tempo real. |
+| Passos 	| - Realizar o login no sistema <br> - Acessar o menu "Salas Disponíveis" <br> - Visualizar as salas disponíveis com seus horários e datas |
+| Critério de Êxito | - A lista de salas disponíveis é apresentada corretamente em tempo real. |
+|  	|  	|
 
-<!-- Caso de Teste CT-03 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-03 – Gerenciar salas**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-02 - A aplicação deve permitir que o usuário gerencie as salas disponíveis.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue adicionar, editar e remover salas.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar a funcionalidade "Gerenciar Salas" <br> - Adicionar uma nova sala <br> - Editar as informações da sala <br> - Remover a sala</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- As operações de adicionar, editar e remover salas são realizadas com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-04 – Reservar sala para um período específico** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-04 - Desenvolver tela para realização de reservas de salas para períodos específicos, com confirmação imediata. |
+| Objetivo do Teste 	| Verificar se o usuário consegue reservar uma sala para um período específico. |
+| Passos 	| - Acessar a funcionalidade de "Reservar Sala" <br> - Selecionar a sala desejada <br> - Escolher o horário e data da reserva <br> - Confirmar a reserva |
+| Critério de Êxito | - A reserva é realizada com sucesso e uma confirmação imediata é exibida. |
+|  	|  	|
 
-<!-- Caso de Teste CT-04 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-04 – Reservar sala**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-03 - A aplicação deve permitir que o usuário reserve salas para eventos.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue reservar uma sala.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar a funcionalidade "Reservar Sala" <br> - Selecionar uma sala <br> - Escolher o horário e a data <br> - Confirmar a reserva</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- A sala é reservada com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-05 – Cadastrar cartão de crédito** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-05 - Desenvolver tela para cadastro de cartão de crédito para pagamento diferido no dia da reserva pelos usuários finais. |
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar um cartão de crédito. |
+| Passos 	| - Acessar a funcionalidade de "Cadastro de Cartão" <br> - Informar os dados do cartão <br> - Confirmar o cadastro |
+| Critério de Êxito | - O cadastro é realizado com sucesso e o cartão fica associado ao perfil do usuário. |
+|  	|  	|
 
-<!-- Caso de Teste CT-05 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-05 – Cancelar reserva**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-04 - A aplicação deve permitir que o usuário cancele reservas previamente feitas.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue cancelar uma reserva.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar a funcionalidade "Minhas Reservas" <br> - Selecionar a reserva desejada <br> - Confirmar o cancelamento</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- A reserva é cancelada com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-06 – Processar pagamento no dia da reserva** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-06 - Desenvolver funcionalidade para processamento automático de pagamentos no dia da reserva, debitando o valor do cartão cadastrado. |
+| Objetivo do Teste 	| Verificar se o pagamento é processado automaticamente no dia da reserva. |
+| Passos 	| - Confirmar uma reserva de sala para um período futuro <br> - Verificar o processamento do pagamento no dia da reserva |
+| Critério de Êxito | - O pagamento é processado automaticamente, e o valor é debitado corretamente. |
+|  	|  	|
 
-<!-- Caso de Teste CT-06 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-06 – Receber confirmação de reserva**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-05 - A aplicação deve enviar uma notificação ao usuário após a reserva ser confirmada.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário recebe uma notificação de confirmação após a reserva.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Realizar uma reserva <br> - Verificar se a notificação de confirmação é recebida</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- A notificação de confirmação é recebida com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-07 – Cadastrar perfil de usuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
+| Passos 	| - Acessar a funcionalidade de "Cadastro de Usuário" <br> - Preencher os dados obrigatórios (nome, e-mail, etc.) <br> - Confirmar o cadastro |
+| Critério de Êxito | - O cadastro é realizado com sucesso, e o usuário consegue visualizar e editar suas informações posteriormente. |
+|  	|  	|
 
-<!-- Caso de Teste CT-07 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-07 – Editar perfil**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-06 - A aplicação deve permitir que o usuário edite seu perfil.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue editar seu perfil.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar a funcionalidade "Meu Perfil" <br> - Editar as informações desejadas <br> - Confirmar as alterações</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- As alterações no perfil são salvas com sucesso.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-08 – Cancelamento de reservas pelo administrador** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-08 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
+| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
+| Passos 	| - Acessar o painel administrativo <br> - Selecionar uma reserva existente <br> - Cancelar a reserva <br> - Verificar se o usuário foi notificado sobre o cancelamento |
+| Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
+|  	|  	|
 
-<!-- Caso de Teste CT-08 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-08 – Visualizar disponibilidade**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-07 - A aplicação deve mostrar a disponibilidade das salas para reserva.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue visualizar a disponibilidade das salas.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar a funcionalidade "Disponibilidade" <br> - Selecionar a data desejada <br> - Verificar as salas disponíveis</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- A disponibilidade das salas é exibida corretamente.</td>
-    </tr>
-</table>
+| **Caso de Teste** 	| **CT-09 – Receber notificação de confirmação de reserva** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-09 - Desenvolver funcionalidade para envio de notificações de confirmação de reservas para os usuários finais. |
+| Objetivo do Teste 	| Verificar se o usuário recebe uma notificação de confirmação após a reserva. |
+| Passos 	| - Realizar uma reserva <br> - Verificar se a notificação de confirmação é enviada ao usuário |
+| Critério de Êxito | - A notificação é recebida corretamente após a confirmação da reserva. |
+|  	|  	|
 
-<!-- Caso de Teste CT-09 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-09 – Receber notificação de cancelamento**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-08 - A aplicação deve enviar uma notificação ao usuário após o cancelamento da reserva.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário recebe uma notificação de cancelamento após cancelar uma reserva.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Cancelar uma reserva <br> - Verificar se a notificação de cancelamento é recebida</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- A notificação de cancelamento é recebida com sucesso.</td>
-    </tr>
-</table>
-
-<!-- Caso de Teste CT-10 -->
-<table>
-    <tr>
-        <th>**Caso de Teste**</th>
-        <th>**CT-10 – Visualizar histórico de reservas**</th>
-    </tr>
-    <tr>
-        <td>Requisito Associado</td>
-        <td>RF-09 - A aplicação deve permitir que o usuário visualize seu histórico de reservas.</td>
-    </tr>
-    <tr>
-        <td>Objetivo do Teste</td>
-        <td>Verificar se o usuário consegue visualizar seu histórico de reservas.</td>
-    </tr>
-    <tr>
-        <td>Passos</td>
-        <td>- Acessar a funcionalidade "Meu Histórico" <br> - Verificar as reservas realizadas anteriormente</td>
-    </tr>
-    <tr>
-        <td>Critério de Êxito</td>
-        <td>- O histórico de reservas é exibido corretamente.</td>
-    </tr>
-</table>
-
-</body>
-</html>
+| **Caso de Teste** 	| **CT-10 – Alterar ou cancelar reservas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-10 - Desenvolver tela que permita aos usuários alterarem ou cancelarem suas reservas com um prazo determinado antes da data da reserva. |
+| Objetivo do Teste 	| Verificar se o usuário consegue alterar ou cancelar uma reserva dentro do prazo permitido. |
+| Passos 	| - Acessar a lista de reservas <br> - Selecionar uma reserva <br> - Realizar a alteração ou cancelamento dentro do prazo permitido |
+| Critério de Êxito | - A reserva é alterada ou cancelada com sucesso dentro do prazo determinado. |
+|  	|  	|
 
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
 > - [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 > - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7
