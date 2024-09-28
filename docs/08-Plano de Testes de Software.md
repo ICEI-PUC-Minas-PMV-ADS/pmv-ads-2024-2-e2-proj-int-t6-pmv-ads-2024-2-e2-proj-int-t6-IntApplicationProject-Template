@@ -6,7 +6,7 @@ Apresente os cenários de testes utilizados na realização dos testes da sua ap
 
 Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
 
-| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	|
+| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	                            |
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Desenvolver tela de Login com módulo de autenticação. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar a autenticação no sistema. |
