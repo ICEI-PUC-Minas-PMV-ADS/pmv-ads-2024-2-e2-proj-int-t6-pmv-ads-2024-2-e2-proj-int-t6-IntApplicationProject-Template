@@ -1,5 +1,53 @@
 # Arquitetura da Solução
 
+```mermaid
+classDiagram
+    class Usuario {
+        int id
+        string nome
+        string email
+        string senha
+        string tipo // 'adotante' ou 'abrigo'
+        cadastrar()
+        login()
+        visualizarInfo()
+    }
+
+    class Animal {
+        int id
+        string nome
+        int idade
+        string tipo // 'cao' ou 'gato'
+        string comportamento
+        int abrigo_id // FK para Usuario
+        cadastrar()
+        editar()
+        visualizar()
+    }
+
+    class Interesse {
+        int id
+        int usuario_id // FK para Usuario
+        int animal_id // FK para Animal
+        date data
+        demonstrar()
+    }
+
+    class Notificacao {
+        int id
+        int usuario_id // FK para Usuario
+        string mensagem
+        date data
+        enviar()
+    }
+
+    Usuario "" -- "" Animal : abriga
+    Usuario "" -- "" Interesse : demonstra
+    Usuario "" -- "" Notificacao : recebe
+    Animal "" -- "" Interesse : interessa
+```
+
+
 ### Classe `Usuario`
 Esta classe representa os usuários do sistema, que podem ser adotantes ou abrigos.
 
@@ -56,62 +104,50 @@ Esta classe representa as notificações enviadas aos usuários.
   - `enviar()`: Método para enviar uma notificação ao usuário.
 
 ## Diagrama de Classes
-
 ```mermaid
-classDiagram
-    class Usuario {
+erDiagram
+    usuario {
         int id
         string nome
         string email
         string senha
-        string tipo // 'adotante' ou 'abrigo'
-        cadastrar()
-        login()
-        visualizarInfo()
+        string tipo
     }
+    usuario ||--o{ animal : abriga
+    usuario ||--o{ interesse : demonstra
+    usuario ||--o{ notificacao : recebe
 
-    class Animal {
+    animal {
         int id
         string nome
         int idade
-        string tipo // 'cao' ou 'gato'
+        string tipo
         string comportamento
-        int abrigo_id // FK para Usuario
-        cadastrar()
-        editar()
-        visualizar()
+        int abrigo_i
     }
+    animal ||--o{ interesse : interessa
 
-    class Interesse {
+    interesse {
         int id
-        int usuario_id // FK para Usuario
-        int animal_id // FK para Animal
+        int usuario_id
+        int animal_id
         date data
-        demonstrar()
     }
 
-    class Notificacao {
+    notificacao {
         int id
-        int usuario_id // FK para Usuario
+        int usuario_id
         string mensagem
         date data
-        enviar()
     }
-
-    Usuario "" -- "" Animal : abriga
-    Usuario "" -- "" Interesse : demonstra
-    Usuario "" -- "" Notificacao : recebe
-    Animal "" -- "" Interesse : interessa
 ```
+
 
 
 > - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
-```mermaid
-
-```
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
 Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
