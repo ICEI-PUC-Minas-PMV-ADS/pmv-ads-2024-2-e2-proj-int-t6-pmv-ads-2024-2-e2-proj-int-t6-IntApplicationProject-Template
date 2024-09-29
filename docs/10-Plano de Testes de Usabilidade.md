@@ -26,40 +26,40 @@ Presenciais: Os testes serão realizados em um ambiente controlado, permitindo q
 Remotos: Parte dos testes será realizada remotamente, com ferramentas de gravação de tela para análise posterior.
 Coleta de Dados:
 
-Número de cliques: Quantidade de cliques necessários para concluir cada tarefa.
+###Número de cliques: Quantidade de cliques necessários para concluir cada tarefa.
 Erros cometidos: Quantidade e tipo de erros ao longo da interação.
 Tempo: Tempo necessário para concluir cada tarefa.
 Satisfação: Questionários subjetivos após cada teste, avaliando a facilidade de uso.
 
 # Tarefas e Funcionalidades Testadas
-1. CT-01 – Autenticar no Sistema
+### 1. CT-01 – Autenticar no Sistema
 Tarefa: Realizar login.
 Métrica: Número de cliques para autenticar, tempo para login, erros ao inserir dados.
-2. CT-02 – Gerenciamento de Salas
+### 2. CT-02 – Gerenciamento de Salas
 Tarefa: Cadastrar, editar, visualizar e excluir uma sala.
 Métrica: Quantidade de cliques, tempo para completar cada ação, erros durante o gerenciamento.
-3. CT-03 – Visualizar disponibilidade das salas
+### 3. CT-03 – Visualizar disponibilidade das salas
 Tarefa: Visualizar a disponibilidade de salas.
 Métrica: Número de cliques até a visualização, tempo de resposta do sistema, erros ao visualizar disponibilidade.
-4. CT-04 – Reservar sala para um período específico
+### 4. CT-04 – Reservar sala para um período específico
 Tarefa: Reservar uma sala.
 Métrica: Quantidade de cliques, tempo para reserva, sucesso ou falha no agendamento.
-5. CT-05 – Cadastrar cartão de crédito
+### 5. CT-05 – Cadastrar cartão de crédito
 Tarefa: Cadastrar um cartão de crédito para pagamento.
 Métrica: Tempo gasto no cadastro, erros ao preencher campos, satisfação com a clareza das informações.
-6. CT-06 – Processar pagamento no dia da reserva
+### 6. CT-06 – Processar pagamento no dia da reserva
 Tarefa: Verificar o processamento automático de pagamento.
 Métrica: Tempo de notificação do pagamento, clareza da confirmação, erros no processo.
-7. CT-07 – Cadastrar perfil de usuário
+### 7. CT-07 – Cadastrar perfil de usuário
 Tarefa: Criar e editar um perfil.
 Métrica: Quantidade de cliques, tempo para completar o cadastro, erros ao inserir dados.
-8. CT-08 – Cancelamento de reservas pelo administrador
+### 8. CT-08 – Cancelamento de reservas pelo administrador
 Tarefa: Administrador cancelar uma reserva.
 Métrica: Tempo para cancelamento, clareza na confirmação, erros ao executar.
-9. CT-09 – Receber notificação de confirmação de reserva
+### 9. CT-09 – Receber notificação de confirmação de reserva
 Tarefa: Verificar recebimento de notificação.
 Métrica: Tempo para receber notificação, clareza da notificação, satisfação com o processo.
-10. CT-10 – Alterar ou cancelar reservas
+### 10. CT-10 – Alterar ou cancelar reservas
 Tarefa: Alterar ou cancelar uma reserva.
 Métrica: Número de cliques, tempo para realizar a alteração ou cancelamento, erros durante o processo.
 
