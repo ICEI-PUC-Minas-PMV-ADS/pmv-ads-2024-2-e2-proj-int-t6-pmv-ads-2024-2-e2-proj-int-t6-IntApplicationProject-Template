@@ -102,6 +102,21 @@ Esta classe representa as notificações enviadas aos usuários.
 
 - **Métodos:**
   - `enviar()`: Método para enviar uma notificação ao usuário.
+ 
+## Relacionamentos
+
+1. **Usuario abriga Animal**
+   - Tipo: 1:N (um usuário pode abrigar vários animais)
+
+2. **Usuario demonstra Interesse**
+   - Tipo: 1:N (um usuário pode ter vários interesses em animais)
+
+3. **Usuario recebe Notificacao**
+   - Tipo: 1:N (um usuário pode receber várias notificações)
+
+4. **Animal interessa Interesse**
+   - Tipo: 1:N (um animal pode ser de interesse para vários usuários)
+
 
 ## Diagrama de Classes
 ```mermaid
@@ -142,11 +157,6 @@ erDiagram
     }
 ```
 
-
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
-
 ## Modelo ER (Projeto Conceitual)
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
@@ -164,9 +174,7 @@ Para mais informações, consulte o microfundamento "Modelagem de Dados".
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 ## Hospedagem
 
