@@ -2,7 +2,8 @@
 # Projeto de Interface
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
-![scrnli_29_09_2024_01-43-14](https://github.com/user-attachments/assets/b382cfbc-eeeb-4cae-8d31-d80742ac0f65)
+![scrnli_29_09_2024_01-52-42](https://github.com/user-attachments/assets/8e882544-1e01-410d-bca6-d3b511cd619b)
+
 
 
 ## Diagrama de Fluxo
