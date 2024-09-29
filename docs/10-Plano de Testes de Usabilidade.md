@@ -7,12 +7,12 @@ Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (o
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
 
 # Plano de Testes de Usabilidade
-Objetivos do Teste de Usabilidade
+# Objetivos do Teste de Usabilidade
 O objetivo dos testes de usabilidade é avaliar como os usuários interagem com a interface do sistema de reservas de salas, garantindo que as funcionalidades atendam às necessidades de forma eficaz, eficiente e satisfatória.
 
 Cada teste visa verificar a facilidade de uso, o número de cliques, erros cometidos e o tempo gasto para completar as seguintes funcionalidades baseadas nos 10 requisitos funcionais levantados.
 
-Critérios para Seleção dos Participantes
+# Critérios para Seleção dos Participantes
 Perfil do Usuário:
 
 Participantes: Serão selecionados 10 participantes, representando diferentes perfis de usuários como administradores, usuários finais e novos usuários.
@@ -20,7 +20,7 @@ Distribuição: 5 usuários experientes com tecnologia e 5 com pouca experiênci
 Diversidade: Incluir perfis de diferentes idades, gêneros, ocupações e familiaridade com sistemas online.
 LGPD: Todos os participantes terão sua identidade preservada. Dados pessoais sensíveis não serão coletados nem divulgados.
 
-Procedimentos de Condução
+# Procedimentos de Condução
 Método: Observação direta e medição.
 
 Presenciais: Os testes serão realizados em um ambiente controlado, permitindo que os condutores observem diretamente as ações dos participantes.
@@ -31,7 +31,8 @@ Número de cliques: Quantidade de cliques necessários para concluir cada tarefa
 Erros cometidos: Quantidade e tipo de erros ao longo da interação.
 Tempo: Tempo necessário para concluir cada tarefa.
 Satisfação: Questionários subjetivos após cada teste, avaliando a facilidade de uso.
-Tarefas e Funcionalidades Testadas
+
+# Tarefas e Funcionalidades Testadas
 1. CT-01 – Autenticar no Sistema
 Tarefa: Realizar login.
 Métrica: Número de cliques para autenticar, tempo para login, erros ao inserir dados.
@@ -62,7 +63,8 @@ Métrica: Tempo para receber notificação, clareza da notificação, satisfaç�
 10. CT-10 – Alterar ou cancelar reservas
 Tarefa: Alterar ou cancelar uma reserva.
 Métrica: Número de cliques, tempo para realizar a alteração ou cancelamento, erros durante o processo.
-Etapas do Teste de Usabilidade
+
+# Etapas do Teste de Usabilidade
 Briefing: Instruções serão dadas aos participantes, explicando as funcionalidades que devem testar e como proceder com o teste.
 
 Execução das Tarefas: Cada participante seguirá as instruções passo a passo para completar as funcionalidades.
@@ -71,12 +73,14 @@ Coleta de Dados: Os condutores observarão e registrarão o número de cliques, 
 
 Questionário de Satisfação: Ao final de cada tarefa, o participante preencherá um questionário avaliando a usabilidade, facilidade de uso e satisfação geral.
 
-Recursos Necessários
+# Recursos Necessários
+
 Ferramentas de gravação: Para os testes remotos, serão usadas ferramentas como Zoom ou Google Meet, com gravação de tela habilitada.
 Equipamento: Computadores e dispositivos móveis para testar diferentes interfaces.
 Planilhas de coleta: Planilhas para registro de cliques, erros, e tempo gasto.
 Equipe: Um moderador para guiar o teste e um observador para registrar os dados.
-Métricas Coletadas
+
+# Métricas Coletadas
 Eficiência: Número de cliques e tempo necessário para completar cada tarefa.
 Efetividade: Quantidade de erros cometidos e tarefas completadas com sucesso.
 Satisfação do Usuário: Resultados dos questionários subjetivos avaliando a facilidade e satisfação com o uso do sistema.
