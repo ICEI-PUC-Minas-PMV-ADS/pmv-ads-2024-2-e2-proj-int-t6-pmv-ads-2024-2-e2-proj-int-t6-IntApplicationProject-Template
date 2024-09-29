@@ -6,7 +6,6 @@ Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (o
 
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
 
-# Plano de Testes de Usabilidade
 # Objetivos do Teste de Usabilidade
 O objetivo dos testes de usabilidade é avaliar como os usuários interagem com a interface do sistema de reservas de salas, garantindo que as funcionalidades atendam às necessidades de forma eficaz, eficiente e satisfatória.
 
