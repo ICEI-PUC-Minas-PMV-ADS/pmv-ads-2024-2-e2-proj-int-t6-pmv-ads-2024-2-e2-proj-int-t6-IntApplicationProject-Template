@@ -1,10 +1,8 @@
 
 # Projeto de Interface
-
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
+![scrnli_29_09_2024_01-43-14](https://github.com/user-attachments/assets/b382cfbc-eeeb-4cae-8d31-d80742ac0f65)
 
 
 ## Diagrama de Fluxo
