@@ -26,7 +26,7 @@ Presenciais: Os testes serão realizados em um ambiente controlado, permitindo q
 Remotos: Parte dos testes será realizada remotamente, com ferramentas de gravação de tela para análise posterior.
 Coleta de Dados:
 
-###Número de cliques: Quantidade de cliques necessários para concluir cada tarefa.
+Número de cliques: Quantidade de cliques necessários para concluir cada tarefa.
 Erros cometidos: Quantidade e tipo de erros ao longo da interação.
 Tempo: Tempo necessário para concluir cada tarefa.
 Satisfação: Questionários subjetivos após cada teste, avaliando a facilidade de uso.
