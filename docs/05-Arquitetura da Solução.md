@@ -1,53 +1,5 @@
 # Arquitetura da Solução
 
-```mermaid
-classDiagram
-    class Usuario {
-        int id
-        string nome
-        string email
-        string senha
-        string tipo // 'adotante' ou 'abrigo'
-        cadastrar()
-        login()
-        visualizarInfo()
-    }
-
-    class Animal {
-        int id
-        string nome
-        int idade
-        string tipo // 'cao' ou 'gato'
-        string comportamento
-        int abrigo_id // FK para Usuario
-        cadastrar()
-        editar()
-        visualizar()
-    }
-
-    class Interesse {
-        int id
-        int usuario_id // FK para Usuario
-        int animal_id // FK para Animal
-        date data
-        demonstrar()
-    }
-
-    class Notificacao {
-        int id
-        int usuario_id // FK para Usuario
-        string mensagem
-        date data
-        enviar()
-    }
-
-    Usuario "" -- "" Animal : abriga
-    Usuario "" -- "" Interesse : demonstra
-    Usuario "" -- "" Notificacao : recebe
-    Animal "" -- "" Interesse : interessa
-```
-
-
 ### Classe `Usuario`
 Esta classe representa os usuários do sistema, que podem ser adotantes ou abrigos.
 
@@ -57,39 +9,49 @@ Esta classe representa os usuários do sistema, que podem ser adotantes ou abrig
   - `email`: Email do usuário.
   - `senha`: Senha para login.
   - `tipo`: Tipo de usuário, que pode ser 'adotante' ou 'abrigo'.
+  - `dataNascimento`: Data de nascimento do usuário.
+  - `dataCadastro`: Data que foi realizado o cadastro na plataforma.
 
 - **Métodos:**
   - `cadastrar()`: Método para cadastrar um novo usuário no sistema.
-  - `login()`: Método para realizar o login do usuário.
-  - `visualizarInfo()`: Método para visualizar as informações do usuário.
+  - `listarDetalhes()`: Método para visualizar as informações do usuário.
+  - `atualizarInfos()`: Método para atualizar informações do usuário.
+  - `deletar()`: Método para deletar a conta do usuário.
+  - `exibeMsg()`: Método para exibir as mensagens de acordo com a ação do usuário.
 
-### Classe `Animal`
-Esta classe representa os animais disponíveis para adoção.
+### Classe `Pet`
+Esta classe representa os Pets disponíveis para adoção.
 
 - **Atributos:**
-  - `id`: Identificador único do animal.
-  - `nome`: Nome do animal.
-  - `idade`: Idade do animal.
-  - `tipo`: Tipo do animal'cão','gato',raça,porte
-  - `comportamento`: Descrição do comportamento do animal.
-  - `abrigo_id`: Identificador do abrigo (usuário) responsável pelo animal.
+  - `id`: Identificador único do pet.
+  - `nome`: Nome do pet.
+  - `idade`: Idade do pet.
+  - `tipoIdade`: Tipo da idade, pode ser dias, meses e anos.
+  - `tipoPet`: Tipo do pet'cão','gato', 'Jabuti' e outros.
+  - `raca`: Raça do pet.
+  - `sexo`: Indicar qual o sexo do pet.
+  - `porte`: Indica o porte do pet, pequeno, médio ou grande.
+  - `idAbrigo`: Identificador do abrigo (usuário) responsável pelo pet.
 
 - **Métodos:**
-  - `cadastrar()`: Método para cadastrar um novo animal no sistema.
-  - `editar()`: Método para editar as informações do animal.
-  - `visualizar()`: Método para visualizar as informações do animal.
+  - `cadastrarPet()`: Método para cadastrar um novo pet no sistema.
+  - `listarPets`: Lista todos os pets.
+  - `DetalhePet`: Lista todos os detalhes de um pet especifico.
+  - `atualizarPet()`: Método para editar as informações do pet.
+  - `deletarPet()`: Método para deletar o cadastro do pet.
+  - `exibeMsg()`: Método para exibir as mensagens de acordo com a ação do usuário.
 
-### Classe `Interesse`
-Esta classe representa o interesse de um usuário em adotar um animal.
+### Classe `Adocao`
+Esta classe representa o interesse de um usuário em adotar um pet.
 
 - **Atributos:**
   - `id`: Identificador único do interesse.
   - `usuario_id`: Identificador do usuário que demonstrou interesse.
-  - `animal_id`: Identificador do animal pelo qual o interesse foi demonstrado.
+  - `pet_id`: Identificador do pet pelo qual o interesse foi demonstrado.
   - `data`: Data em que o interesse foi registrado.
 
 - **Métodos:**
-  - `demonstrar()`: Método para registrar o interesse de um usuário em um animal.
+  - `demonstrar()`: Método para registrar o interesse de um usuário em um pet.
 
 ### Classe `Notificacao`
 Esta classe representa as notificações enviadas aos usuários.
@@ -119,43 +81,8 @@ Esta classe representa as notificações enviadas aos usuários.
 
 
 ## Diagrama de Classes
-```mermaid
-erDiagram
-    usuario {
-        int id
-        string nome
-        string email
-        string senha
-        string tipo
-    }
-    usuario ||--o{ animal : abriga
-    usuario ||--o{ interesse : demonstra
-    usuario ||--o{ notificacao : recebe
 
-    animal {
-        int id
-        string nome
-        int idade
-        string tipo
-        string comportamento
-        int abrigo_i
-    }
-    animal ||--o{ interesse : interessa
-
-    interesse {
-        int id
-        int usuario_id
-        int animal_id
-        date data
-    }
-
-    notificacao {
-        int id
-        int usuario_id
-        string mensagem
-        date data
-    }
-```
+![image info](./img/diagrama_classe.png)
 
 ## Modelo ER (Projeto Conceitual)
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
