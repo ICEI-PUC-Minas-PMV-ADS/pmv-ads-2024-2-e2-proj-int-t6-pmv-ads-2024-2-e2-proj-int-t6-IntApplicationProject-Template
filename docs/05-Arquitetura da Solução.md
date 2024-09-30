@@ -1,5 +1,7 @@
 # Arquitetura da Solução
 
+## Diagrama de Classes
+
 ### Classe `Usuario`
 Esta classe representa os usuários do sistema, que podem ser adotantes ou abrigos.
 
@@ -45,13 +47,32 @@ Esta classe representa os Pets disponíveis para adoção.
 Esta classe representa o interesse de um usuário em adotar um pet.
 
 - **Atributos:**
-  - `id`: Identificador único do interesse.
+  - `id`: Identificador único do processo de adoção.
   - `usuario_id`: Identificador do usuário que demonstrou interesse.
-  - `pet_id`: Identificador do pet pelo qual o interesse foi demonstrado.
-  - `data`: Data em que o interesse foi registrado.
+  - `idPet`: Identificador do pet pelo qual foi iniciado o processo de adoção.
+  - `statusAdocao`: Indica o status da adoção que pode ser, iniciado, em andamento, finalizado e cancelado.
+  - `dataInicio`: Data em que o processo foi iniciado.
+  - `dataFinalizacao`: Data em que o processo foi finalizado.
 
 - **Métodos:**
-  - `demonstrar()`: Método para registrar o interesse de um usuário em um pet.
+  - `criarProposta()`: Método para iniciar o processo de adoção.
+  - `validarInfos`: Método para validar as informações disponibilizadas.
+  - `atualizaProposta`: Método para atualizar informações na proposta iniciada.
+  - `exibeMsg()`: Método para exibir as mensagens de acordo com a ação do usuário.
+
+### Classe `Login`
+Esta classe representa o login do usuário.
+
+- **Atributos:**
+  - `email`: Email do usuário.
+  - `senha`: Senha do usuário.
+
+- **Métodos:**
+  - `entrar()`: Método para iniciar o processo de login.
+  - `validaInfos()`: Método para validar as informações fornecidas no login.
+  - `esqueceuSenha()`: Método para iniciar o processo de recuperação da senha.
+  - `exibeMsg()`: Método para exibir as mensagens de acordo com a ação do usuário.
+
 
 ### Classe `Notificacao`
 Esta classe representa as notificações enviadas aos usuários.
@@ -60,34 +81,42 @@ Esta classe representa as notificações enviadas aos usuários.
   - `id`: Identificador único da notificação.
   - `usuario_id`: Identificador do usuário que receberá a notificação.
   - `mensagem`: Conteúdo da notificação.
-  - `data`: Data em que a notificação foi enviada.
+  - `dataEnvio`: Data em que a notificação foi enviada.
 
 - **Métodos:**
-  - `enviar()`: Método para enviar uma notificação ao usuário.
+  - `enviarNotificacao()`: Método para enviar uma notificação ao usuário.
  
-## Relacionamentos
+### Classe `AlertaCustomizado`
+Esta classe representa as notificações enviadas aos usuários.
 
-1. **Usuario abriga Animal**
-   - Tipo: 1:N (um usuário pode abrigar vários animais)
+- **Atributos:**
+  - `tipo`: 
+  - `usuario_id`: Identificador do usuário que receberá a notificação.
+  - `mensagem`: Conteúdo da notificação.
+  - `dataEnvio`: Data em que a notificação foi enviada.
 
-2. **Usuario demonstra Interesse**
-   - Tipo: 1:N (um usuário pode ter vários interesses em animais)
+- **Métodos:**
+  - `enviarNotificacao()`: Método para enviar uma notificação ao usuário.
 
-3. **Usuario recebe Notificacao**
-   - Tipo: 1:N (um usuário pode receber várias notificações)
-
-4. **Animal interessa Interesse**
-   - Tipo: 1:N (um animal pode ser de interesse para vários usuários)
-
-
-## Diagrama de Classes
 
 ![image info](./img/diagrama_classe.png)
 
 ## Modelo ER (Projeto Conceitual)
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
+
+### Relacionamentos:
+1. **Tabela Usuario** 
+  - Representa os usuários da plataforma. A chave primária é o id, que é único para cada usuário.
+1. **Tabela Pet** 
+  - Relaciona-se com a tabela Usuario através da chave estrangeira idAbrigo, que referencia o abrigo responsável pelo pet. Quando um abrigo é deletado, os pets relacionados também são deletados devido à regra ON DELETE CASCADE.
+1. **Tabela Adocao** 
+  - Representa o processo de adoção. Contém as chaves estrangeiras usuario_id (para o usuário que está adotando) e idPet (para o pet sendo adotado). As regras de integridade referencial garantem que se um pet ou usuário for deletado, o processo de adoção relacionado também será.
+1. **Tabela Notificacao** 
+  - Relaciona-se com Usuario pela chave estrangeira usuario_id, que referencia o usuário que recebe a notificação.
+
+
+![image info](./img/ER.png)
 
 A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
 
