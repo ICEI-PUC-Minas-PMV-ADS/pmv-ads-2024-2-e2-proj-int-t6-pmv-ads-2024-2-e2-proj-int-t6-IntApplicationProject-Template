@@ -43,11 +43,11 @@ A equipe adotou abordagens ágeis para o desenvolvimento do projeto, reconhecend
 
 Dentro dessa estrutura, a equipe se organiza de acordo com os papéis tradicionais do Scrum:
 
-- Scrum Master: ;
+- Scrum Master: David Travassos Milan;
 
 - Product Owner: Breno Santos Figueiredo;
 
-- Equipe de Desenvolvimento: Patrícia Ester Ferreira Rodrigues, Breno Santos Figueiredo;
+- Equipe de Desenvolvimento: Patrícia Ester Ferreira Rodrigues, Breno Santos Figueiredo, David Travassos Milan, Adrian Sodré da Silva, Ernane Oliveira, Marcelo Silvério;
 
 - Equipe de Design: Patrícia Ester Ferreira Rodrigues;
 
