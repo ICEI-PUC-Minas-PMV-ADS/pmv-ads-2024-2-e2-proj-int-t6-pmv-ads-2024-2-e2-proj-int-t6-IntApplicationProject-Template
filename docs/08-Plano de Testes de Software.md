@@ -20,6 +20,18 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | O usuário deverá fazer o login, recebendo um feedback mostrando se o login foi bem ou mal sucedido. Após a confirmação de login, os dados previamente cadastrados deverão aparecer para o usuário. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-03 – Verificar o funcionamento de busca e pesquisa de animais na Home Page.**	|
+|Requisito Associado | RF-007 - O sistema deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar os animais. |
+| Objetivo do Teste 	| Verificar se o usuário consegue utilizar o sistema de busca por animais. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Visualizar o campo de filtro/busca na Home Page <br> - Preencher os dados requisitados <br> - Clicar em "Filtrar" |
+|Critério de Êxito | O usuário deverá fazer busca, visualizando os animais com base nos filtros que foram selecionados. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-04 – Verificar o funcionamento do cadastro de animais.**	|
+|Requisito Associado | RF-004 - O sistema deve permitir cadastrar animais disponíveis para adoção. |
+| Objetivo do Teste 	| Verificar se a parte de cadastro de animais está correta. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Visualizar a Home Page <br> - Efetuar o Login <br> - Selecionar a opção de cadastro de animais <br> - Preencher os dados requisitados <br> - Verificar se o animal foi cadastrad ocom sucesso. |
+|Critério de Êxito | O usuário deverá fazer o cadastro do animal que deseja, visualizando os dados corretamente do cadastro feito. |
 
  
 > **Links Úteis**:
