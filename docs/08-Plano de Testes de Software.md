@@ -27,11 +27,11 @@ Por exemplo:
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Visualizar o campo de filtro/busca na Home Page <br> - Preencher os dados requisitados <br> - Clicar em "Filtrar" |
 |Critério de Êxito | O usuário deverá fazer busca, visualizando os animais com base nos filtros que foram selecionados. |
 |  	|  	|
-| **Caso de Teste** 	| **CT-04 – Verificar o funcionamento do cadastro de animais.**	|
-|Requisito Associado | RF-004 - O sistema deve permitir cadastrar animais disponíveis para adoção. |
-| Objetivo do Teste 	| Verificar se a parte de cadastro de animais está correta. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Efetuar o Login <br> - Visualizar a Home Page <br> - Selecionar a opção de cadastro de animais <br> - Preencher os dados requisitados <br> - Verificar se o animal foi cadastrado com sucesso. |
-|Critério de Êxito | O usuário deverá fazer o cadastro do animal que deseja, visualizando os dados corretamente do cadastro feito. |
+| **Caso de Teste** 	| **CT-04 – Verificar o funcionamento do cadastro e edição de informações de animais.**	|
+|Requisito Associado | RF-004 - O sistema deve permitir cadastrar animais disponíveis para adoção. <br> RF-005 - O Sistema deve permitir editar as informações dos animais cadastrados.|
+| Objetivo do Teste 	| Verificar se a parte de cadastro de animais e edição de informações está correta. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Efetuar o Login <br> - Visualizar a Home Page <br> - Selecionar a opção de cadastro de animais <br> - Preencher os dados requisitados <br> - Verificar se o animal foi cadastrado com sucesso. <br> Caso desejar mudar alguma informação do Pet cadastrado, selecionar a ferramenta "Editar". <br> - Editar os dados que deseja <br> - Verificar se o cadastro do animal foi editado com sucesso. |
+|Critério de Êxito | O usuário deverá fazer o cadastro do animal que deseja, visualizando os dados corretamente do cadastro feito. Caso seja utilizado a edição de informações, o usuário deverá visualizar as informações corrigidas após alteração. |
 
  
 > **Links Úteis**:
