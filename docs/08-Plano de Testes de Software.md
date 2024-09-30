@@ -41,7 +41,7 @@ Por exemplo:
 |  	|  	|
 | **Caso de Teste** 	| **CT-06 – Verificar se o usuário consegue demonstrar interesse no animal disponível para adoção que deseja.**	|
 |Requisito Associado | RF-008 - O sistema deve permitir o adotante/usuário demonstrar interesse em um animal.|
-| Objetivo do Teste 	| Verificar se o usuário consegue demosntrar interesse no animal que deseja adotar. |
+| Objetivo do Teste 	| Verificar se o usuário consegue demonstrar interesse no animal que deseja adotar. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Efetuar o Login <br> - Visualizar a Home Page <br> - Selecionar a opção "Animais" <br> - Visualizar a aba com os animais disponíveis para adoção <br> - Clicar na opção "Tenho Interesse" sobre o animal que deseja adotar. <br> - Preencher as informações necessárias para prosseguir com o interesse |
 |Critério de Êxito | O usuário deverá demonstrar interesse no animal selecionado, preenchendo informações requisitadas para prosseguir com a adoção. |
 |  	|  	|
@@ -50,7 +50,12 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o abrigo é notificado quando um usuário demonstra interesse em algum animal disponível para adoção. Após a notificação, o sistema deverá informar o status da adoção solicitada, sendo os status: pendente, em processo ou concluído. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Efetuar o Login (como abrigo) <br> - Visualizar a Home Page <br> - Verificar a área de notificações <br> - Visualizar a notificação de que um animal do abrigo está sendo solicitado por um usuário. <br> - Clicar na notificação para visualizar as informações do usuário e qual animal foi escolhido <br> - Após o início do processo de adoção, ambos receberão notificações caso o status da adoção se altere. |
 |Critério de Êxito | O abrigo deverá receber notificação sempre que um usuário demonstrar interesse em um animal disponível para adoção no sistema. Após o início do processo, tanto o abrigo quanto o usuário deverão receber notificações informando o status da adoção solicitada. |
-
+|  	|  	|
+| **Caso de Teste** 	| **CT-08 – Verificar se o sistema oferece conteúdo com informações sobre cuidados aos animais e dicas de adoções**	|
+|Requisito Associado | RF-011 - O sistema deve oferecer conteúdo com cuidados aos animais e dicas de adoções.|
+| Objetivo do Teste 	| Verificar se o sistema oferece conteúdos visando maior conscientização dos usuários com interesse em adoção de animais. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site. <br> - Efetuar o Login (como abrigo) <br> - Visualizar a Home Page <br> - Selecionar a opção "Informações" <br> - Visualizar os conteúdos disponíveis que falam sobre cuidados que devemos ter ocm animais e dicas importantes sobre adoção para usuários que tenham dúvidas ou pouco conhecimento sobre os processos. |
+|Critério de Êxito | O sistema deverá mostrar os conteúdos para os usuários. |
 
  
 > **Links Úteis**:
