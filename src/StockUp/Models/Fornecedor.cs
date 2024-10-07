@@ -1,0 +1,21 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace StockUp.Models
+{
+    [Table("Fornecedores")]
+    public class Fornecedor
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
+
+        [Required(ErrorMessage = "Nome é obrigatório")]
+        public string Nome { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public DateTime CriadoEm { get; set; }
+
+        public ICollection<Produto> Produtos { get; set; }
+    }
+}
