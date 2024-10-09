@@ -26,6 +26,6 @@ namespace StockUp.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime AtualizadoEm { get; set; }
 
-        public ICollection<Produto> Produtos { get; set; }
+        public ICollection<Produto>? Produtos { get; set; }
     }
 }
