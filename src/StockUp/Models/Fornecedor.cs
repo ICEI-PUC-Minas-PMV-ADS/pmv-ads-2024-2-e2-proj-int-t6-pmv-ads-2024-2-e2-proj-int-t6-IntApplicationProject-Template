@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace StockUp.Models
 {
@@ -11,11 +12,11 @@ namespace StockUp.Models
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Nome é obrigatório")]
-        public string Nome { get; set; }
+        public required string Nome { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CriadoEm { get; set; }
 
-        public ICollection<Produto> Produtos { get; set; }
+        public ICollection<Produto>? Produtos { get; set; }
     }
 }
