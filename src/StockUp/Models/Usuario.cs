@@ -11,14 +11,14 @@ namespace StockUp.Models
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Nome é obrigatório")]
-        public string Nome { get; set; }
+        public required string Nome { get; set; }
 
         [Required(ErrorMessage = "Email é obrigatório")]
-        public string Email { get; set; }
+        public required string Email { get; set; }
 
         [Required(ErrorMessage = "Senha é obrigatório")]
         [DataType(DataType.Password)]
-        public string Senha { get; set; }
+        public required string Senha { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CriadoEm { get; set; }

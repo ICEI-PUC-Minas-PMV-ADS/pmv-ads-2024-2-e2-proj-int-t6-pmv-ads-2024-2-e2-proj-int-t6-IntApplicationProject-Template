@@ -45,7 +45,7 @@ namespace StockUp.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CriadoEm { get; set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime AtualizadoEm { get; set; }
 
         public ICollection<Saida>? Saidas { get; set; }

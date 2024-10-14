@@ -15,7 +15,7 @@ namespace StockUp.Models
         public Guid ProdutoId { get; set; }
 
         [ForeignKey("ProdutoId")]
-        public Produto Produto { get; set; }
+        public required Produto Produto { get; set; }
 
         [Required(ErrorMessage = "Quantidade é obrigatório")]
         public int Quantidade { get; set; }

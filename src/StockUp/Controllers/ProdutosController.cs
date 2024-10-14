@@ -55,23 +55,23 @@ namespace StockUp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UsuarioId,Nome,Preco,Quantidade,Descricao,EstoqueMinimo,Categoria")] Produto produto, string NomeFornecedor)
+        public async Task<IActionResult> Create([Bind("Nome,Preco,Quantidade,Descricao,EstoqueMinimo,Categoria")] Produto produto, string nomeFornecedor)
         {
-            if (string.IsNullOrEmpty(NomeFornecedor))
+            if (string.IsNullOrEmpty(nomeFornecedor))
             {
                 ModelState.AddModelError("NomeFornecedor", "O nome do fornecedor é obrigatório.");
                 ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Email", produto.UsuarioId);
                 return View(produto);
             }
 
-            var fornecedor = await _context.Fornecedores.FirstOrDefaultAsync(f => f.Nome == NomeFornecedor);
+            var fornecedor = await _context.Fornecedores.FirstOrDefaultAsync(f => f.Nome == nomeFornecedor);
 
             if (fornecedor == null)
             {
                 fornecedor = new Fornecedor
                 {
                     Id = Guid.NewGuid(),
-                    Nome = NomeFornecedor,
+                    Nome = nomeFornecedor,
                     CriadoEm = DateTime.Now,
                 };
                 _context.Fornecedores.Add(fornecedor);
@@ -79,7 +79,6 @@ namespace StockUp.Controllers
             }
 
             produto.FornecedorId = fornecedor.Id;
-
             ModelState.Remove("Fornecedor");
 
             if (ModelState.IsValid)
@@ -87,7 +86,6 @@ namespace StockUp.Controllers
                 produto.Id = Guid.NewGuid();
                 produto.CriadoEm = DateTime.Now;
                 produto.AtualizadoEm = DateTime.Now;
-
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -120,12 +118,36 @@ namespace StockUp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,UsuarioId,Nome,Preco,Quantidade,Descricao,EstoqueMinimo,Categoria,FornecedorId,CriadoEm,AtualizadoEm")] Produto produto)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Preco,Quantidade,Descricao,EstoqueMinimo,Categoria")] Produto produto, string nomeFornecedor)
         {
             if (id != produto.Id)
             {
                 return NotFound();
             }
+
+            if (string.IsNullOrEmpty(nomeFornecedor))
+            {
+                ModelState.AddModelError("NomeFornecedor", "O nome do fornecedor é obrigatório.");
+                ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Email", produto.UsuarioId);
+                return View(produto);
+            }
+
+            var fornecedor = await _context.Fornecedores.FirstOrDefaultAsync(f => f.Nome == nomeFornecedor);
+
+            if (fornecedor == null)
+            {
+                fornecedor = new Fornecedor
+                {
+                    Id = Guid.NewGuid(),
+                    Nome = nomeFornecedor,
+                    CriadoEm = DateTime.Now,
+                };
+                _context.Fornecedores.Add(fornecedor);
+                await _context.SaveChangesAsync();
+            }
+
+            produto.FornecedorId = fornecedor.Id;
+            ModelState.Remove("Fornecedor");
 
             if (ModelState.IsValid)
             {
