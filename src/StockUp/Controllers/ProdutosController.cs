@@ -53,9 +53,6 @@ namespace StockUp.Controllers
             return View();
         }
 
-        // POST: Produtos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("UsuarioId,Nome,Preco,Quantidade,Descricao,EstoqueMinimo,Categoria")] Produto produto, string NomeFornecedor)
@@ -67,7 +64,7 @@ namespace StockUp.Controllers
                 return View(produto);
             }
 
-            var fornecedor = await _context.Fornecedores.FirstAsync(f => f.Nome == NomeFornecedor);
+            var fornecedor = await _context.Fornecedores.FirstOrDefaultAsync(f => f.Nome == NomeFornecedor);
 
             if (fornecedor == null)
             {
