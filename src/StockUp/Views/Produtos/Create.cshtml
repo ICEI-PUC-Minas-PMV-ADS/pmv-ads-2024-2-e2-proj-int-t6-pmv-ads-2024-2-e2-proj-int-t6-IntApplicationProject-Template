@@ -4,63 +4,108 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea.form-control {
+            height: 100px;
+            resize: vertical;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
 
-<h4>Produto</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="UsuarioId" class="control-label"></label>
-                <select asp-for="UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Preco" class="control-label"></label>
-                <input asp-for="Preco" class="form-control" />
-                <span asp-validation-for="Preco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Quantidade" class="control-label"></label>
-                <input asp-for="Quantidade" class="form-control" />
-                <span asp-validation-for="Quantidade" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
-                <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EstoqueMinimo" class="control-label"></label>
-                <input asp-for="EstoqueMinimo" class="form-control" />
-                <span asp-validation-for="EstoqueMinimo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Categoria" class="control-label"></label>
-                <select asp-for="Categoria" class="form-control" asp-items="Html.GetEnumSelectList<Categorias>()"></select>
-                <span asp-validation-for="Categoria" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label for="nomeFornecedor" class="control-label">Fornecedor</label>
-                <input name="nomeFornecedor" id="nomeFornecedor" class="form-control" required />
-                <span class="text-danger" id="nomeFornecedorError"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<h1>Cadastrar produto</h1>
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Nome" class="control-label"></label>
+        <input asp-for="Nome" class="form-control" placeholder="Dipirona"/>
+        <span asp-validation-for="Nome" class="text-danger"></span>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div class="form-group">
+        <label asp-for="Preco" class="control-label"></label>
+        <input asp-for="Preco" class="form-control" placeholder="0" />
+        <span asp-validation-for="Preco" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantidade" class="control-label"></label>
+        <input asp-for="Quantidade" class="form-control" placeholder="2" />
+        <span asp-validation-for="Quantidade" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Descricao" class="control-label"></label>
+        <input asp-for="Descricao" class="form-control" placeholder="A dipirona serve para alívio da dor" />
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EstoqueMinimo" class="control-label"></label>
+        <input asp-for="EstoqueMinimo" class="form-control" placeholder="1" />
+        <span asp-validation-for="EstoqueMinimo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Categoria" class="control-label"></label>
+        <select asp-for="Categoria" class="form-control" asp-items="Html.GetEnumSelectList<Categorias>()"></select>
+        <span asp-validation-for="Categoria" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="nomeFornecedor" class="control-label">Fornecedor</label>
+        <input name="nomeFornecedor" id="nomeFornecedor" class="form-control" required placeholder="Farmácia União" />
+        <span class="text-danger" id="nomeFornecedorError"></span>
+    </div>
+    <div class="button-group">
+        <button type="submit" class="btn btn-primary">Criar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
