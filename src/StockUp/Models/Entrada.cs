@@ -21,6 +21,7 @@ namespace StockUp.Models
         public int Quantidade { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Display(Name = "Criado em") ]
         public DateTime CriadoEm { get; set; }
     }
 }
