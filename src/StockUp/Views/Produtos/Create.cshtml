@@ -15,8 +15,8 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 30px auto;
+            max-width: 880px;
+            margin-top: 70px;
         }
         h1 {
             color: #333;
@@ -41,11 +41,6 @@
             height: 100px;
             resize: vertical;
         }
-        .button-group {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
         .btn {
             padding: 10px 20px;
             border: none;
@@ -64,7 +59,7 @@
     </style>
 </head>
 
-<h1>Cadastrar produto</h1>
+<h4>Cadastrar produto</h4>
 <form asp-action="Create">
     <div class="form-group">
         <label asp-for="Nome" class="control-label"></label>
@@ -101,7 +96,7 @@
         <input name="nomeFornecedor" id="nomeFornecedor" class="form-control" required placeholder="Farmácia União" />
         <span class="text-danger" id="nomeFornecedorError"></span>
     </div>
-    <div class="button-group">
+    <div class="form-group">
         <button type="submit" class="btn btn-primary">Criar</button>
         <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
     </div>

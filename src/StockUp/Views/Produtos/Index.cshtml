@@ -8,7 +8,6 @@
     body {
         font-family: Arial, sans-serif;
         background-color: #f0f8ff;
-        padding: 20px;
     }
 
     .container {
@@ -16,6 +15,8 @@
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 880px;
+        margin-top: 70px;
     }
 
     h1 {
@@ -69,28 +70,24 @@
     }
 
     tr:nth-child(even) {
-        background-color: #f8f8f8;
-    }
-
-    tr:hover {
-        background-color: #e8e8e8;
+        background-color: #f2f2f2;
     }
 </style>
 
-<h1>Lista de produtos</h1>
+<h4>Lista de produtos</h4>
 <div class="search-bar">
     <input type="text" placeholder="Pesquisar">
     <button class="btn btn-primary">Pesquisar</button>
     <a asp-action="Create" class="btn btn-success">Adicionar</a>
 </div>
-<table class="table">
+<table class="info-table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Preco)
+                Preço
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Quantidade)
@@ -99,7 +96,7 @@
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EstoqueMinimo)
+                Estoque mínimo
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Categoria)
@@ -116,7 +113,7 @@
                 <a style="text-decoration: none;" asp-action="Details" asp-route-id="@item.Id">@item.Nome</a>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Preco)
+                @item.Preco.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-br"))
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Quantidade)
@@ -128,7 +125,7 @@
                 @Html.DisplayFor(modelItem => item.EstoqueMinimo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Categoria)s
+                @Html.DisplayFor(modelItem => item.Categoria)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Fornecedor.Nome)

@@ -103,7 +103,10 @@ namespace StockUp.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = await _context.Produtos
+                .Include(p => p.Fornecedor)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (produto == null)
             {
                 return NotFound();
