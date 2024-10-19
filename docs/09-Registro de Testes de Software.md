@@ -7,7 +7,7 @@
 |Registro de evidência |  |
 
 <video width="640" height="360" controls>
-    <source src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/releases/download/v1.0.1/teste_cadastro_usuarios.mp4" type="video/mp4">
+    <source src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/releases/download/v1.0.1/teste_cadastro_usuarios.mp4" type="video/mp4">
     Seu navegador não suporta o elemento de vídeo.
 </video>
 
