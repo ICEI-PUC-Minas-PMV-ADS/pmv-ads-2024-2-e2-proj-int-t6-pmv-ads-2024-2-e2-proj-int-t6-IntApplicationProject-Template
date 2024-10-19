@@ -21,7 +21,9 @@ namespace OfficeRoomie.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            return View(await _context.Clientes
+                .OrderByDescending(a => a.id)
+                .ToListAsync());
         }
 
         // GET: Clientes/Details/5
