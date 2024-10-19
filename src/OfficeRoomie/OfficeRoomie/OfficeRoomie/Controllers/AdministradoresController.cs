@@ -18,7 +18,9 @@ namespace OfficeRoomie.Controllers
         public async Task<IActionResult> Index()
         {
 
-            var dados = await _context.Administradores.ToListAsync();
+            var dados = await _context.Administradores
+                    .OrderByDescending(a => a.id)
+                    .ToListAsync();
 
             return View(dados);
         }
