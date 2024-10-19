@@ -4,9 +4,12 @@
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
-|Registro de evidência | [Baixar o vídeo de teste](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/releases/download/v1.0.1/teste_cadastro_usuarios.mp4) |
+|Registro de evidência | <video width="640" height="360" controls>
+    <source src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/releases/download/v1.0.1/teste_cadastro_usuarios.mp4" type="video/mp4">
+    Seu navegador não suporta o elemento de vídeo.
+</video> |
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-officeroomie/releases/download/v1.0.1/teste_cadastro_usuarios.mp4
+
 
 <!-- <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
