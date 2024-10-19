@@ -18,9 +18,6 @@
             <th width="25%">
                 @Html.DisplayNameFor(model => model.email)
             </th>
-            <th width="25%">
-                @Html.DisplayNameFor(model => model.cpf)
-            </th>
             <th width="25%"></th>
         </tr>
     </thead>
@@ -32,9 +29,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cpf)
             </td>
             <td>
                 <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.id">

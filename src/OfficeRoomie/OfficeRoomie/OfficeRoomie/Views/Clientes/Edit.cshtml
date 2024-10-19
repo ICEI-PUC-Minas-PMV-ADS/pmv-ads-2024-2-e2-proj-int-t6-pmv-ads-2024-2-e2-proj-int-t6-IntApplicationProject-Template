@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <fieldset class="row g-4">
                 <div class="form-group col-6">
                     <label asp-for="endereco_logradouro" class="control-label"></label>
                     <input asp-for="endereco_logradouro" class="form-control" />
@@ -75,7 +75,7 @@
                     <input asp-for="endereco_pais" class="form-control" />
                     <span asp-validation-for="endereco_pais" class="text-danger"></span>
                 </div>
-            </div>
+            </fieldset>
             
             <div class="form-group">
                 <a class="btn btn-link" asp-action="Index">Voltar para lista</a>
