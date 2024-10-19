@@ -1,4 +1,4 @@
-﻿@model OfficeRoomie.Models.Administrador
+﻿@model OfficeRoomie.Models.ViewModels.AdministradorEdit
 
 @{
     ViewData["Title"] = "Editar Administrador";
@@ -20,25 +20,10 @@
                     <input asp-for="nome" class="form-control" />
                     <span asp-validation-for="nome" class="text-danger"></span>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12">
                     <label asp-for="email" class="control-label"></label>
                     <input asp-for="email" class="form-control" />
                     <span asp-validation-for="email" class="text-danger"></span>
-                </div>
-                <div class="form-group col-6">
-                    <label asp-for="cpf" class="control-label"></label>
-                    <input asp-for="cpf" class="form-control" />
-                    <span asp-validation-for="cpf" class="text-danger"></span>
-                </div>
-                <div class="form-group col-6">
-                    <label asp-for="senha" class="control-label"></label>
-                    <input asp-for="senha" class="form-control" />
-                    <span asp-validation-for="senha" class="text-danger"></span>
-                </div>
-                <div class="form-group col-6">
-                    <label asp-for="permissoes" class="control-label"></label>
-                    <input asp-for="permissoes" class="form-control" />
-                    <span asp-validation-for="permissoes" class="text-danger"></span>
                 </div>
             </div>
             

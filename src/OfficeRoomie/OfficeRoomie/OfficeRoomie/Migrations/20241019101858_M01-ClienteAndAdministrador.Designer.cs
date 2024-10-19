@@ -11,15 +11,15 @@ using OfficeRoomie.Models;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241012113641_M01-AdministradorAndCliente")]
-    partial class M01AdministradorAndCliente
+    [Migration("20241019101858_M01-ClienteAndAdministrador")]
+    partial class M01ClienteAndAdministrador
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -33,11 +33,9 @@ namespace OfficeRoomie.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
                     b.Property<string>("cpf")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("created_at")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("email")
@@ -49,7 +47,6 @@ namespace OfficeRoomie.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("permissoes")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("senha")
@@ -57,7 +54,6 @@ namespace OfficeRoomie.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("updated_at")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
@@ -74,11 +70,9 @@ namespace OfficeRoomie.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
                     b.Property<string>("cpf")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("created_at")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("email")
@@ -86,35 +80,27 @@ namespace OfficeRoomie.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_bairro")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_cep")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_cidade")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_complemento")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_estado")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_logradouro")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_numero")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("endereco_pais")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nome")
@@ -122,7 +108,6 @@ namespace OfficeRoomie.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("updated_at")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");

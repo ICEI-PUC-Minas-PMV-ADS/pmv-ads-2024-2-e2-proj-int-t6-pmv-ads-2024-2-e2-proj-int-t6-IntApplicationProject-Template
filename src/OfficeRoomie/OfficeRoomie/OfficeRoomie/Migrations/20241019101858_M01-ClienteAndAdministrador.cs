@@ -5,7 +5,7 @@
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class M01AdministradorAndCliente : Migration
+    public partial class M01ClienteAndAdministrador : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,11 +18,11 @@ namespace OfficeRoomie.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    cpf = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    permissoes = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    created_at = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    updated_at = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    cpf = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    permissoes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    created_at = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    updated_at = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -37,17 +37,17 @@ namespace OfficeRoomie.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    cpf = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_logradouro = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_numero = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_complemento = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_cep = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_bairro = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_cidade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_estado = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco_pais = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    created_at = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    updated_at = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    cpf = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_logradouro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_numero = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_complemento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_cep = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_bairro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_cidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_estado = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    endereco_pais = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    created_at = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    updated_at = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
