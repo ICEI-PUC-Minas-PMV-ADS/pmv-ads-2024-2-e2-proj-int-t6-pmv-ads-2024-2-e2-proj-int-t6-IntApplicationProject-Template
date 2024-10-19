@@ -4,8 +4,10 @@
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
-|Registro de evidência | [Baixar o vídeo de teste](videos/testes/teste_cadastro_usuarios.mp4) |
 
+Registro de evidência:
+
+https://github.com/user-attachments/assets/3dbf51b0-06db-4bed-ab5e-89603bf38274
 
 <!-- <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
