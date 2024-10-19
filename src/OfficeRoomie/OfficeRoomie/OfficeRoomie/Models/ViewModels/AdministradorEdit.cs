@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OfficeRoomie.Models
+namespace OfficeRoomie.Models.ViewModels
 {
     [Table("administradores")]
-    public class Administrador
+    public class AdministradorEdit
     {
         [Key]
         public int id { get; set; }
@@ -17,9 +17,8 @@ namespace OfficeRoomie.Models
         [Display(Name="E-mail")]
         public string email { get; set; }
 
-        [Required(ErrorMessage = "Preenchimento do Campo 'senha' Obrigatório!")]
-        [Display(Name="Senha")]
-        public string senha { get; set; }
+        [Display(Name = "Senha")]
+        public string? senha { get; set; } = "";
 
         [Display(Name = "CPF")]
         public string? cpf { get; set; } = "";

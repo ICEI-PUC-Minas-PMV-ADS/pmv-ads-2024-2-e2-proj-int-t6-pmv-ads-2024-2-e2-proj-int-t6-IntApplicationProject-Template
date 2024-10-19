@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
+﻿using Humanizer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Models;
+using OfficeRoomie.Models.ViewModels;
 
 namespace OfficeRoomie.Controllers
 {
@@ -54,22 +55,42 @@ namespace OfficeRoomie.Controllers
                 return NotFound();
             }
 
-            return View(dados);
+            var modelView = new AdministradorEdit
+            {
+                id = dados.id,
+                nome = dados.nome,
+                email = dados.email,
+            };
+
+            return View(modelView);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Administrador administrador)
+        public async Task<IActionResult> Edit(int id, AdministradorEdit modelView)
         {
-            if (id != administrador.id)
+            
+            if (id != modelView.id)
             {
                 return NotFound();
             }
 
             if (ModelState.IsValid)
             {
-                _context.Administradores.Update(administrador);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                var administrador = await _context.Administradores.FindAsync(id);
+
+                if (administrador != null)
+                {
+                    administrador.nome = modelView.nome;
+                    administrador.email = modelView.email;
+
+                    _context.Administradores.Update(administrador);
+
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+                else {
+                    return NotFound();
+                }
             }
 
             return View();
