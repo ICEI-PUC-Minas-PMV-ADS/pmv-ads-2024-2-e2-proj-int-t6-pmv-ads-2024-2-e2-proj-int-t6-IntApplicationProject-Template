@@ -48,6 +48,7 @@ Utilizado para áreas de destaque, como caixas de input, e elementos que demanda
 Essa combinação de cores foi escolhida para proporcionar um ambiente de trabalho profissional, minimizando distrações visuais e melhorando a experiência do usuário na navegação e utilização do sistema.
 
 ![Paleta de Cores](img/paleta_de_cores.png)
+
 *Paleta de cores*
 
 <!-- <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
