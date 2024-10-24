@@ -13,19 +13,13 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <th width="40%">
                 @Html.DisplayNameFor(model => model.nome)
             </th>
-            <th>
+            <th width="40%">
                 @Html.DisplayNameFor(model => model.email)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cpf)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.permissoes)
-            </th>
-            <th></th>
+            <th width="20%"></th>
         </tr>
     </thead>
     <tbody>
@@ -36,12 +30,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cpf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.permissoes)
             </td>
             
             <td>
