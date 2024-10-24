@@ -1,5 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using OfficeRoomie.Models;
+using OfficeRoomie.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,15 +6,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-builder.Services.AddDbContext<AppDbContext>(options => {
-    // Mudar para Mysql ou SqlServer
-    //options.UseMySQL(builder.Configuration.GetConnectionString("MySqlConnection")!);
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
-});
+builder.Services.AddDbContext<AppDbContext>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
