@@ -1,6 +1,6 @@
-﻿using Humanizer;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using OfficeRoomie.Database;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
 
