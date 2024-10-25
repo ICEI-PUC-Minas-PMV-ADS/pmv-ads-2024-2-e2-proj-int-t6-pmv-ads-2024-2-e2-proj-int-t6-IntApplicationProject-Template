@@ -4,6 +4,7 @@
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
+|Critérios de Êxito| Foi possível realizar o cadastro dos usuários, edição, visualização e exclusão dos mesmos. |
 
 Registro de evidência:
 
