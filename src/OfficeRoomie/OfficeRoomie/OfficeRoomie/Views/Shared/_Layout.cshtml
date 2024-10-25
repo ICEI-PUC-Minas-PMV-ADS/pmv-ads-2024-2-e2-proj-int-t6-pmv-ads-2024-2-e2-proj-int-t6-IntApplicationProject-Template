@@ -34,15 +34,24 @@
     <nav class="sidebar">
         <h3 class="mb-4 px-3 text-uppercase">OfficeRoomie</h3>
         <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" asp-area="" asp-controller="Administradores" asp-action="Index">Administradores</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
-            </li>
+            @if(User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Administradores" asp-action="Index">Administradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
+                    </li>
+                }
+            }  
         </ul>
     </nav>
 
@@ -52,6 +61,20 @@
             <nav class="navbar navbar-light bg-light border-bottom">
                 <div class="container-fluid">
                     <span class="navbar-brand">Dashboard</span>
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
             </nav>
         </header>

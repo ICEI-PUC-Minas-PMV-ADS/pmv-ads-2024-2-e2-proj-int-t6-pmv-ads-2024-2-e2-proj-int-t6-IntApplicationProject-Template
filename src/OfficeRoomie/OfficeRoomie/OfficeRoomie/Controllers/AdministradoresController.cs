@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Models;
 
 namespace OfficeRoomie.Controllers
 {
+    [Authorize]
     public class AdministradoresController : Controller
     {
         private readonly AppDbContext _context;

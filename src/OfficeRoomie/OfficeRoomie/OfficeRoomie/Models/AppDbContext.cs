@@ -9,5 +9,9 @@ namespace OfficeRoomie.Models
         public DbSet<Cliente> Clientes { get; set; }
 
         public DbSet<Administrador> Administradores { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
+
+
     }
 }
