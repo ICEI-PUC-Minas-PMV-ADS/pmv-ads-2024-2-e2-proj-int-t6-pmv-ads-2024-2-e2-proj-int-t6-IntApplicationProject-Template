@@ -35,15 +35,18 @@
         <h3 class="mb-4 px-3 text-uppercase">OfficeRoomie</h3>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="nav-link text-white" asp-area="" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
             </li>
+            
             <li class="nav-item">
                 <a class="nav-link text-white" asp-area="" asp-controller="Administradores" asp-action="Index">Administradores</a>
             </li>
+            
             <li class="nav-item">
                 <a class="nav-link text-white" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
             </li>
-                      <li class="nav-item">
+            
+            <li class="nav-item">
                 <a class="nav-link text-white" asp-area="" asp-controller="Cartoes" asp-action="Index">Pagamento</a>
             </li>
         </ul>
@@ -55,6 +58,10 @@
             <nav class="navbar navbar-light bg-light border-bottom">
                 <div class="container-fluid">
                     <span class="navbar-brand">Dashboard</span>
+                    <a class="btn btn-link" href="/authentication/logout" title="Logout">
+                        <span>Sair</span>
+                        <span class="iconify" data-icon="ic:baseline-login" data-inline="false"></span>
+                    </a>
                 </div>
             </nav>
         </header>
@@ -81,7 +88,5 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-
-
 </body>
 </html>

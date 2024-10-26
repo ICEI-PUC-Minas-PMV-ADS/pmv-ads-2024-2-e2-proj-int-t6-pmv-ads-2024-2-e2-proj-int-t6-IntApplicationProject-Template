@@ -1,156 +1,159 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Database;
+using OfficeRoomie.Helpers;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
 
-namespace OfficeRoomie.Controllers
+namespace OfficeRoomie.Controllers;
+
+[Authorize]
+public class AdministradoresController : Controller
 {
-    public class AdministradoresController : Controller
+    private readonly AppDbContext _context;
+
+    public AdministradoresController(AppDbContext context)
     {
-        private readonly AppDbContext _context;
+        _context = context;
+    }
 
-        public AdministradoresController(AppDbContext context)
+    public async Task<IActionResult> Index()
+    {
+
+        var dados = await _context.Administradores
+                .OrderByDescending(a => a.id)
+                .ToListAsync();
+
+        return View(dados);
+    }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(Administrador administrador)
+    {
+        if (ModelState.IsValid)
         {
-            _context = context;
+            administrador.senha = PasswordHelper.HashPassword(administrador.senha);
+            _context.Administradores.Add(administrador);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Index()
+        return View(administrador);
+    }
+
+    public async Task<IActionResult> Edit(int? id)
+    {
+        if (id == null)
         {
-
-            var dados = await _context.Administradores
-                    .OrderByDescending(a => a.id)
-                    .ToListAsync();
-
-            return View(dados);
+            return NotFound();
         }
 
-        public IActionResult Create()
+        var dados = await _context.Administradores.FindAsync(id);
+
+        if (dados == null)
         {
-            return View();
+            return NotFound();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(Administrador administrador)
+        var modelView = new AdministradorEdit
         {
-            if (ModelState.IsValid)
+            id = dados.id,
+            nome = dados.nome,
+            email = dados.email,
+        };
+
+        return View(modelView);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(int id, AdministradorEdit modelView)
+    {
+        
+        if (id != modelView.id)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            var administrador = await _context.Administradores.FindAsync(id);
+
+            if (administrador != null)
             {
-                _context.Administradores.Add(administrador);
+                administrador.nome = modelView.nome;
+                administrador.email = modelView.email;
+
+                _context.Administradores.Update(administrador);
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-
-            return View(administrador);
+            else {
+                return NotFound();
+            }
         }
 
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var dados = await _context.Administradores.FindAsync(id);
-
-            if (dados == null)
-            {
-                return NotFound();
-            }
-
-            var modelView = new AdministradorEdit
-            {
-                id = dados.id,
-                nome = dados.nome,
-                email = dados.email,
-            };
-
-            return View(modelView);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id, AdministradorEdit modelView)
-        {
-            
-            if (id != modelView.id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                var administrador = await _context.Administradores.FindAsync(id);
-
-                if (administrador != null)
-                {
-                    administrador.nome = modelView.nome;
-                    administrador.email = modelView.email;
-
-                    _context.Administradores.Update(administrador);
-
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction("Index");
-                }
-                else {
-                    return NotFound();
-                }
-            }
-
-            return View();
-        }
-
-        public async Task<IActionResult> Details(int? id) 
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var dados = await _context.Administradores.FindAsync(id);
-
-            if (dados == null)
-            {
-                return NotFound();
-            }
-
-            return View(dados);
-        }
-
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var dados = await _context.Administradores.FindAsync(id);
-
-            if (dados == null)
-            {
-                return NotFound();
-            }
-
-            return View(dados);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var dados = await _context.Administradores.FindAsync(id);
-
-            if (dados == null)
-            {
-                return NotFound();
-            }
-
-            _context.Administradores.Remove(dados);
-            await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
-        
-         }
+        return View();
     }
+
+    public async Task<IActionResult> Details(int? id) 
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var dados = await _context.Administradores.FindAsync(id);
+
+        if (dados == null)
+        {
+            return NotFound();
+        }
+
+        return View(dados);
+    }
+
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var dados = await _context.Administradores.FindAsync(id);
+
+        if (dados == null)
+        {
+            return NotFound();
+        }
+
+        return View(dados);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteConfirmed(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var dados = await _context.Administradores.FindAsync(id);
+
+        if (dados == null)
+        {
+            return NotFound();
+        }
+
+        _context.Administradores.Remove(dados);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Index");
+    
+     }
 }

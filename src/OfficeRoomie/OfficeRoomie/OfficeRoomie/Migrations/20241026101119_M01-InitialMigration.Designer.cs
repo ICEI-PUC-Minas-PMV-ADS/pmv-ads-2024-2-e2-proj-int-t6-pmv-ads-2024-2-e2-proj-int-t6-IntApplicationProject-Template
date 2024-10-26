@@ -11,8 +11,8 @@ using OfficeRoomie.Database;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241026002037_AddCartaoTable")]
-    partial class AddCartaoTable
+    [Migration("20241026101119_M01-InitialMigration")]
+    partial class M01InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
