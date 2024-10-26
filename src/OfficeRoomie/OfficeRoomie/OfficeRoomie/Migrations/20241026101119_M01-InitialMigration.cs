@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class M01InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -27,6 +28,25 @@ namespace OfficeRoomie.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_administradores", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "cartoes",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    numeroDoCartao = table.Column<string>(type: "TEXT", nullable: false),
+                    nomeDoTitular = table.Column<string>(type: "TEXT", nullable: false),
+                    validade = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    cvv = table.Column<int>(type: "INTEGER", nullable: false),
+                    idUsuario = table.Column<int>(type: "INTEGER", nullable: false),
+                    created_at = table.Column<string>(type: "TEXT", nullable: true),
+                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_cartoes", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -60,6 +80,9 @@ namespace OfficeRoomie.Migrations
         {
             migrationBuilder.DropTable(
                 name: "administradores");
+
+            migrationBuilder.DropTable(
+                name: "cartoes");
 
             migrationBuilder.DropTable(
                 name: "clientes");

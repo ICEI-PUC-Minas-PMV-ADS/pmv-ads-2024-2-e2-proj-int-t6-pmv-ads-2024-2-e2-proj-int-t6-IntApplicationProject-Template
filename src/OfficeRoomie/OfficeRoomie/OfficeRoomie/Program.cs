@@ -1,10 +1,13 @@
 using OfficeRoomie.Database;
+using OfficeRoomie.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCustomAuthentication();
+builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
-
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>();
 
@@ -18,13 +21,14 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
+app.MapControllers();
+app.MapRazorPages();
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseAuthentication();
 app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+app.RegisterRoutes();
 
 app.Run();
