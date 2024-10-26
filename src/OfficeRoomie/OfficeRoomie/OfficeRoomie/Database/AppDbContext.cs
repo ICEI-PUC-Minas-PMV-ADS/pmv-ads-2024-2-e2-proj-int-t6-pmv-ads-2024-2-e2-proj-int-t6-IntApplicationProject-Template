@@ -48,4 +48,6 @@ public class AppDbContext : DbContext
     public DbSet<Cliente> Clientes { get; set; }
 
     public DbSet<Administrador> Administradores { get; set; }
+
+    public DbSet<Cartao> Cartoes { get; set; }
 }
