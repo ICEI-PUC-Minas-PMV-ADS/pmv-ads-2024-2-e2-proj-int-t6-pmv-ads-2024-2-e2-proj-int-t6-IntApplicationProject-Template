@@ -9,6 +9,8 @@
 
 Registro de evidência:
 
+https://github.com/user-attachments/assets/0cc263be-01da-4562-9411-b843d2a3f30b
+
 
 
 | Caso de Teste | CT-07 – Cadastrar perfil de usuário |
