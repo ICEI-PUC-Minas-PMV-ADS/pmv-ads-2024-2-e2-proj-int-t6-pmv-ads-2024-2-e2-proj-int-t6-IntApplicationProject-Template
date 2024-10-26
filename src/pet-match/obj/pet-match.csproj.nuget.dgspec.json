@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/src/pet-match/pet-match.csproj": {}
+    "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj": {}
   },
   "projects": {
-    "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/src/pet-match/pet-match.csproj": {
+    "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/src/pet-match/pet-match.csproj",
+        "projectUniqueName": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj",
         "projectName": "pet-match",
-        "projectPath": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/src/pet-match/pet-match.csproj",
+        "projectPath": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj",
         "packagesPath": "/Users/italosousa/.nuget/packages/",
-        "outputPath": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/src/pet-match/obj/",
+        "outputPath": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/italosousa/.nuget/NuGet/NuGet.Config"
