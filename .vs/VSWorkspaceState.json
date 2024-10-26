@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\presentation",
+    "\\src",
+    "\\src\\OfficeRoomie",
+    "\\src\\OfficeRoomie\\OfficeRoomie",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers"
   ],
-  "SelectedNode": "\\OfficeRoomie.sln",
   "PreviewInSolutionExplorer": false
 }
