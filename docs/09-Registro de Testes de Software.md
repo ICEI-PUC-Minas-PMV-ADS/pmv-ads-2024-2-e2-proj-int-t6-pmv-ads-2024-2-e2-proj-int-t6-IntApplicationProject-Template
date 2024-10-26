@@ -41,7 +41,7 @@ https://github.com/user-attachments/assets/7e1793fe-e96e-4c8c-8470-f126638976a7
 |	Requisito Associado 	| RF-08 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
 | Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
 | Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva - Verificar se o usuário foi notificado sobre o cancelamento |
-| Critério de Êxito | - - A reserva é cancelada com sucesso e o usuário é notificado. |
+| Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
 
 Registro de evidência:
 
