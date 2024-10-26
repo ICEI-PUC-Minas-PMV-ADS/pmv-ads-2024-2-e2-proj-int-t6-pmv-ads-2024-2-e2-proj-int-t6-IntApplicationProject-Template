@@ -13,9 +13,7 @@ https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
 
 
 
-
-
-| Caso de Teste | CT-07 – Cadastrar perfil de usuário |
+| **Caso de Teste** | **CT-07 – Cadastrar perfil de usuário |**
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
@@ -36,6 +34,19 @@ https://github.com/user-attachments/assets/3dbf51b0-06db-4bed-ab5e-89603bf38274
 Registro de evidência: 
 
 https://github.com/user-attachments/assets/7e1793fe-e96e-4c8c-8470-f126638976a7
+
+
+| **Caso de Teste** 	| **CT-08 – Cancelamento de reservas pelo administrador** 	                            |
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-08 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
+| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
+| Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva - Verificar se o usuário foi notificado sobre o cancelamento |
+| Critério de Êxito | - - A reserva é cancelada com sucesso e o usuário é notificado. |
+
+Registro de evidência:
+
+
+
 
 <!-- <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
