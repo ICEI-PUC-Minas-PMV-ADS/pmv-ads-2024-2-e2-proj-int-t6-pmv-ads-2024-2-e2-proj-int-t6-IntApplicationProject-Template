@@ -1,12 +1,23 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eduar\\OneDrive\\Desktop\\projetos\\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\\",
+  "WorkspaceRootPath": "C:\\Users\\ferna\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

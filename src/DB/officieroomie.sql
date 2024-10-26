@@ -31,7 +31,7 @@ CREATE TABLE salas (
     id INT PRIMARY KEY IDENTITY(1,1),
     nome VARCHAR(255) NOT NULL,
     descricao VARCHAR(100),
-    capacidade INT,
+    capacidade INT NOT NULL,
     categoria VARCHAR(255) NOT NULL,
     status VARCHAR(50) NOT NULL,
 );

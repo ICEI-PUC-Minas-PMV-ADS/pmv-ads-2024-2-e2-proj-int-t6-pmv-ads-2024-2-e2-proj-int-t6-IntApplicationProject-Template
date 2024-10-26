@@ -73,6 +73,24 @@ namespace OfficeRoomie.Migrations
                 {
                     table.PrimaryKey("PK_clientes", x => x.id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "salas",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    nome = table.Column<string>(type: "TEXT", nullable: false),
+                    descricao = table.Column<string>(type: "TEXT", nullable: false),
+                    capacidade = table.Column<int>(type: "INTEGER", nullable: true),
+                    categoria = table.Column<string>(type: "TEXT", nullable: true),
+                    created_at = table.Column<string>(type: "TEXT", nullable: true),
+                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_salas", x => x.id);
+                });
         }
 
         /// <inheritdoc />
@@ -86,6 +104,9 @@ namespace OfficeRoomie.Migrations
 
             migrationBuilder.DropTable(
                 name: "clientes");
+            
+            migrationBuilder.DropTable(
+                name: "salas");
         }
     }
 }

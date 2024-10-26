@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "\\src",
+    "\\src\\OfficeRoomie",
+    "\\src\\OfficeRoomie\\OfficeRoomie",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Models\\ViewModels",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Views",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Views\\Shared",
+    "\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\wwwroot"
   ],
-  "SelectedNode": "\\OfficeRoomie.sln",
   "PreviewInSolutionExplorer": false
 }
