@@ -31,6 +31,21 @@ namespace OfficeRoomie.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Cancelamentos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nome = table.Column<string>(type: "TEXT", nullable: false),
+                    Data = table.Column<int>(type: "INTEGER", nullable: false),
+                    Horario = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cancelamentos", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "cartoes",
                 columns: table => new
                 {
@@ -98,6 +113,9 @@ namespace OfficeRoomie.Migrations
         {
             migrationBuilder.DropTable(
                 name: "administradores");
+
+            migrationBuilder.DropTable(
+                name: "Cancelamentos");
 
             migrationBuilder.DropTable(
                 name: "cartoes");

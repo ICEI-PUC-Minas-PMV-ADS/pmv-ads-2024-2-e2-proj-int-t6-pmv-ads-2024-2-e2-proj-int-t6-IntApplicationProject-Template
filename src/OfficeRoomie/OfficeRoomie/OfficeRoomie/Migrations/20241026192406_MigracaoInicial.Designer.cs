@@ -11,7 +11,7 @@ using OfficeRoomie.Database;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241026151448_MigracaoInicial")]
+    [Migration("20241026192406_MigracaoInicial")]
     partial class MigracaoInicial
     {
         /// <inheritdoc />
@@ -53,6 +53,27 @@ namespace OfficeRoomie.Migrations
                     b.HasKey("id");
 
                     b.ToTable("administradores");
+                });
+
+            modelBuilder.Entity("OfficeRoomie.Models.Cancelamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Data")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Horario")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cancelamentos");
                 });
 
             modelBuilder.Entity("OfficeRoomie.Models.Cartao", b =>

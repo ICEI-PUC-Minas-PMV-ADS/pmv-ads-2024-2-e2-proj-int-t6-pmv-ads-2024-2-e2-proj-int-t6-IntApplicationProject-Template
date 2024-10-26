@@ -52,6 +52,27 @@ namespace OfficeRoomie.Migrations
                     b.ToTable("administradores");
                 });
 
+            modelBuilder.Entity("OfficeRoomie.Models.Cancelamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Data")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Horario")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cancelamentos");
+                });
+
             modelBuilder.Entity("OfficeRoomie.Models.Cartao", b =>
                 {
                     b.Property<int>("id")
