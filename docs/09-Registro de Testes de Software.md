@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/3dbf51b0-06db-4bed-ab5e-89603bf38274
 
 Registro de evidência: 
 
-
+https://github.com/user-attachments/assets/7e1793fe-e96e-4c8c-8470-f126638976a7
 
 <!-- <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
