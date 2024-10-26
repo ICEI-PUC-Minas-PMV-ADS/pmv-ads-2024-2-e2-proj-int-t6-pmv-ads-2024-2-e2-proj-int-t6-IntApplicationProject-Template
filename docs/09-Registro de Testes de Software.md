@@ -1,5 +1,20 @@
 # Registro de Testes de Software
 
+| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	                            |
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-01 - Desenvolver tela de Login com módulo de autenticação. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar a autenticação no sistema. |
+| Passos 	| - Acessar o navegador <br> - Clicar no botão "Area restrita" <br> - Preencher os campos de e-mail e senha <br> - Clicar em "Acessar" |
+| Critério de Êxito | - O login é realizado com sucesso, e o usuário é direcionado à página inicial. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
+
+
+
+
+
 | Caso de Teste | CT-07 – Cadastrar perfil de usuário |
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
