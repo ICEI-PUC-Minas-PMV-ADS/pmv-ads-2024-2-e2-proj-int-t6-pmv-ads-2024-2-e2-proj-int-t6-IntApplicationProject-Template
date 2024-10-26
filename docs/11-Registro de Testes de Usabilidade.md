@@ -25,18 +25,10 @@
 - **Mariana Silva: Completou as tarefas no tempo estipulado.
 - **Rafael Costa: Completou dentro do tempo as atividades.
 
+## Questionário de Satisfação
 
-
-
-
-
-
-
-
-
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+| Usuário            | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                             | Você acredita que o acesso ao sistema é fácil?               | Como você avaliaria sua experiência de fazer o login e logout?        |
+|--------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| Lucas Ferreira      | Todos os campos estavam marcados de forma nítida.                   | Não, o processo muito fácil.                                             | Sim, os campos estão bem sinalizados e não senti nenhuma complexidade.  | Experiência incrível, minhas expectativas foram as melhores.                          |
+| Mariana Silva    | Sim, tudo intuitivo.                          | Não, muito funcional.                                                                   | Sim, sem dificuldade alguma.                   | Ótima, muito simples e fácil.            |
+| Rafael Costa         | Sim, tudo de forma bem objetiva.                                          | Dificuldade não, tudo foi bem fluido e de fácil entendimento. | Sim, muito fácil.                      | Muito boa, tive uma execelente experiência com o login desse software.   |
