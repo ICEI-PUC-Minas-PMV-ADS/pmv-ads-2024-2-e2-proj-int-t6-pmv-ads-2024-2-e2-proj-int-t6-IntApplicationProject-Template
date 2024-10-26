@@ -11,8 +11,8 @@ using OfficeRoomie.Database;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241026101119_M01-InitialMigration")]
-    partial class M01InitialMigration
+    [Migration("20241026151448_MigracaoInicial")]
+    partial class MigracaoInicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -142,37 +142,37 @@ namespace OfficeRoomie.Migrations
                 });
 
             modelBuilder.Entity("OfficeRoomie.Models.Sala", b =>
-            {
-                b.Property<int>("id")
-                    .ValueGeneratedOnAdd()
-                    .HasColumnType("INTEGER");
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
-                b.Property<string>("nome")
-                    .IsRequired()
-                    .HasColumnType("TEXT");
+                    b.Property<string>("capacidade")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                b.Property<string>("descricao")
-                    .IsRequired()
-                    .HasColumnType("TEXT");
+                    b.Property<string>("categoria")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                b.Property<int>("capacidade")
-                    .IsRequired()
-                    .HasColumnType("INTEGER");
+                    b.Property<string>("created_at")
+                        .HasColumnType("TEXT");
 
-                b.Property<string>("categoria")
-                    .IsRequired()
-                    .HasColumnType("TEXT");
+                    b.Property<string>("descricao")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                b.Property<string>("created_at")
-                    .HasColumnType("TEXT");
+                    b.Property<string>("nome")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                b.Property<string>("updated_at")
-                    .HasColumnType("TEXT");
+                    b.Property<string>("updated_at")
+                        .HasColumnType("TEXT");
 
-                b.HasKey("id");
+                    b.HasKey("id");
 
-                b.ToTable("salas");
-            });
+                    b.ToTable("salas");
+                });
 #pragma warning restore 612, 618
         }
     }

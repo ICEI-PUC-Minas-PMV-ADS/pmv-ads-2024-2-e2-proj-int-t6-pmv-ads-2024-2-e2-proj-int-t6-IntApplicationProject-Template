@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ferna\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers\\AdministradoresController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers\\AdministradoresController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdministradoresController.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers\\AdministradoresController.cs",
+              "RelativeDocumentMoniker": "src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers\\AdministradoresController.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-officeroomie\\src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers\\AdministradoresController.cs",
+              "RelativeToolTip": "src\\OfficeRoomie\\OfficeRoomie\\OfficeRoomie\\Controllers\\AdministradoresController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T14:48:50.731Z",
+              "EditorCaption": ""
             }
           ]
         }

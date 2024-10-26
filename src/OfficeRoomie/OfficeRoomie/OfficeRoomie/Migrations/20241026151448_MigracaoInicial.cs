@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class M01InitialMigration : Migration
+    public partial class MigracaoInicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -82,8 +82,8 @@ namespace OfficeRoomie.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     nome = table.Column<string>(type: "TEXT", nullable: false),
                     descricao = table.Column<string>(type: "TEXT", nullable: false),
-                    capacidade = table.Column<int>(type: "INTEGER", nullable: true),
-                    categoria = table.Column<string>(type: "TEXT", nullable: true),
+                    capacidade = table.Column<string>(type: "TEXT", nullable: false),
+                    categoria = table.Column<string>(type: "TEXT", nullable: false),
                     created_at = table.Column<string>(type: "TEXT", nullable: true),
                     updated_at = table.Column<string>(type: "TEXT", nullable: true)
                 },
@@ -104,7 +104,7 @@ namespace OfficeRoomie.Migrations
 
             migrationBuilder.DropTable(
                 name: "clientes");
-            
+
             migrationBuilder.DropTable(
                 name: "salas");
         }
