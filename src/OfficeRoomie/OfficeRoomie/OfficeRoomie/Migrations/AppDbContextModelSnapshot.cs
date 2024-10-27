@@ -52,6 +52,27 @@ namespace OfficeRoomie.Migrations
                     b.ToTable("administradores");
                 });
 
+            modelBuilder.Entity("OfficeRoomie.Models.Cancelamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Data")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Horario")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cancelamentos");
+                });
+
             modelBuilder.Entity("OfficeRoomie.Models.Cartao", b =>
                 {
                     b.Property<int>("id")
@@ -136,6 +157,39 @@ namespace OfficeRoomie.Migrations
                     b.HasKey("id");
 
                     b.ToTable("clientes");
+                });
+
+            modelBuilder.Entity("OfficeRoomie.Models.Sala", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("capacidade")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("categoria")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("created_at")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("descricao")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("nome")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("updated_at")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("id");
+
+                    b.ToTable("salas");
                 });
 #pragma warning restore 612, 618
         }

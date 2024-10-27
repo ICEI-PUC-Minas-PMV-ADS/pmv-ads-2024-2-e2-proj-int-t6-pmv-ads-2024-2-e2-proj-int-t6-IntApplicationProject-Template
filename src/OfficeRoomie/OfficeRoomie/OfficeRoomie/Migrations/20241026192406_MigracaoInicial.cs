@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class M01InitialMigration : Migration
+    public partial class MigracaoInicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -28,6 +28,21 @@ namespace OfficeRoomie.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_administradores", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Cancelamentos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nome = table.Column<string>(type: "TEXT", nullable: false),
+                    Data = table.Column<int>(type: "INTEGER", nullable: false),
+                    Horario = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cancelamentos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -73,6 +88,24 @@ namespace OfficeRoomie.Migrations
                 {
                     table.PrimaryKey("PK_clientes", x => x.id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "salas",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    nome = table.Column<string>(type: "TEXT", nullable: false),
+                    descricao = table.Column<string>(type: "TEXT", nullable: false),
+                    capacidade = table.Column<string>(type: "TEXT", nullable: false),
+                    categoria = table.Column<string>(type: "TEXT", nullable: false),
+                    created_at = table.Column<string>(type: "TEXT", nullable: true),
+                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_salas", x => x.id);
+                });
         }
 
         /// <inheritdoc />
@@ -82,10 +115,16 @@ namespace OfficeRoomie.Migrations
                 name: "administradores");
 
             migrationBuilder.DropTable(
+                name: "Cancelamentos");
+
+            migrationBuilder.DropTable(
                 name: "cartoes");
 
             migrationBuilder.DropTable(
                 name: "clientes");
+
+            migrationBuilder.DropTable(
+                name: "salas");
         }
     }
 }

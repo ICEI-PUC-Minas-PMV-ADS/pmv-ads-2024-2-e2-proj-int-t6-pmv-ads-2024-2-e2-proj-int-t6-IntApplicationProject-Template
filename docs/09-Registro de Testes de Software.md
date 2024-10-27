@@ -4,6 +4,7 @@
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
+| Passos 	| - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Novo Administrador" ou "Novo cliente" <br> - Prencher os campos obrigatórios <br> - Confirmar o cadastro <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Editar" (ícone de caneta) <br> - Alterar dados <br> - Confirmar o edição <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Deletar" (ícone de lixeira) <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Visualizar" (ícone de olho) |
 |Critérios de Êxito| Foi possível realizar o cadastro dos usuários, edição, visualização e exclusão dos mesmos. |
 
 Registro de evidência:
@@ -21,6 +22,36 @@ https://github.com/user-attachments/assets/3dbf51b0-06db-4bed-ab5e-89603bf38274
 Registro de evidência: 
 
 https://github.com/user-attachments/assets/7e1793fe-e96e-4c8c-8470-f126638976a7
+
+| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	                            |
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-01 - Desenvolver tela de Login com módulo de autenticação. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar a autenticação no sistema. |
+| Passos 	| - Acessar o navegador <br> - Clicar no botão "Area restrita" <br> - Preencher os campos de e-mail e senha <br> - Clicar em "Acessar" |
+| Critério de Êxito | - O login é realizado com sucesso, e o usuário é direcionado à página inicial. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
+
+
+| **Caso de Teste** 	| **CT-08 – Cancelamento de reservas pelo administrador** 	                            |
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-08 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
+| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
+| Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva - Verificar se o usuário foi notificado sobre o cancelamento |
+| Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
+
+
+
+
+
+
+
 
 <!-- <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 

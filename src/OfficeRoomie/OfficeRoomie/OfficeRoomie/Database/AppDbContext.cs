@@ -50,4 +50,10 @@ public class AppDbContext : DbContext
     public DbSet<Administrador> Administradores { get; set; }
 
     public DbSet<Cartao> Cartoes { get; set; }
+
+    public DbSet<Cancelamento> Cancelamentos { get; set; }
+
+
+    public DbSet<Sala> Salas { get; set; }
+
 }
