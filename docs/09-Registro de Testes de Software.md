@@ -54,6 +54,7 @@ https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
 | Passos 	| - Acessar a funcionalidade "Gerenciamento de Salas" <br> - Cadastrar uma nova sala <br> - Editar as informações da sala cadastrada <br> - Visualizar os dados da sala <br> - Excluir a sala cadastrada |
 | Critério de Êxito | - Todas as operações (cadastrar, editar, visualizar, excluir) são realizadas com sucesso. |
 
+Registro de evidência:
 
 | **Caso de Teste** 	| **CT-03 – Visualizar disponibilidade das salas** 	|
 |:---:	|:---:	|
@@ -61,6 +62,11 @@ https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
 | Objetivo do Teste 	| Verificar se o usuário consegue visualizar a disponibilidade das salas em tempo real. |
 | Passos 	| - Realizar o login no sistema <br> - Acessar o menu "Salas Disponíveis" <br> - Visualizar as salas disponíveis com seus horários e datas |
 | Critério de Êxito | - A lista de salas disponíveis é apresentada corretamente em tempo real. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/53a3e991-94c4-497a-8011-89c2fcc2f8bf
+
 
 
 
