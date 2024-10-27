@@ -96,3 +96,34 @@
 | Vanessa Lima         | Sim, tudo estava bem sinalizado.                                   | Não, foi fácil de usar.                                                          | Sim, o sistema é fácil de navegar.                          | Ótima, todas as funcionalidades funcionaram perfeitamente.             |
 | Samira Couceiro      |  Sim.                | Não.                      | Sim.            | Boa.                |
 | Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |
+
+### Teste 05 - Cadastrar Cartão de Crédito
+**Data do Teste:** 27 de outubro de 2024
+**Local:** Testes realizados de forma remota
+**Versão do Software:** 1.0
+**Objetivo do Teste:** Avaliar a clareza e facilidade de uso da funcionalidade de cadastro de cartão de crédito para pagamentos.
+
+**Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram a seguinte tarefa:
+
+- **Cadastrar um cartão de crédito** 
+- **Excluir um cartão de crédito cadastrado**
+
+### Participantes:
+
+- **Usuário 1:** Pedro Santos, 29 anos, desenvolvedor web, trabalha em uma empresa de e-commerce.
+- **Usuário 2:** Camila Ribeiro, 26 anos, designer, freelancer.
+- **Usuário 3:** João Carvalho, 38 anos, consultor de negócios, trabalha em uma empresa de tecnologia financeira.
+
+### Resultados:
+
+- **Pedro Santos:** Concluiu a tarefa em tempo recorde e sem dificuldades.
+- **Camila Ribeiro:** Completou a tarefa rapidamente, mas mencionou que a descrição dos campos poderia ser mais específica.
+- **João Carvalho:** Concluiu a tarefa com uma leve dificuldade para entender o formato aceito em alguns campos, mas dentro do tempo estipulado.
+
+## Questionário de Satisfação
+
+| Usuário             | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                                  | Você acredita que o acesso ao sistema é fácil?             | Como você avaliaria sua experiência com as funcionalidades testadas? |
+|---------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------|
+| Pedro Santos        | Sim, tudo estava bem explicado e fácil de identificar.             | Não, o uso foi bem tranquilo.                                                   | Sim, achei o sistema bem intuitivo.                         | Excelente, todas as funcionalidades operaram conforme esperado.       |
+| Camila Ribeiro      | Sim.                                                               | Não.                                                                            | Sim.                                                       | Muito boa.                                                             |
+| João Carvalho       | Sim, as instruções eram claras.                                    | Não.                                                                            | Sim, o acesso é bem direto.                                 | Boa, a experiência foi positiva.                                       |
