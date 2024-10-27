@@ -1,19 +1,6 @@
 # Registro de Testes de Software
 
-| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	                            |
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-01 - Desenvolver tela de Login com módulo de autenticação. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar a autenticação no sistema. |
-| Passos 	| - Acessar o navegador <br> - Clicar no botão "Area restrita" <br> - Preencher os campos de e-mail e senha <br> - Clicar em "Acessar" |
-| Critério de Êxito | - O login é realizado com sucesso, e o usuário é direcionado à página inicial. |
-
-Registro de evidência:
-
-https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
-
-
-
-| **Caso de Teste** | **CT-07 – Cadastrar perfil de usuário |**
+| Caso de Teste | CT-07 – Cadastrar perfil de usuário |
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
@@ -34,6 +21,17 @@ https://github.com/user-attachments/assets/3dbf51b0-06db-4bed-ab5e-89603bf38274
 Registro de evidência: 
 
 https://github.com/user-attachments/assets/7e1793fe-e96e-4c8c-8470-f126638976a7
+
+| **Caso de Teste** 	| **CT-01 – Autenticar no Sistema** 	                            |
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-01 - Desenvolver tela de Login com módulo de autenticação. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar a autenticação no sistema. |
+| Passos 	| - Acessar o navegador <br> - Clicar no botão "Area restrita" <br> - Preencher os campos de e-mail e senha <br> - Clicar em "Acessar" |
+| Critério de Êxito | - O login é realizado com sucesso, e o usuário é direcionado à página inicial. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
 
 
 | **Caso de Teste** 	| **CT-08 – Cancelamento de reservas pelo administrador** 	                            |
