@@ -4,6 +4,7 @@
 |---------------|---------------------------------|
 | Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
+| Passos 	| - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Novo Administrador" ou "Novo cliente" <br> - Prencher os campos obrigatórios <br> - Confirmar o cadastro <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Editar" (ícone de caneta) <br> - Alterar dados <br> - Confirmar o edição <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Deletar" (ícone de lixeira) <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Visualizar" (ícone de olho) |
 |Critérios de Êxito| Foi possível realizar o cadastro dos usuários, edição, visualização e exclusão dos mesmos. |
 
 Registro de evidência:
