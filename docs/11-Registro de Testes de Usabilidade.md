@@ -98,9 +98,9 @@
 | Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |
 
 ### Teste 05 - Cadastrar Cartão de Crédito
-**Data do Teste:** 27 de outubro de 2024
-**Local:** Testes realizados de forma remota
-**Versão do Software:** 1.0
+**Data do Teste:** 27 de outubro de 2024 
+**Local:** Testes realizados de forma remota  
+**Versão do Software:** 1.0  
 **Objetivo do Teste:** Avaliar a clareza e facilidade de uso da funcionalidade de cadastro de cartão de crédito para pagamentos.
 
 **Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram a seguinte tarefa:
