@@ -15,10 +15,10 @@ namespace OfficeRoomie.Models
         public required string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a data")]
-        public int Data { get; set; }
+        public string Data { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o horário")]
-        public int Horario { get; set; }
+        public string Horario { get; set; }
 
 
     }
