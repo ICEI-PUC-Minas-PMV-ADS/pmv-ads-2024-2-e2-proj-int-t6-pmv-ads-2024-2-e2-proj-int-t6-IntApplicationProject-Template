@@ -56,6 +56,8 @@ https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
 
 Registro de evidência:
 
+https://github.com/user-attachments/assets/98b20086-89a2-480f-9bce-39b583633164
+
 | **Caso de Teste** 	| **CT-03 – Visualizar disponibilidade das salas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-03 - Desenvolver tela para visualização da disponibilidade das salas em tempo real pelos usuários finais. |
