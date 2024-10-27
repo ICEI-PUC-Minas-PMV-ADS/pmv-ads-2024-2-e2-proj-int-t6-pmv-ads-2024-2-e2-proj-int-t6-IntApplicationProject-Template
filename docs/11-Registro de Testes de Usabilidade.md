@@ -32,3 +32,34 @@
 | Lucas Ferreira      | Todos os campos estavam marcados de forma nítida.                   | Não, o processo muito fácil.                                             | Sim, os campos estão bem sinalizados e não senti nenhuma complexidade.  | Experiência incrível, minhas expectativas foram as melhores.                          |
 | Mariana Silva    | Sim, tudo intuitivo.                          | Não, muito funcional.                                                                   | Sim, sem dificuldade alguma.                   | Ótima, muito simples e fácil.            |
 | Rafael Costa         | Sim, tudo de forma bem objetiva.                                          | Dificuldade não, tudo foi bem fluido e de fácil entendimento. | Sim, muito fácil.                      | Muito boa, tive uma execelente experiência com o login desse software.   |
+
+
+### Teste 02 - Cancelamento de reservas pelo administrador
+**Data do Teste:** 26 de outubro de 2024  
+**Local:** Testes realizados de forma remota  
+**Versão do Software:** 1.0  
+**Objetivo do Teste:** Avaliar a facilidade de navegação e usabilidade da funcionalidade de cancelamento de reservas
+
+**Observação:** O teste foi acompanhado através de gravações de tela e áudio. Os participantes realizaram as seguintes tarefas:
+
+- **Cancelar Reservas**
+
+### Participantes:
+
+- **Usuário 1: Ana Santos, 29 anos, desenvolvedora, trabalha em uma empresa de tecnologia.
+- **Usuário 2: João Souza, 25 anos, estudante de engenharia, faz estágio em uma multinacional.
+- **Usuário 3: Carla Almeida, 40 anos, gerente administrativa, trabalha em uma organização educacional.
+
+### Resultados:
+
+- **Ana Santos: Completou todas as tarefas no tempo estipulado, com facilidade.
+- **João Souza: Conseguiu concluir as tarefas, mas teve alguma dificuldade em identificar o botão de cancelar reserva.
+- **Carla Almeida: Completou as tarefas com sucesso.
+
+## Questionário de Satisfação
+
+| Usuário            | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                             | Você acredita que o acesso ao sistema é fácil?               | Como você avaliaria sua experiência de fazer o login e logout?        |
+|--------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| Ana Santos      | Sim, tudo estava bem sinalizado.	                   |Não, foi muito fácil de entender.                                             | Sim, a reserva foi prática e rápida.	  | Ótima, a experiência foi tranquila e agradável.                          |
+| João Souza	    | Sim, embora o botão de cancelamento não fosse muito evidente.	                          | Sim, localizar o botão de cancelamento.	                                                                   | Sim, mas poderia ser mais claro em algumas funções.	                   | Boa, mas o cancelamento poderia ser mais intuitivo.            |
+| Carla Almeida         | Sim, estão excelentes.                                          | Não, o entendimento do sistema está bem claro.	 | Sim, é fácil de usar.	                      | Excelente.   |
