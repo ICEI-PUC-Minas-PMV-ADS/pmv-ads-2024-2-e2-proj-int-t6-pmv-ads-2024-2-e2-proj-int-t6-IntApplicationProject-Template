@@ -34,7 +34,7 @@
 | Rafael Costa         | Sim, tudo de forma bem objetiva.                                          | Dificuldade não, tudo foi bem fluido e de fácil entendimento. | Sim, muito fácil.                      | Muito boa, tive uma execelente experiência com o login desse software.   |
 
 
-### Teste 02 - Cancelamento de reservas pelo administrador
+### Teste 08 - Cancelamento de reservas pelo administrador
 **Data do Teste:** 26 de outubro de 2024  
 **Local:** Testes realizados de forma remota  
 **Versão do Software:** 1.0  
@@ -160,3 +160,37 @@
 | Aline Costa        | Sim, todas as instruções estavam visíveis.            | Não.                                                   | Sim, a interface é clara.                         | Boa, mas poderia ser mais intuitiva.       |
 | Lucas Oliveira     | Sim, mas uma confirmação para exclusão seria útil.                                                              | Não.                                                                            | 	Sim, sistema bem desenhado.                                                       | Muito boa, fácil de navegar.                                                             |
 | Maria Souza       | Sim, exceto a opção de edição que não ficou clara.                                    | Um pouco para encontrar "Editar".                                                                            | Sim, com algumas melhorias.                                 | Boa, mas poderia melhorar em alguns pontos.                                       |
+
+
+### Teste 03 - Visualizar Disponibilidade das Salas
+**Data do Teste:** 27 de outubro de 2024 
+**Local:** Testes realizados de forma remota  
+**Versão do Software:** 1.0  
+**Objetivo do Teste:**  Avaliar a clareza e eficiência da interface para a visualização da disponibilidade de salas, incluindo rapidez de acesso e facilidade de navegação.
+
+**Observação:** Teste acompanhado via gravação de tela e áudio. Os participantes realizaram a seguinte tarefa:
+
+- **Número de cliques necessários até a visualização da disponibilidade** 
+- **Tempo de resposta do sistema ao carregar a disponibilidade**
+- **Erros ocorridos ao tentar visualizar a disponibilidade de uma sala**
+
+
+### Participantes:
+
+- **Usuário 1:** Bruno Lima, 35 anos, arquiteto, trabalha em uma empresa de design de interiores
+- **Usuário 2:** Fernanda Almeida, 30 anos, coordenadora de eventos, atua em uma empresa de organização de eventos corporativos.
+- **Usuário 3:** Carla Ferreira, 28 anos, secretária executiva, trabalha em uma multinacional.
+
+### Resultados:
+
+- **Bruno Lima:** Conseguiu visualizar a disponibilidade sem dificuldades.
+- **Fernanda Almeida:** Concluiu a tarefa rapidamente e elogiou a resposta rápida do sistema ao carregar as informações.
+- **Carla Ferreira:** Achou o sistema intuitivo e rapido.
+
+## Questionário de Satisfação
+
+| Usuário             | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                                  | Você acredita que o acesso ao sistema é fácil?             | Como você avaliaria sua experiência com as funcionalidades testadas? |
+|---------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------|
+| Bruno Lima        | Sim.            | Não.                                                   | Sim, no geral é direto.                         | Boa      |
+| Fernanda Almeida     | Sim, todas as informações estavam claras.                                                               | Não.                                                                            | 	Sim, interface muito funcional.                                                       | Excelente, rápida e eficiente.                                                             |
+| Carla Ferreira       | Sim.                                    | Não.                                                                            | Sim, após compreender a interface.                                 | Boa, com pequenas sugestões de usabilidade.                                       |
