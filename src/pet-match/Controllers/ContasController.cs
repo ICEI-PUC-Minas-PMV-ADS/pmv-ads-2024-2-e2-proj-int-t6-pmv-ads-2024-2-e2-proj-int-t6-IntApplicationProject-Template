@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using pet_match.Models;
 //using pet_match.Services;
+using pet_match.Models;
+
+namespace pet_match.Controllers;
+
 
 public class AccountController : Controller
 {
