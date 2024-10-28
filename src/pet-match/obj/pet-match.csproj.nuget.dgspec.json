@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj": {}
+    "C:\\Users\\laise\\OneDrive\\Área de Trabalho\\pets\\pmv-ads-2024-2-e2-proj-int-t6-pet\\src\\pet-match\\pet-match.csproj": {}
   },
   "projects": {
-    "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj": {
+    "C:\\Users\\laise\\OneDrive\\Área de Trabalho\\pets\\pmv-ads-2024-2-e2-proj-int-t6-pet\\src\\pet-match\\pet-match.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj",
+        "projectUniqueName": "C:\\Users\\laise\\OneDrive\\Área de Trabalho\\pets\\pmv-ads-2024-2-e2-proj-int-t6-pet\\src\\pet-match\\pet-match.csproj",
         "projectName": "pet-match",
-        "projectPath": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/pet-match.csproj",
-        "packagesPath": "/Users/italosousa/.nuget/packages/",
-        "outputPath": "/Users/italosousa/Documents/pmv-ads-2024-2-e2-proj-int-t6-pet/pet-match/obj/",
+        "projectPath": "C:\\Users\\laise\\OneDrive\\Área de Trabalho\\pets\\pmv-ads-2024-2-e2-proj-int-t6-pet\\src\\pet-match\\pet-match.csproj",
+        "packagesPath": "C:\\Users\\laise\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laise\\OneDrive\\Área de Trabalho\\pets\\pmv-ads-2024-2-e2-proj-int-t6-pet\\src\\pet-match\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/italosousa/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\laise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
