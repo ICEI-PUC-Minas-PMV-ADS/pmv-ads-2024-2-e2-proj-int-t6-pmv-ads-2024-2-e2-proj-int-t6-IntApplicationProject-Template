@@ -6,7 +6,7 @@ using pet_match.Models;
 namespace pet_match.Controllers;
 
 
-public class AccountController : Controller
+public class ContaController : Controller
 {
     private readonly UserManager<IdentityUser> _userManager;
     private readonly SignInManager<IdentityUser> _signInManager;
@@ -20,6 +20,37 @@ public class AccountController : Controller
     //    _signInManager = signInManager;
     //    _emailSender = emailSender;
     //}
+
+    public ContaController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+    {
+        _userManager = userManager;
+        _signInManager = signInManager;
+    }
+
+    [HttpGet]
+    public IActionResult Register() => View();
+
+    [HttpPost]
+    public async Task<IActionResult> Register(RegisterViewModel model)
+    {
+        if (!ModelState.IsValid) return View(model);
+
+        var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+        var result = await _userManager.CreateAsync(user, model.Password);
+
+        if (result.Succeeded)
+        {
+            await _signInManager.SignInAsync(user, isPersistent: false);
+            return RedirectToAction("Index", "Home");
+        }
+
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError(string.Empty, error.Description);
+        }
+
+        return View(model);
+    }
 
     [HttpGet]
     public IActionResult Login() => View();
