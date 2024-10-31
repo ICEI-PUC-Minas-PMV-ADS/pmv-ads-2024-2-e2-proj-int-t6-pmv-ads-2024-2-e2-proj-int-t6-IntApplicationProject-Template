@@ -58,11 +58,13 @@ namespace OfficeRoomie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Data")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("Horario")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Horario")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
                         .IsRequired()
