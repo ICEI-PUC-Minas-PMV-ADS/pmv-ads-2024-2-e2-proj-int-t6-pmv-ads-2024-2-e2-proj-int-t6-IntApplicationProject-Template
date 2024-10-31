@@ -11,8 +11,8 @@ using OfficeRoomie.Database;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241026192406_MigracaoInicial")]
-    partial class MigracaoInicial
+    [Migration("20241031120417_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,11 +61,13 @@ namespace OfficeRoomie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Data")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("Horario")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Horario")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
                         .IsRequired()
