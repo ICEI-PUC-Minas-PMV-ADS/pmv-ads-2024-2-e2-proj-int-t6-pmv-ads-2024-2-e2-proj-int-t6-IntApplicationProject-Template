@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class MigracaoInicial : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -37,8 +37,8 @@ namespace OfficeRoomie.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Nome = table.Column<string>(type: "TEXT", nullable: false),
-                    Data = table.Column<int>(type: "INTEGER", nullable: false),
-                    Horario = table.Column<int>(type: "INTEGER", nullable: false)
+                    Data = table.Column<string>(type: "TEXT", nullable: false),
+                    Horario = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
