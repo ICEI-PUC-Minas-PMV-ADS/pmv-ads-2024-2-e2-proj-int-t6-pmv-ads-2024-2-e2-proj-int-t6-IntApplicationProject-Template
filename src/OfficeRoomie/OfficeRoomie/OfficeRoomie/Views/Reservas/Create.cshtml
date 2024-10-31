@@ -1,0 +1,76 @@
+﻿@model OfficeRoomie.Models.Reserva
+
+@{
+    ViewData["Title"] = "Nova Reserva";
+}
+
+<h1>Nova Reserva</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="hora_inicio" class="control-label"></label>
+                <input asp-for="hora_inicio" class="form-control" />
+                <span asp-validation-for="hora_inicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="hora_fim" class="control-label"></label>
+                <input asp-for="hora_fim" class="form-control" />
+                <span asp-validation-for="hora_fim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="data_reserva" class="control-label"></label>
+                <input asp-for="data_reserva" class="form-control" />
+                <span asp-validation-for="data_reserva" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="protocolo" class="control-label"></label>
+                <input asp-for="protocolo" class="form-control" />
+                <span asp-validation-for="protocolo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="status" class="control-label"></label>
+                <input asp-for="status" class="form-control" />
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cliente_id" class="control-label"></label>
+                <input asp-for="cliente_id" class="form-control" />
+                <span asp-validation-for="cliente_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sala_id" class="control-label"></label>
+                <input asp-for="sala_id" class="form-control" />
+                <span asp-validation-for="sala_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cartão_id" class="control-label"></label>
+                <input asp-for="cartão_id" class="form-control" />
+                <span asp-validation-for="cartão_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="created_at" class="control-label"></label>
+                <input asp-for="created_at" class="form-control" />
+                <span asp-validation-for="created_at" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="updated_at" class="control-label"></label>
+                <input asp-for="updated_at" class="form-control" />
+                <span asp-validation-for="updated_at" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

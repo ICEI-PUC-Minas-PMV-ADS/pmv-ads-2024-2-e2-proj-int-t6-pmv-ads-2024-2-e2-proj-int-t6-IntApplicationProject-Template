@@ -161,6 +161,67 @@ namespace OfficeRoomie.Migrations
                     b.ToTable("clientes");
                 });
 
+            modelBuilder.Entity("OfficeRoomie.Models.Reserva", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("cartaoid")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("cartão_id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("cliente_id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("clienteid")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("created_at")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("data_reserva")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("hora_fim")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("hora_inicio")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("protocolo")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("sala_id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("salaid")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("updated_at")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("cartaoid");
+
+                    b.HasIndex("clienteid");
+
+                    b.HasIndex("salaid");
+
+                    b.ToTable("reservas");
+                });
+
             modelBuilder.Entity("OfficeRoomie.Models.Sala", b =>
                 {
                     b.Property<int>("id")
@@ -192,6 +253,27 @@ namespace OfficeRoomie.Migrations
                     b.HasKey("id");
 
                     b.ToTable("salas");
+                });
+
+            modelBuilder.Entity("OfficeRoomie.Models.Reserva", b =>
+                {
+                    b.HasOne("OfficeRoomie.Models.Cartao", "cartao")
+                        .WithMany()
+                        .HasForeignKey("cartaoid");
+
+                    b.HasOne("OfficeRoomie.Models.Cliente", "cliente")
+                        .WithMany()
+                        .HasForeignKey("clienteid");
+
+                    b.HasOne("OfficeRoomie.Models.Sala", "sala")
+                        .WithMany()
+                        .HasForeignKey("salaid");
+
+                    b.Navigation("cartao");
+
+                    b.Navigation("cliente");
+
+                    b.Navigation("sala");
                 });
 #pragma warning restore 612, 618
         }

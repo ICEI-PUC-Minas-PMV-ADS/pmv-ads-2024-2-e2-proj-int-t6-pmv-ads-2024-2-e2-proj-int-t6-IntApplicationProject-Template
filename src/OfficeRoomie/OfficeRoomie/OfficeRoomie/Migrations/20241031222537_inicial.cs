@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -106,6 +106,61 @@ namespace OfficeRoomie.Migrations
                 {
                     table.PrimaryKey("PK_salas", x => x.id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "reservas",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    hora_inicio = table.Column<string>(type: "TEXT", nullable: false),
+                    hora_fim = table.Column<string>(type: "TEXT", nullable: false),
+                    data_reserva = table.Column<string>(type: "TEXT", nullable: false),
+                    protocolo = table.Column<string>(type: "TEXT", nullable: false),
+                    status = table.Column<string>(type: "TEXT", nullable: false),
+                    cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    sala_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    cartão_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    clienteid = table.Column<int>(type: "INTEGER", nullable: true),
+                    salaid = table.Column<int>(type: "INTEGER", nullable: true),
+                    cartaoid = table.Column<int>(type: "INTEGER", nullable: true),
+                    created_at = table.Column<string>(type: "TEXT", nullable: true),
+                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_reservas", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_reservas_cartoes_cartaoid",
+                        column: x => x.cartaoid,
+                        principalTable: "cartoes",
+                        principalColumn: "id");
+                    table.ForeignKey(
+                        name: "FK_reservas_clientes_clienteid",
+                        column: x => x.clienteid,
+                        principalTable: "clientes",
+                        principalColumn: "id");
+                    table.ForeignKey(
+                        name: "FK_reservas_salas_salaid",
+                        column: x => x.salaid,
+                        principalTable: "salas",
+                        principalColumn: "id");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reservas_cartaoid",
+                table: "reservas",
+                column: "cartaoid");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reservas_clienteid",
+                table: "reservas",
+                column: "clienteid");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reservas_salaid",
+                table: "reservas",
+                column: "salaid");
         }
 
         /// <inheritdoc />
@@ -116,6 +171,9 @@ namespace OfficeRoomie.Migrations
 
             migrationBuilder.DropTable(
                 name: "Cancelamentos");
+
+            migrationBuilder.DropTable(
+                name: "reservas");
 
             migrationBuilder.DropTable(
                 name: "cartoes");
