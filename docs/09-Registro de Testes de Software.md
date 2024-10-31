@@ -47,6 +47,30 @@ Registro de evidência:
 https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
 
 
+| **Caso de Teste** 	| **CT-02 – Gerenciamento de Salas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-02 - Desenvolver tela de gerenciamento de Salas, permitindo cadastro, edição, visualização e exclusão de informações. |
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar, editar, visualizar e excluir informações sobre salas. |
+| Passos 	| - Acessar a funcionalidade "Gerenciamento de Salas" <br> - Cadastrar uma nova sala <br> - Editar as informações da sala cadastrada <br> - Visualizar os dados da sala <br> - Excluir a sala cadastrada |
+| Critério de Êxito | - Todas as operações (cadastrar, editar, visualizar, excluir) são realizadas com sucesso. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/98b20086-89a2-480f-9bce-39b583633164
+
+| **Caso de Teste** 	| **CT-03 – Visualizar disponibilidade das salas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-03 - Desenvolver tela para visualização da disponibilidade das salas em tempo real pelos usuários finais. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar a disponibilidade das salas em tempo real. |
+| Passos 	| - Realizar o login no sistema <br> - Acessar o menu "Salas Disponíveis" <br> - Visualizar as salas disponíveis com seus horários e datas |
+| Critério de Êxito | - A lista de salas disponíveis é apresentada corretamente em tempo real. |
+
+Registro de evidência:
+
+
+![Evidência de Teste](https://github.com/user-attachments/assets/53a3e991-94c4-497a-8011-89c2fcc2f8bf)
+
+
 
 
 
