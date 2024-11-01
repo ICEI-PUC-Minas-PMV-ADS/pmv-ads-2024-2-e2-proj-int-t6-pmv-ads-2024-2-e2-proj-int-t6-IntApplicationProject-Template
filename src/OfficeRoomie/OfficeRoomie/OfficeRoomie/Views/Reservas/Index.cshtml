@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OfficeRoomie.Models.Reserva>
+﻿@model OfficeRoomie.Models.ViewModels.ModelPaginado<Reserva>
 
 @{
     ViewData["Title"] = "Reservas";
@@ -13,19 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.hora_inicio)
+                @Html.DisplayNameFor(model => model.First().hora_inicio)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.hora_fim)
+                @Html.DisplayNameFor(model => model.First().hora_fim)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.data_reserva)
+                @Html.DisplayNameFor(model => model.First().data_reserva)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.protocolo)
+                @Html.DisplayNameFor(model => model.First().protocolo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.status)
+                @Html.DisplayNameFor(model => model.First().status)
             </th>
             <th>
                Cliente
@@ -55,10 +55,10 @@
                 @Html.DisplayFor(modelItem => item.status)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.cliente.nome)
+                @Html.DisplayFor(modelItem => item.cliente!.nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.sala.nome)
+                @Html.DisplayFor(modelItem => item.sala!.nome)
             </td>
             
             <td>
@@ -76,3 +76,15 @@
 }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index" asp-route-pageNumber="@(Model.PageIndex - 1)" class="btn btn-default @prevDisabled">
+    Anterior
+</a>
+<a asp-action="Index" asp-route-pageNumber="@(Model.PageIndex + 1)" class="btn btn-default @nextDisabled">
+    Próximo
+</a>

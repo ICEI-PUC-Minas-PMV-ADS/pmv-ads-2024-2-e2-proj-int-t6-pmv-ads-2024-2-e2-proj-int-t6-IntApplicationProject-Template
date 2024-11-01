@@ -16,15 +16,15 @@ namespace OfficeRoomie.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? pageNumber)
         {
-            var reservas = await _context.Reserva
+            var reservas = _context.Reserva
                 .OrderByDescending(a => a.id)
                 .Include(r => r.cliente)
-                .Include(r => r.sala)
-                .ToListAsync();
-
-            return View(reservas);
+                .Include(r => r.sala);
+            var reservasPaginados = await ModelPaginado<Reserva>.CreateAsync(reservas, pageNumber ?? 1, 5);
+            
+            return View(reservasPaginados);
         }
 
         public async Task<IActionResult> Details(int? id)
