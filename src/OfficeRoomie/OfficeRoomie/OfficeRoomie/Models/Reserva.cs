@@ -9,27 +9,39 @@ public class Reserva
 {
     [Key]
     public int id { get; set; }
-    [Required]
+
+    [Required(ErrorMessage = "Preenchimento do Campo [hora inicial] Obrigatório!")]
     [Display(Name="Hora Início")]
     public string hora_inicio { get; set; } = "";
-    [Required]
+    
+    [Required(ErrorMessage = "Preenchimento do Campo [hora final] Obrigatório!")]
     [Display(Name="Hora Fim")]
     public string hora_fim { get; set; } = "";
-    [Required]
+
+    [Required(ErrorMessage = "Preenchimento do Campo [data da reserva] Obrigatório!")]
     [Display(Name="Data da Reserva")]
     public string data_reserva { get; set; } = "";
-    [Required]
+
     [Display(Name="Protocolo")]
     public string protocolo { get; set; } = "";
-    [Required]
+
+    [Required(ErrorMessage = "Preenchimento do Campo [status] Obrigatório!")]
     [Display(Name="Status")]
     public string status { get; set; } = "";
-    [Required]
+
+    [Required(ErrorMessage = "Preenchimento do Campo [cliente] Obrigatório!")]
+    [Display(Name = "Cliente")]
+    [ForeignKey("cliente")]
     public int cliente_id { get; set; }
-    [Required]
+
+    [Required(ErrorMessage = "Preenchimento do Campo [sala] Obrigatório!")]
+    [Display(Name = "Sala")]
+    [ForeignKey("sala")]
     public int sala_id { get; set; }
-    [Required]
-    public int cartão_id { get; set; }
+
+
+    [ForeignKey("cartao")]
+    public Nullable<int> cartão_id { get; set; } = null;
 
     public Cliente? cliente { get; set; }
     public Sala? sala { get; set; }

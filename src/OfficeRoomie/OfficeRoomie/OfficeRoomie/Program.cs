@@ -36,3 +36,5 @@ app.Run();
 
 // Execute esse comando via powershell pra remover o banco e criar do zero;
 // cd .\OfficeRoomie\; .\setup.ps1;
+
+// Set-ExecutionPolicy RemoteSigned

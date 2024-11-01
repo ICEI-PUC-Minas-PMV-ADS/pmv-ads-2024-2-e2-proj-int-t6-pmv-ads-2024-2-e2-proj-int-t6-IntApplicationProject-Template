@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Database;
+using OfficeRoomie.Helpers;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
 
@@ -20,13 +16,17 @@ namespace OfficeRoomie.Controllers
             _context = context;
         }
 
-        // GET: Reservas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Reserva.ToListAsync());
+            var reservas = await _context.Reserva
+                .OrderByDescending(a => a.id)
+                .Include(r => r.cliente)
+                .Include(r => r.sala)
+                .ToListAsync();
+
+            return View(reservas);
         }
 
-        // GET: Reservas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,6 +35,8 @@ namespace OfficeRoomie.Controllers
             }
 
             var reserva = await _context.Reserva
+                .Include(r => r.cliente)
+                .Include(r => r.sala)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (reserva == null)
             {
@@ -44,29 +46,45 @@ namespace OfficeRoomie.Controllers
             return View(reserva);
         }
 
-        // GET: Reservas/Create
-        public IActionResult Create()
+        async public Task<IActionResult> Create()
         {
-            return View();
+            var salas = await _context.Salas.ToListAsync();
+            var clientes = await _context.Clientes.ToListAsync();
+
+            var viewModel = new ReservaCreate
+            {
+                reserva = new Reserva(),
+                salas = salas,
+                clientes = clientes
+            };
+
+            return View(viewModel);
         }
 
-        // POST: Reservas/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,hora_inicio,hora_fim,data_reserva,protocolo,status,cliente_id,sala_id,cartão_id,created_at,updated_at")] Reserva reserva)
+        public async Task<IActionResult> Create([FromForm] ReservaCreate dto)
         {
             if (ModelState.IsValid)
             {
+                var reserva = new Reserva
+                {
+                    hora_inicio = dto.reserva.hora_inicio,
+                    hora_fim = dto.reserva.hora_fim,
+                    data_reserva = dto.reserva.data_reserva,
+                    status = dto.reserva.status,
+                    cliente_id = dto.reserva.cliente_id,
+                    sala_id = dto.reserva.sala_id,
+                    protocolo = ProtocoloHelper.GerarProtocolo(),
+                };
+
                 _context.Add(reserva);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(reserva);
+            return View(dto);
         }
 
-        // GET: Reservas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,23 +97,40 @@ namespace OfficeRoomie.Controllers
             {
                 return NotFound();
             }
-            return View(reserva);
+
+            var salas = await _context.Salas.ToListAsync();
+            var clientes = await _context.Clientes.ToListAsync();
+
+            var viewModel = new ReservaCreate
+            {
+                reserva = reserva,
+                salas = salas,
+                clientes = clientes
+            };
+            return View(viewModel);
         }
 
-        // POST: Reservas/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,hora_inicio,hora_fim,data_reserva,protocolo,status,cliente_id,sala_id,cartão_id,created_at,updated_at")] Reserva reserva)
+        public async Task<IActionResult> Edit(int id, [FromForm] ReservaCreate dto)
         {
-            if (id != reserva.id)
+            if (id != dto.reserva.id)
             {
                 return NotFound();
             }
 
             if (ModelState.IsValid)
             {
+                var reserva = new Reserva
+                {
+                    hora_inicio = dto.reserva.hora_inicio,
+                    hora_fim = dto.reserva.hora_fim,
+                    data_reserva = dto.reserva.data_reserva,
+                    status = dto.reserva.status,
+                    cliente_id = dto.reserva.cliente_id,
+                    sala_id = dto.reserva.sala_id,
+                };
+
                 try
                 {
                     _context.Update(reserva);
@@ -114,10 +149,9 @@ namespace OfficeRoomie.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(reserva);
+            return View(dto);
         }
 
-        // GET: Reservas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -126,6 +160,8 @@ namespace OfficeRoomie.Controllers
             }
 
             var reserva = await _context.Reserva
+                .Include(r => r.cliente)
+                .Include(r => r.sala)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (reserva == null)
             {
@@ -135,7 +171,6 @@ namespace OfficeRoomie.Controllers
             return View(reserva);
         }
 
-        // POST: Reservas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
