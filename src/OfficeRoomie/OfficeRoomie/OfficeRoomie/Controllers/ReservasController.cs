@@ -4,16 +4,19 @@ using OfficeRoomie.Database;
 using OfficeRoomie.Helpers;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
+using OfficeRoomie.Services;
 
 namespace OfficeRoomie.Controllers
 {
     public class ReservasController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly EmailService _emailService;
 
-        public ReservasController(AppDbContext context)
+        public ReservasController(AppDbContext context, EmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         public async Task<IActionResult> Index(int? pageNumber)
@@ -80,6 +83,9 @@ namespace OfficeRoomie.Controllers
 
                 _context.Add(reserva);
                 await _context.SaveChangesAsync();
+
+                // await _emailService.SendEmailAsync("destinatario@exemplo.com", "Assunto do Email", "<p>Conteúdo do email</p>");
+
                 return RedirectToAction(nameof(Index));
             }
             return View(dto);
@@ -114,27 +120,30 @@ namespace OfficeRoomie.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [FromForm] ReservaCreate dto)
         {
-            if (id != dto.reserva.id)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
-                var reserva = new Reserva
+                var reserva = await _context.Reserva
+                    .Include(r => r.cliente)
+                    .Include(r => r.sala)
+                    .FirstOrDefaultAsync(m => m.id == id);
+
+                if (reserva == null)
                 {
-                    hora_inicio = dto.reserva.hora_inicio,
-                    hora_fim = dto.reserva.hora_fim,
-                    data_reserva = dto.reserva.data_reserva,
-                    status = dto.reserva.status,
-                    cliente_id = dto.reserva.cliente_id,
-                    sala_id = dto.reserva.sala_id,
-                };
+                    return NotFound();
+                }
+
+                reserva.hora_inicio = dto.reserva.hora_inicio;
+                reserva.hora_fim = dto.reserva.hora_fim;
+                reserva.data_reserva = dto.reserva.data_reserva;
+                reserva.status = dto.reserva.status;
 
                 try
                 {
                     _context.Update(reserva);
                     await _context.SaveChangesAsync();
+
+                    // Se houver cliente smtp configurado, chama essa função pra notificar por email
+                    // await _emailService.SendEmailAsync(reserva.cliente!.email, "OfficeRoomie: Sua reserva foi atualizada", "<p>Conteúdo do email</p>");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -182,6 +191,9 @@ namespace OfficeRoomie.Controllers
             }
 
             await _context.SaveChangesAsync();
+
+            // await _emailService.SendEmailAsync("destinatario@exemplo.com", "Assunto do Email", "<p>Conteúdo do email</p>");
+
             return RedirectToAction(nameof(Index));
         }
 
