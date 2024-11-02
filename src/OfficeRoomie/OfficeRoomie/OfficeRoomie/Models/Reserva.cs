@@ -29,16 +29,15 @@ public class Reserva
     [Display(Name="Status")]
     public string status { get; set; } = "";
 
-    [Required(ErrorMessage = "Preenchimento do Campo [cliente] Obrigatório!")]
-    [Display(Name = "Cliente")]
-    [ForeignKey("cliente")]
-    public int cliente_id { get; set; }
-
     [Required(ErrorMessage = "Preenchimento do Campo [sala] Obrigatório!")]
     [Display(Name = "Sala")]
     [ForeignKey("sala")]
     public int sala_id { get; set; }
 
+    [Required(ErrorMessage = "Preenchimento do Campo [cliente] Obrigatório!")]
+    [Display(Name = "Cliente")]
+    [ForeignKey("cliente")]
+    public int cliente_id { get; set; }
 
     [ForeignKey("cartao")]
     public Nullable<int> cartão_id { get; set; } = null;
