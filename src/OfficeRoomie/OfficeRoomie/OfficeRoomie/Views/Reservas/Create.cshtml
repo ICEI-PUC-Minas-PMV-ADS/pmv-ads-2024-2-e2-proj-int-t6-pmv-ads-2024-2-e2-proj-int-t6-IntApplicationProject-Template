@@ -62,7 +62,7 @@
             <option value="">Selecione</option>
             @foreach (var item in Model.salas)
             {
-                <option value="@item.id">@item.nome</option>
+                <option value="@item.id">@item.nome - @item.capacidade Pessoas</option>
             }
         </select>
         
