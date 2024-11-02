@@ -106,6 +106,60 @@ namespace OfficeRoomie.Migrations
                 {
                     table.PrimaryKey("PK_salas", x => x.id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "reservas",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    hora_inicio = table.Column<string>(type: "TEXT", nullable: false),
+                    hora_fim = table.Column<string>(type: "TEXT", nullable: false),
+                    data_reserva = table.Column<string>(type: "TEXT", nullable: false),
+                    protocolo = table.Column<string>(type: "TEXT", nullable: false),
+                    status = table.Column<string>(type: "TEXT", nullable: false),
+                    cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    sala_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    cartão_id = table.Column<int>(type: "INTEGER", nullable: true),
+                    created_at = table.Column<string>(type: "TEXT", nullable: true),
+                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_reservas", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_reservas_cartoes_cartão_id",
+                        column: x => x.cartão_id,
+                        principalTable: "cartoes",
+                        principalColumn: "id");
+                    table.ForeignKey(
+                        name: "FK_reservas_clientes_cliente_id",
+                        column: x => x.cliente_id,
+                        principalTable: "clientes",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_reservas_salas_sala_id",
+                        column: x => x.sala_id,
+                        principalTable: "salas",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reservas_cartão_id",
+                table: "reservas",
+                column: "cartão_id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reservas_cliente_id",
+                table: "reservas",
+                column: "cliente_id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_reservas_sala_id",
+                table: "reservas",
+                column: "sala_id");
         }
 
         /// <inheritdoc />
@@ -116,6 +170,9 @@ namespace OfficeRoomie.Migrations
 
             migrationBuilder.DropTable(
                 name: "Cancelamentos");
+
+            migrationBuilder.DropTable(
+                name: "reservas");
 
             migrationBuilder.DropTable(
                 name: "cartoes");

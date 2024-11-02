@@ -18,14 +18,11 @@ public class AdministradoresController : Controller
         _context = context;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? pageNumber)
     {
-
-        var dados = await _context.Administradores
-                .OrderByDescending(a => a.id)
-                .ToListAsync();
-
-        return View(dados);
+        var administradores = _context.Administradores.AsNoTracking().OrderByDescending(a => a.id);
+        var administradoresPaginados = await ModelPaginado<Administrador>.CreateAsync(administradores, pageNumber ?? 1, 5);
+        return View(administradoresPaginados);
     }
 
     public IActionResult Create()
