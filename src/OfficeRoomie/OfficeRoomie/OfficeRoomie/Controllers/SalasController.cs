@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Database;
 using OfficeRoomie.Models;
+using OfficeRoomie.Models.ViewModels;
 
 namespace OfficeRoomie.Controllers
 {
@@ -15,11 +16,12 @@ namespace OfficeRoomie.Controllers
         }
 
         // GET: Salas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? pageNumber)
         {
-            return View(await _context.Salas
-                .OrderByDescending(a => a.id)
-                .ToListAsync());
+            var salas = _context.Salas.OrderByDescending(a => a.id);
+            var salasPaginados = await ModelPaginado<Sala>.CreateAsync(salas, pageNumber ?? 1, 5);
+
+            return View(salasPaginados);
         }
 
         // GET: Salas/Details/5

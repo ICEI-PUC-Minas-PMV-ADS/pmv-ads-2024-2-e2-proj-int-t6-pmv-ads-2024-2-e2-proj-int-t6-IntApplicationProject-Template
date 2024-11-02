@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OfficeRoomie.Models.Administrador>
+﻿@model OfficeRoomie.Models.ViewModels.ModelPaginado<Administrador>
 
 @{
     ViewData["Title"] = "Administradores";
@@ -14,10 +14,10 @@
     <thead>
         <tr>
             <th width="40%">
-                @Html.DisplayNameFor(model => model.nome)
+                @Html.DisplayNameFor(model => model.First().nome)
             </th>
             <th width="40%">
-                @Html.DisplayNameFor(model => model.email)
+                @Html.DisplayNameFor(model => model.First().email)
             </th>
             <th width="20%"></th>
         </tr>
@@ -47,3 +47,15 @@
 }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index" asp-route-pageNumber="@(Model.PageIndex - 1)" class="btn btn-default @prevDisabled">
+    Anterior
+</a>
+<a asp-action="Index" asp-route-pageNumber="@(Model.PageIndex + 1)" class="btn btn-default @nextDisabled">
+    Próximo
+</a>

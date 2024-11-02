@@ -12,9 +12,13 @@ static class DatabaseSeederExtension
             var services = scope.ServiceProvider;
             var context = services.GetRequiredService<AppDbContext>();
 
-            var seeder = new AdministradorSeeder(context);
+            var administradorSeeder = new AdministradorSeeder(context);
+            var clienteSeeder = new ClienteSeeder(context);
+            var salaSeeder = new SalaSeeder(context);
 
-            seeder.Seed();
+            administradorSeeder.Seed();
+            clienteSeeder.Seed();
+            salaSeeder.Seed();
         }
     }
 }

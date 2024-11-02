@@ -1,5 +1,6 @@
 using OfficeRoomie.Database;
 using OfficeRoomie.Extensions;
+using OfficeRoomie.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>();
+
+builder.Services.AddScoped<EmailService>();
 
 var app = builder.Build();
 
@@ -36,3 +39,5 @@ app.Run();
 
 // Execute esse comando via powershell pra remover o banco e criar do zero;
 // cd .\OfficeRoomie\; .\setup.ps1;
+
+// Set-ExecutionPolicy RemoteSigned

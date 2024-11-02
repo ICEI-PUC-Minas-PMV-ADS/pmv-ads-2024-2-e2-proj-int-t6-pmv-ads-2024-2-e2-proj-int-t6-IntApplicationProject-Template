@@ -48,6 +48,7 @@ public class AppDbContext : DbContext
     public DbSet<Cliente> Clientes { get; set; }
 
     public DbSet<Administrador> Administradores { get; set; }
+    public DbSet<Reserva> Reservas { get; set; }
 
     public DbSet<Cartao> Cartoes { get; set; }
 
@@ -55,5 +56,7 @@ public class AppDbContext : DbContext
 
 
     public DbSet<Sala> Salas { get; set; }
+
+public DbSet<OfficeRoomie.Models.Reserva> Reserva { get; set; } = default!;
 
 }
