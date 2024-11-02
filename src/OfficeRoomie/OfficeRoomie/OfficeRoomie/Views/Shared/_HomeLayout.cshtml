@@ -24,9 +24,11 @@
 </head>
 <body class="mb-0">
     <div class="main-content">
-        <header class="navbar">
+        <header class="navbar navbar-light bg-light border-bottom">
             <div class="container d-flex justify-content-between align-items-center">
-                <h4 class="text-uppercase">OfficeRoomie</h4>
+                <a asp-action="Index" class="text-decoration-none text-black">
+                    <h4 class="text-uppercase mb-0">OfficeRoomie</h4>
+                </a>
 
                 <a class="btn btn-link" href="/dashboard">
                     <span>Área restrita</span>
@@ -42,7 +44,7 @@
             </div>
         </main>
 
-        <footer class="footer text-muted p-3 text-center">
+        <footer class="border-top footer text-muted p-3 text-center bg-light text-center">
             <div class="container">
                 &copy; 2024 - OfficeRoomie
             </div>
