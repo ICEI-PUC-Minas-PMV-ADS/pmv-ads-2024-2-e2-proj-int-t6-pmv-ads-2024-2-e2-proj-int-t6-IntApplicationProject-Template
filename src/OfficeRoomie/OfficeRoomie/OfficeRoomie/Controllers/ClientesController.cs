@@ -17,10 +17,25 @@ public class ClientesController : Controller
         _context = context;
     }
 
-    public async Task<IActionResult> Index(int? pageNumber)
+    public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter)
     {
+        if (searchString != null)
+        {
+            pageNumber = 1;
+        }
+        else
+        {
+            searchString = currentFilter;
+        }
+
+        ViewData["CurrentFilter"] = searchString;
+
         var clientes = _context.Clientes.AsNoTracking().OrderByDescending(a => a.id);
-        var clientesPaginados = await ModelPaginado<Cliente>.CreateAsync(clientes, pageNumber ?? 1, 5);
+        var clientesFiltrados = !String.IsNullOrEmpty(searchString)
+            ? clientes.Where(s => s.nome.ToLower().Contains(searchString.ToLower()))
+            : clientes;
+        var clientesPaginados = await ModelPaginado<Cliente>.CreateAsync(clientesFiltrados, pageNumber ?? 1, 5);
+
         return View(clientesPaginados);
     }
 
