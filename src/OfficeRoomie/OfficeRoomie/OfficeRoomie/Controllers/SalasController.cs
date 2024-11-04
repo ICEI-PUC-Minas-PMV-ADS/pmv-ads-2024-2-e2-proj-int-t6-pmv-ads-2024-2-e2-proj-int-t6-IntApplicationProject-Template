@@ -16,12 +16,23 @@ namespace OfficeRoomie.Controllers
         }
 
         // GET: Salas
-        public async Task<IActionResult> Index(int? pageNumber)
+        public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter)
         {
-            var salas = _context.Salas.OrderByDescending(a => a.id);
-            var salasPaginados = await ModelPaginado<Sala>.CreateAsync(salas, pageNumber ?? 1, 5);
+            if (searchString != null) {
+                pageNumber = 1;
+            } else {
+                searchString = currentFilter;
+            }
 
-            return View(salasPaginados);
+            ViewData["CurrentFilter"] = searchString;
+
+            var salas = _context.Salas.AsNoTracking().OrderByDescending(a => a.id);
+            var salasFiltradas = !String.IsNullOrEmpty(searchString)
+                ? salas.Where(s => s.nome.ToLower().Contains(searchString.ToLower()))
+                : salas;
+            var salasPaginadas = await ModelPaginado<Sala>.CreateAsync(salasFiltradas, pageNumber ?? 1, 5);
+
+            return View(salasPaginadas);
         }
 
         // GET: Salas/Details/5

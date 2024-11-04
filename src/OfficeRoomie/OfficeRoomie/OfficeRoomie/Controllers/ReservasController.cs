@@ -19,15 +19,27 @@ namespace OfficeRoomie.Controllers
             _emailService = emailService;
         }
 
-        public async Task<IActionResult> Index(int? pageNumber)
+        public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter)
         {
-            var reservas = _context.Reserva
+            if (searchString != null) {
+                pageNumber = 1;
+            } else {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            var reservas = _context.Reservas
+                .AsNoTracking()
                 .OrderByDescending(a => a.id)
                 .Include(r => r.cliente)
-                .Include(r => r.sala);
-            var reservasPaginados = await ModelPaginado<Reserva>.CreateAsync(reservas, pageNumber ?? 1, 5);
-            
-            return View(reservasPaginados);
+                .Include(r => r.sala); ;
+            var reservasFiltradas = !String.IsNullOrEmpty(searchString)
+                ? reservas.Where(s => s.protocolo.ToLower().Contains(searchString.ToLower()))
+                : reservas;
+            var reservasPaginadas = await ModelPaginado<Reserva>.CreateAsync(reservasFiltradas, pageNumber ?? 1, 5);
+
+            return View(reservasPaginadas);
         }
 
         public async Task<IActionResult> Details(int? id)
