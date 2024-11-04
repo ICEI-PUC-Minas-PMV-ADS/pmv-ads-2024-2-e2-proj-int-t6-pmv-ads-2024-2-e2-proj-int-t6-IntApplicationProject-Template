@@ -1,5 +1,4 @@
-﻿using OfficeRoomie.Helpers;
-using OfficeRoomie.Models;
+﻿using OfficeRoomie.Models;
 
 namespace OfficeRoomie.Database.Seeders;
 

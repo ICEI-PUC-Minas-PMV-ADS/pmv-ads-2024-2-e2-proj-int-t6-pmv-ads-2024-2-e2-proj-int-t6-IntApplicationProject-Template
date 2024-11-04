@@ -44,9 +44,53 @@
             </div>
         </main>
 
-        <footer class="border-top footer text-muted p-3 text-center bg-light text-center">
+        <footer class="bg-dark text-white pt-5 pb-4">
             <div class="container">
-                &copy; 2024 - OfficeRoomie
+                <div class="row">
+                    <!-- Coluna de Contato -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Contato</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-telephone-fill"></i> Telefone: (11) 1234-5678</li>
+                            <li><i class="bi bi-envelope-fill"></i> Email: contato@exemplo.com</li>
+                            <li><i class="bi bi-geo-alt-fill"></i> Endereço: Rua Exemplo, 123, Cidade</li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna de Links Úteis -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Links Úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a asp-action="Sobre" class="text-white">Sobre Nós</a></li>
+                            <li><a asp-action="Privacidade" class="text-white">Política de Privacidade</a></li>
+                            <li><a asp-action="Ajuda" class="text-white">Ajuda</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna de Formas de Pagamento -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Formas de Pagamento</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <span class="iconify" data-icon="ic:outline-check" data-inline="false"></span>
+                                <span>Visa</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="iconify" data-icon="ic:outline-check" data-inline="false"></span>
+                                <span>Mastercard</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="iconify" data-icon="ic:outline-check" data-inline="false"></span>
+                                <span>Paypal</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Rodapé Secundário -->
+                <div class="text-center mt-4">
+                    <p class="mb-0">&copy; 2024 OfficeRoomie. Todos os direitos reservados.</p>
+                </div>
             </div>
         </footer>
     </div>
@@ -57,6 +101,24 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+          const btnCta = document.querySelector(".cta-reserva");
+
+          if (btnCta) {
+            btnCta.addEventListener("click", (event) => {
+                event.preventDefault();
+
+                const listaSalas = document.querySelector(".lista-salas");
+
+                if (listaSalas) {
+                    listaSalas.scrollIntoView({ behavior: "smooth" });
+                }
+            });
+          }
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 
 
