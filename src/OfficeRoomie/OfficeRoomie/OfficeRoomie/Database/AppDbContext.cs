@@ -38,6 +38,9 @@ public class AppDbContext : DbContext
                     break;
                 case "SqlServer":
                     optionsBuilder.UseSqlServer(configuration.GetConnectionString("SqlServerConnection")!);
+                    break; 
+                case "Production":
+                    optionsBuilder.UseSqlServer(configuration.GetConnectionString("SmarterAspMSSQL")!);
                     break;
                 default:
                     throw new Exception($"Provedor de banco de dados não suportado: {databaseProvider}");
