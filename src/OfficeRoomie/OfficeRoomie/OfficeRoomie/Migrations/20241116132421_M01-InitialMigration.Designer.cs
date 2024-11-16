@@ -11,8 +11,8 @@ using OfficeRoomie.Database;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241101173125_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20241116132421_M01-InitialMigration")]
+    partial class M01InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

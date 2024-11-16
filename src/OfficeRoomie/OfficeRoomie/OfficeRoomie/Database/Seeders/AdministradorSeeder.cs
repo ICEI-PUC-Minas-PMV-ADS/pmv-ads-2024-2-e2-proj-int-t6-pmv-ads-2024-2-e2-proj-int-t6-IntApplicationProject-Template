@@ -16,7 +16,7 @@ public class AdministradorSeeder
     {
         if (!_context.Administradores.Any(a => a.email == "email@email.com"))
         {
-            var senha = PasswordHelper.HashPassword("Senh@123");
+            var senha = PasswordHelper.HashPassword("123");
             var administrador = new Administrador { nome = "Admin", email = "email@email.com", senha = "" };
             administrador.senha = senha;
 

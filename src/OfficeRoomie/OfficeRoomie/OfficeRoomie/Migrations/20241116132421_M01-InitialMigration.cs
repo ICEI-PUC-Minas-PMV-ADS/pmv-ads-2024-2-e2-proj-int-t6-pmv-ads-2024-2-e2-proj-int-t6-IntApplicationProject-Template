@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class M01InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -118,8 +118,8 @@ namespace OfficeRoomie.Migrations
                     data_reserva = table.Column<string>(type: "TEXT", nullable: false),
                     protocolo = table.Column<string>(type: "TEXT", nullable: false),
                     status = table.Column<string>(type: "TEXT", nullable: false),
-                    cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
                     sala_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
                     cartão_id = table.Column<int>(type: "INTEGER", nullable: true),
                     created_at = table.Column<string>(type: "TEXT", nullable: true),
                     updated_at = table.Column<string>(type: "TEXT", nullable: true)
