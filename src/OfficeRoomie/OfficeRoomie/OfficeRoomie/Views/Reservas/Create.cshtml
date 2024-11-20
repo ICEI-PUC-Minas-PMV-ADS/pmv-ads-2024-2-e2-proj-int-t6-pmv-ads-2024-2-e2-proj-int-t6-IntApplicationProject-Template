@@ -53,6 +53,19 @@
         
         <span asp-validation-for="reserva.cliente_id" class="text-danger"></span>
     </div>
+    
+    <div class="form-group col-12 col-md-6">
+        <label asp-for="reserva.cartao_id" class="control-label"></label>
+        
+        <select asp-for="reserva.cartao_id" class="form-control">
+            <option value="">Selecione</option>
+        @foreach (var item in Model.cartoes) {
+            <option value="@item.id">@item.numeroDoCartao</option>
+        }
+        </select>
+        
+        <span asp-validation-for="reserva.cartao_id" class="text-danger"></span>
+    </div>
 
     <div class="form-group col-12 col-md-6">
         <label asp-for="reserva.sala_id" class="control-label"></label>

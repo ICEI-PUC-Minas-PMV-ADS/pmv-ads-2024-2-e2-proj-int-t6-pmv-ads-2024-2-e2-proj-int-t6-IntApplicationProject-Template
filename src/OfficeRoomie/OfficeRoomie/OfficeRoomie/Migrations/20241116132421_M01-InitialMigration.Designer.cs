@@ -170,7 +170,7 @@ namespace OfficeRoomie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("cartão_id")
+                    b.Property<int>("cartao_id")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("cliente_id")
@@ -207,7 +207,7 @@ namespace OfficeRoomie.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("cartão_id");
+                    b.HasIndex("cartao_id");
 
                     b.HasIndex("cliente_id");
 
@@ -253,7 +253,9 @@ namespace OfficeRoomie.Migrations
                 {
                     b.HasOne("OfficeRoomie.Models.Cartao", "cartao")
                         .WithMany()
-                        .HasForeignKey("cartão_id");
+                        .HasForeignKey("cartao_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("OfficeRoomie.Models.Cliente", "cliente")
                         .WithMany()

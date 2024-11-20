@@ -32,8 +32,9 @@ namespace OfficeRoomie.Controllers
             var reservas = _context.Reservas
                 .AsNoTracking()
                 .OrderByDescending(a => a.id)
+                .Include(r => r.cartao)
                 .Include(r => r.cliente)
-                .Include(r => r.sala); ;
+                .Include(r => r.sala);
 
             var reservasByStatus = !String.IsNullOrEmpty(active) && active == "1"
                 ? reservas.Where(s => !s.status.ToLower().Contains("cancelada"))
@@ -60,6 +61,7 @@ namespace OfficeRoomie.Controllers
             var reserva = await _context.Reserva
                 .Include(r => r.cliente)
                 .Include(r => r.sala)
+                .Include(r => r.cartao)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (reserva == null)
             {
@@ -73,12 +75,14 @@ namespace OfficeRoomie.Controllers
         {
             var salas = await _context.Salas.ToListAsync();
             var clientes = await _context.Clientes.ToListAsync();
+            var cartoes = await _context.Cartoes.ToListAsync();
 
             var viewModel = new ReservaCreate
             {
                 reserva = new Reserva(),
                 salas = salas,
-                clientes = clientes
+                clientes = clientes,
+                cartoes = cartoes
             };
 
             return View(viewModel);
@@ -98,6 +102,7 @@ namespace OfficeRoomie.Controllers
                     status = dto.reserva.status,
                     cliente_id = dto.reserva.cliente_id,
                     sala_id = dto.reserva.sala_id,
+                    cartao_id = dto.reserva.cartao_id,
                     protocolo = ProtocoloHelper.GerarProtocolo(),
                 };
 
@@ -126,12 +131,14 @@ namespace OfficeRoomie.Controllers
 
             var salas = await _context.Salas.ToListAsync();
             var clientes = await _context.Clientes.ToListAsync();
+            var cartoes = await _context.Cartoes.ToListAsync();
 
             var viewModel = new ReservaCreate
             {
                 reserva = reserva,
                 salas = salas,
-                clientes = clientes
+                clientes = clientes,
+                cartoes = cartoes
             };
             return View(viewModel);
         }
@@ -145,6 +152,7 @@ namespace OfficeRoomie.Controllers
                 var reserva = await _context.Reserva
                     .Include(r => r.cliente)
                     .Include(r => r.sala)
+                    .Include(r => r.cartao)
                     .FirstOrDefaultAsync(m => m.id == id);
 
                 if (reserva == null)
@@ -156,6 +164,7 @@ namespace OfficeRoomie.Controllers
                 reserva.hora_fim = dto.reserva.hora_fim;
                 reserva.data_reserva = dto.reserva.data_reserva;
                 reserva.status = dto.reserva.status;
+                reserva.cartao_id = dto.reserva.cartao_id;
 
                 try
                 {
@@ -191,6 +200,7 @@ namespace OfficeRoomie.Controllers
             var reserva = await _context.Reserva
                 .Include(r => r.cliente)
                 .Include(r => r.sala)
+                .Include(r => r.cartao)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (reserva == null)
             {

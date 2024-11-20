@@ -120,7 +120,7 @@ namespace OfficeRoomie.Migrations
                     status = table.Column<string>(type: "TEXT", nullable: false),
                     sala_id = table.Column<int>(type: "INTEGER", nullable: false),
                     cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
-                    cartão_id = table.Column<int>(type: "INTEGER", nullable: true),
+                    cartao_id = table.Column<int>(type: "INTEGER", nullable: true),
                     created_at = table.Column<string>(type: "TEXT", nullable: true),
                     updated_at = table.Column<string>(type: "TEXT", nullable: true)
                 },
@@ -128,8 +128,8 @@ namespace OfficeRoomie.Migrations
                 {
                     table.PrimaryKey("PK_reservas", x => x.id);
                     table.ForeignKey(
-                        name: "FK_reservas_cartoes_cartão_id",
-                        column: x => x.cartão_id,
+                        name: "FK_reservas_cartoes_cartao_id",
+                        column: x => x.cartao_id,
                         principalTable: "cartoes",
                         principalColumn: "id");
                     table.ForeignKey(
@@ -147,9 +147,9 @@ namespace OfficeRoomie.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_reservas_cartão_id",
+                name: "IX_reservas_cartao_id",
                 table: "reservas",
-                column: "cartão_id");
+                column: "cartao_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_reservas_cliente_id",
