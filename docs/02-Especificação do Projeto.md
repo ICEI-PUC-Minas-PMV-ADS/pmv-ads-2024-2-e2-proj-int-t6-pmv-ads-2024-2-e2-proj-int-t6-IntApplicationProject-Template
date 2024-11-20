@@ -239,7 +239,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
     <tbody>
         <tr>
             <td>RF- 01</td>
-            <td>Desenvolver tela de Login com módulo de autênticação.</td>
+            <td>Desenvolver tela de autenticação do usuário administrador.</td>
             <td>Alta</td>
         </tr>
         <tr>
@@ -274,17 +274,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
         </tr>
         <tr>
             <td>RF- 08</td>
-            <td>Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento.</td>
+            <td>Desenvolver tela do administrador para gerenciar as reservas das salas.</td>
             <td>Média</td>
         </tr>
         <tr>
             <td>RF- 09</td>
-            <td>Desenvolver funcionalidade para envio de notificações de confirmação de reservas para os usuários finais.</td>
-            <td>Alta</td>
-        </tr>
-        <tr>
-            <td>RF- 10</td>
-            <td>Desenvolver tela que permita aos usuários alterarem ou cancelarem suas reservas com um prazo determinado antes da data da reserva.</td>
+            <td>Desenvolver tela do cliente para acompanhamento e/ou cancelamento da reserva.</td>
             <td>Alta</td>
         </tr>
     </tbody>
