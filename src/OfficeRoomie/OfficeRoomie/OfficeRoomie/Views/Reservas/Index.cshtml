@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Reservas";
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -10,12 +12,26 @@
 </div>
 
 <form asp-action="Index" method="get">
-    <div class="form-group d-flex gap-2 align-items-center w-25">
+    <div class="form-group d-flex gap-2 align-items-center w-50">
+        <input type="hidden" name="active" value="@ViewBag.active" />
         <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Pesquisar pelo nome" />
         <button type="submit" class="btn btn-outline-primary d-flex gap-2 align-items-center">
             <span class="iconify" data-icon="ic:baseline-search" data-inline="false"></span>
             <span>Pesquisar</span>
         </button>
+
+        @if (!string.IsNullOrEmpty(ViewBag.active) && ViewBag.active == "1")
+        {
+            <a asp-action="Index" asp-route-active="0" class="btn btn-outline-primary">
+                Canceladas
+            </a>
+        }
+        else
+        {
+            <a asp-action="Index" asp-route-active="1" class="btn btn-outline-primary">
+                Ativas
+            </a>
+        }
     </div>
 </form>
 
@@ -87,14 +103,9 @@
     </tbody>
 </table>
 
-@{
-    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
-}
-
-<a asp-action="Index" asp-route-pageNumber="@(Model.PageIndex - 1)" class="btn btn-default @prevDisabled">
+<a asp-action="Index" asp-route-acive="@ViewBag.active" asp-route-searchString="@ViewData["CurrentFilter"]" asp-route-pageNumber="@(Model.PageIndex - 1)" class="btn btn-default @prevDisabled">
     Anterior
 </a>
-<a asp-action="Index" asp-route-pageNumber="@(Model.PageIndex + 1)" class="btn btn-default @nextDisabled">
+<a asp-action="Index" asp-route-acive="@ViewBag.active" asp-route-searchString="@ViewData["CurrentFilter"]" asp-route-pageNumber="@(Model.PageIndex + 1)" class="btn btn-default @nextDisabled">
     Próximo
 </a>
