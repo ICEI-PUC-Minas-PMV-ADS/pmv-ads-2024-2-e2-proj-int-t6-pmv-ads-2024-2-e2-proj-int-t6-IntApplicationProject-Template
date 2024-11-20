@@ -19,7 +19,7 @@ namespace OfficeRoomie.Controllers
             _emailService = emailService;
         }
 
-        public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter)
+        public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter, string active = "1")
         {
             if (searchString != null) {
                 pageNumber = 1;
@@ -34,10 +34,18 @@ namespace OfficeRoomie.Controllers
                 .OrderByDescending(a => a.id)
                 .Include(r => r.cliente)
                 .Include(r => r.sala); ;
+
+            var reservasByStatus = !String.IsNullOrEmpty(active) && active == "1"
+                ? reservas.Where(s => !s.status.ToLower().Contains("cancelada"))
+                : reservas.Where(s => s.status.ToLower().Contains("cancelada"));
+
             var reservasFiltradas = !String.IsNullOrEmpty(searchString)
-                ? reservas.Where(s => s.protocolo.ToLower().Contains(searchString.ToLower()))
-                : reservas;
+                ? reservasByStatus.Where(s => s.protocolo.ToLower().Contains(searchString.ToLower()))
+                : reservasByStatus;
+
             var reservasPaginadas = await ModelPaginado<Reserva>.CreateAsync(reservasFiltradas, pageNumber ?? 1, 5);
+
+            ViewBag.active = active;
 
             return View(reservasPaginadas);
         }
