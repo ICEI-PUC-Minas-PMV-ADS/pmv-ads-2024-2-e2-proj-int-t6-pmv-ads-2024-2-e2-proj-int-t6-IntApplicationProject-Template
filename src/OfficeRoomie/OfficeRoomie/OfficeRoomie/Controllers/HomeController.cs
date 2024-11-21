@@ -1,11 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Mysqlx.Datatypes;
-using MySqlX.XDevAPI;
 using OfficeRoomie.Database;
 using OfficeRoomie.Helpers;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
+using System;
 using System.Diagnostics;
 
 
@@ -84,6 +83,67 @@ public class HomeController : Controller
         TempData["MensagemSucesso"] = "Reserva realizada com sucesso! - " + reserva.protocolo;
 
         return RedirectToAction(nameof(Index));
+    }
+
+    async public Task<IActionResult> Reserva(int? pageNumber, string SearchString, string currentFilter)
+    {
+        // Controle do filtro de pesquisa
+        if (SearchString != null)
+        {
+            pageNumber = 1;
+        }
+        else
+        {
+            SearchString = currentFilter;
+        }
+
+        ViewData["CurrentFilter"] = SearchString;
+
+        var reservas = _context.Reservas
+            .AsNoTracking()
+            .OrderByDescending(a => a.id)
+            .Include(r => r.cliente)
+            .Include(r => r.sala);
+
+        if (string.IsNullOrEmpty(SearchString))
+        {
+            var listaVazia = reservas.Where(r => false);
+            var reservasPaginadasVazia = await ModelPaginado<Reserva>.CreateAsync(listaVazia, pageNumber ?? 1, 5);
+            return View(reservasPaginadasVazia);
+        }
+
+        ViewBag.searchString = SearchString;
+
+        var reservasFiltradas = reservas.Where(s => s.protocolo.ToLower().Contains(SearchString.ToLower()));
+        var reservasPaginadas = await ModelPaginado<Reserva>.CreateAsync(reservasFiltradas, pageNumber ?? 1, 5);
+
+        return View(reservasPaginadas);
+    }
+
+    [HttpPost]
+    async public Task<IActionResult> Reserva(int id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var SearchString = "";
+        var reserva = await _context.Reserva.FindAsync(id);
+        
+        if (reserva != null)
+        {
+            reserva.status = "cancelada";
+            SearchString = reserva.protocolo;
+            _context.Update(reserva);
+        }
+
+        await _context.SaveChangesAsync();
+
+
+        TempData["MensagemSucesso"] = "Reserva cancelada com sucesso!";
+
+        return RedirectToAction(nameof(Reserva), new { SearchString });
     }
 
     public IActionResult Sobre()
