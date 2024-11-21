@@ -42,10 +42,13 @@ public class HomeController : Controller
             return NotFound();
         }
 
+        var cartoes = await _context.Cartoes.ToListAsync();
+
         var viewModel = new ClienteReserva
         {
             reserva = new Reserva(),
             sala = sala,
+            cartoes = cartoes
         };
 
         return View(viewModel);
@@ -71,6 +74,7 @@ public class HomeController : Controller
             status = "solicitada",
             cliente_id = cliente.id,
             sala_id = id,
+            cartao_id = dto.reserva.cartao_id,
             protocolo = ProtocoloHelper.GerarProtocolo(),
         };
 
