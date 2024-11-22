@@ -52,42 +52,19 @@ namespace OfficeRoomie.Migrations
                     b.ToTable("administradores");
                 });
 
-            modelBuilder.Entity("OfficeRoomie.Models.Cancelamento", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Data")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Horario")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Cancelamentos");
-                });
-
             modelBuilder.Entity("OfficeRoomie.Models.Cartao", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("cliente_id")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("created_at")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("cvv")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("idUsuario")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("nomeDoTitular")
@@ -105,6 +82,8 @@ namespace OfficeRoomie.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");
+
+                    b.HasIndex("cliente_id");
 
                     b.ToTable("cartoes");
                 });
@@ -167,7 +146,7 @@ namespace OfficeRoomie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("cartao_id")
+                    b.Property<int?>("cartao_id")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("cliente_id")
@@ -246,13 +225,22 @@ namespace OfficeRoomie.Migrations
                     b.ToTable("salas");
                 });
 
+            modelBuilder.Entity("OfficeRoomie.Models.Cartao", b =>
+                {
+                    b.HasOne("OfficeRoomie.Models.Cliente", "cliente")
+                        .WithMany()
+                        .HasForeignKey("cliente_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("cliente");
+                });
+
             modelBuilder.Entity("OfficeRoomie.Models.Reserva", b =>
                 {
                     b.HasOne("OfficeRoomie.Models.Cartao", "cartao")
                         .WithMany()
-                        .HasForeignKey("cartao_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("cartao_id");
 
                     b.HasOne("OfficeRoomie.Models.Cliente", "cliente")
                         .WithMany()

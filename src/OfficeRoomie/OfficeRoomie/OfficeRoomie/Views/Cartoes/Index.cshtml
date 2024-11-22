@@ -12,11 +12,12 @@
 <table class="table">
     <thead>
         <tr>
-            <th width="25%">Número do Cartão</th>
-            <th width="25%">Nome do Titular</th>
-            <th width="25%">Validade</th>
-            <th width="25%">CVV</th> <!-- Nova coluna para o CVV -->
-            <th width="25%"></th>
+            <th width="20%">Número do Cartão</th>
+            <th width="20%">Nome do Titular</th>
+            <th width="20%">Validade</th>
+            <th width="20%">CVV</th>
+            <th width="20%">Cliente</th>
+            <th width="20%"></th>
         </tr>
     </thead>
     <tbody>
@@ -26,7 +27,8 @@
                 <td>@item.numeroDoCartao</td>
                 <td>@item.nomeDoTitular</td>
                 <td>@item.validade.ToString("MM/yyyy")</td>
-                <td>@item.cvv</td> <!-- Exibe o CVV do cartão -->
+                <td>@item.cvv</td> 
+                <td>@item.cliente!.nome</td> 
                 <td>
                     <a class="btn btn-danger" onclick="confirmDelete('@item.numeroDoCartao')">
                         <span class="iconify" data-icon="ic:baseline-delete" data-inline="false"></span>

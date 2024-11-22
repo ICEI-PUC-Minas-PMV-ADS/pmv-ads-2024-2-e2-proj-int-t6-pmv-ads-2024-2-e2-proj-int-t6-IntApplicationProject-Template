@@ -5,6 +5,7 @@ using OfficeRoomie.Helpers;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
 using OfficeRoomie.Services;
+using Org.BouncyCastle.Utilities;
 
 namespace OfficeRoomie.Controllers
 {
@@ -102,7 +103,6 @@ namespace OfficeRoomie.Controllers
                     status = dto.reserva.status,
                     cliente_id = dto.reserva.cliente_id,
                     sala_id = dto.reserva.sala_id,
-                    cartao_id = dto.reserva.cartao_id,
                     protocolo = ProtocoloHelper.GerarProtocolo(),
                 };
 
@@ -131,7 +131,7 @@ namespace OfficeRoomie.Controllers
 
             var salas = await _context.Salas.ToListAsync();
             var clientes = await _context.Clientes.ToListAsync();
-            var cartoes = await _context.Cartoes.ToListAsync();
+            var cartoes = await _context.Cartoes.Where(s => s.cliente_id == reserva.cliente_id).ToListAsync();
 
             var viewModel = new ReservaCreate
             {
@@ -166,13 +166,15 @@ namespace OfficeRoomie.Controllers
                 reserva.status = dto.reserva.status;
                 reserva.cartao_id = dto.reserva.cartao_id;
 
+                if (dto.reserva.cartao_id != null) {
+                    reserva.cartao_id = dto.reserva.cartao_id;
+                    reserva.status = "confirmada";
+                }
+
                 try
                 {
                     _context.Update(reserva);
                     await _context.SaveChangesAsync();
-
-                    // Se houver cliente smtp configurado, chama essa função pra notificar por email
-                    // await _emailService.SendEmailAsync(reserva.cliente!.email, "OfficeRoomie: Sua reserva foi atualizada", "<p>Conteúdo do email</p>");
                 }
                 catch (DbUpdateConcurrencyException)
                 {

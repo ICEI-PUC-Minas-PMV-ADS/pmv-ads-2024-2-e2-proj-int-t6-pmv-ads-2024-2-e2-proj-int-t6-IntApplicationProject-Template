@@ -41,13 +41,10 @@ public class HomeController : Controller
             return NotFound();
         }
 
-        var cartoes = await _context.Cartoes.ToListAsync();
-
         var viewModel = new ClienteReserva
         {
             reserva = new Reserva(),
             sala = sala,
-            cartoes = cartoes
         };
 
         return View(viewModel);
