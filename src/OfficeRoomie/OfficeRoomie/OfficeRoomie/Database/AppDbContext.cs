@@ -55,8 +55,6 @@ public class AppDbContext : DbContext
 
     public DbSet<Cartao> Cartoes { get; set; }
 
-    public DbSet<Cancelamento> Cancelamentos { get; set; }
-
     public DbSet<Sala> Salas { get; set; }
 
 public DbSet<OfficeRoomie.Models.Reserva> Reserva { get; set; } = default!;

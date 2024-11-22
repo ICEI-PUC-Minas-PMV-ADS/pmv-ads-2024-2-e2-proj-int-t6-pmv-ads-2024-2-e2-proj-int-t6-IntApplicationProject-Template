@@ -39,10 +39,9 @@ public class Reserva
     [ForeignKey("cliente")]
     public int cliente_id { get; set; }
 
-    [Required(ErrorMessage = "Preenchimento do Campo [cartao] Obrigatório!")]
     [Display(Name = "Cartao")]
     [ForeignKey("cartao")]
-    public int cartao_id { get; set; }
+    public int? cartao_id { get; set; }
 
     public Cliente? cliente { get; set; }
     public Sala? sala { get; set; }

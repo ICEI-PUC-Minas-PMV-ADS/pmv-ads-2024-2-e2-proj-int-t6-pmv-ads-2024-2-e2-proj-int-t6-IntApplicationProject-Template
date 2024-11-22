@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OfficeRoomie.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class M01initialmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -28,40 +28,6 @@ namespace OfficeRoomie.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_administradores", x => x.id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Cancelamentos",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Nome = table.Column<string>(type: "TEXT", nullable: false),
-                    Data = table.Column<string>(type: "TEXT", nullable: false),
-                    Horario = table.Column<string>(type: "TEXT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Cancelamentos", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "cartoes",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    numeroDoCartao = table.Column<string>(type: "TEXT", nullable: false),
-                    nomeDoTitular = table.Column<string>(type: "TEXT", nullable: false),
-                    validade = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    cvv = table.Column<int>(type: "INTEGER", nullable: false),
-                    idUsuario = table.Column<int>(type: "INTEGER", nullable: false),
-                    created_at = table.Column<string>(type: "TEXT", nullable: true),
-                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_cartoes", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,6 +74,31 @@ namespace OfficeRoomie.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "cartoes",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    numeroDoCartao = table.Column<string>(type: "TEXT", nullable: false),
+                    nomeDoTitular = table.Column<string>(type: "TEXT", nullable: false),
+                    validade = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    cvv = table.Column<int>(type: "INTEGER", nullable: false),
+                    cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    created_at = table.Column<string>(type: "TEXT", nullable: true),
+                    updated_at = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_cartoes", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_cartoes_clientes_cliente_id",
+                        column: x => x.cliente_id,
+                        principalTable: "clientes",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "reservas",
                 columns: table => new
                 {
@@ -120,7 +111,7 @@ namespace OfficeRoomie.Migrations
                     status = table.Column<string>(type: "TEXT", nullable: false),
                     sala_id = table.Column<int>(type: "INTEGER", nullable: false),
                     cliente_id = table.Column<int>(type: "INTEGER", nullable: false),
-                    cartao_id = table.Column<int>(type: "INTEGER", nullable: false),
+                    cartao_id = table.Column<int>(type: "INTEGER", nullable: true),
                     created_at = table.Column<string>(type: "TEXT", nullable: true),
                     updated_at = table.Column<string>(type: "TEXT", nullable: true)
                 },
@@ -131,8 +122,7 @@ namespace OfficeRoomie.Migrations
                         name: "FK_reservas_cartoes_cartao_id",
                         column: x => x.cartao_id,
                         principalTable: "cartoes",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "id");
                     table.ForeignKey(
                         name: "FK_reservas_clientes_cliente_id",
                         column: x => x.cliente_id,
@@ -146,6 +136,11 @@ namespace OfficeRoomie.Migrations
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_cartoes_cliente_id",
+                table: "cartoes",
+                column: "cliente_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_reservas_cartao_id",
@@ -170,19 +165,16 @@ namespace OfficeRoomie.Migrations
                 name: "administradores");
 
             migrationBuilder.DropTable(
-                name: "Cancelamentos");
-
-            migrationBuilder.DropTable(
                 name: "reservas");
 
             migrationBuilder.DropTable(
                 name: "cartoes");
 
             migrationBuilder.DropTable(
-                name: "clientes");
+                name: "salas");
 
             migrationBuilder.DropTable(
-                name: "salas");
+                name: "clientes");
         }
     }
 }

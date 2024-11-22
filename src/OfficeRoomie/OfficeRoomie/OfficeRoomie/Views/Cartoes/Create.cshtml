@@ -1,4 +1,4 @@
-﻿@model OfficeRoomie.Models.Cartao
+﻿@model OfficeRoomie.Models.ViewModels.CartoesCreate
 
 @{
     ViewData["Title"] = "Novo Cartão";
@@ -16,30 +16,46 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="row gx-4 gy-4">
-                <div class="form-group col-3">
-                    <label asp-for="numeroDoCartao" class="control-label"></label>
-                    <input asp-for="numeroDoCartao" class="form-control" />
-                    <span asp-validation-for="numeroDoCartao" class="text-danger"></span>
+                <div class="form-group col-12 col-md-6">
+                    <label asp-for="cartao.numeroDoCartao" class="control-label"></label>
+                    <input asp-for="cartao.numeroDoCartao" class="form-control" />
+                    <span asp-validation-for="cartao.numeroDoCartao" class="text-danger"></span>
                 </div>
-                <div class="form-group col-3">
-                    <label asp-for="nomeDoTitular" class="control-label"></label>
-                    <input asp-for="nomeDoTitular" class="form-control" />
-                    <span asp-validation-for="nomeDoTitular" class="text-danger"></span>
+                <div class="form-group col-12 col-md-6">
+                    <label asp-for="cartao.nomeDoTitular" class="control-label"></label>
+                    <input asp-for="cartao.nomeDoTitular" class="form-control" />
+                    <span asp-validation-for="cartao.nomeDoTitular" class="text-danger"></span>
                 </div>
-                <div class="form-group col-3">
-                    <label asp-for="validade" class="control-label"></label>
-                    <input asp-for="validade" class="form-control" type="month" />
-                    <span asp-validation-for="validade" class="text-danger"></span>
+                <div class="form-group col-12 col-md-4">
+                    <label asp-for="cartao.validade" class="control-label"></label>
+                    <input asp-for="cartao.validade" class="form-control" type="month" value="" />
+                    <span asp-validation-for="cartao.validade" class="text-danger"></span>
                 </div>
-                <div class="form-group col-3">
-                    <label asp-for="cvv" class="control-label"></label>
-                    <input asp-for="cvv" class="form-control" type="number" min="0" max="999" />
-                    <span asp-validation-for="cvv" class="text-danger"></span>
+                <div class="form-group col-12 col-md-4">
+                    <label asp-for="cartao.cvv" class="control-label"></label>
+                    <input asp-for="cartao.cvv" class="form-control" type="number" value="" min="0" max="999" />
+                    <span asp-validation-for="cartao.cvv" class="text-danger"></span>
                 </div>
-            </div>
-            <div class="form-group col-12" style="display: flex; align-items: center; justify-content: center">
-                <a class="btn btn-link" style="width: 10%" asp-action="Index">Voltar para lista</a>
-                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+                <div class="form-group col-12 col-md-4">
+                    <label asp-for="cartao.cliente_id" class="control-label"></label>
+
+                    <select asp-for="cartao.cliente_id" class="form-control">
+                        <option value="">Selecione</option>
+                        @foreach (var item in Model.clientes)
+                        {
+                            <option value="@item.id">@item.nome</option>
+                        }
+                    </select>
+
+                    <span asp-validation-for="cartao.cliente_id" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-12">
+                    <div class="d-flex gap-2 justify-content-end">
+                        <a class="btn btn-link" style="width: 10%" asp-action="Index">Voltar para lista</a>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
