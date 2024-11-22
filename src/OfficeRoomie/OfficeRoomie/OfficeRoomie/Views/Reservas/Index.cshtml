@@ -75,7 +75,10 @@
                 @Html.DisplayFor(modelItem => item.hora_fim)
             </td>
             <td>
-                 @Html.DisplayFor(modelItem => item.data_reserva)
+                @{
+                    DateTime dataFormatada;
+                    @(DateTime.TryParse(Model.First().data_reserva, out dataFormatada) ? @dataFormatada.ToString("dd/MM/yyyy") : "");
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.protocolo)
@@ -90,7 +93,9 @@
                 @Html.DisplayFor(modelItem => item.sala!.nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.cartao!.numeroDoCartao)
+                @(item.cartao != null && !string.IsNullOrEmpty(item.cartao.numeroDoCartao)
+                    ? item.cartao.numeroDoCartao
+                    : "Não possui")
             </td>
             
             <td>
