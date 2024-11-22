@@ -11,7 +11,7 @@ using OfficeRoomie.Database;
 namespace OfficeRoomie.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241122122435_M01-initialmigration")]
+    [Migration("20241122131458_M01-initialmigration")]
     partial class M01initialmigration
     {
         /// <inheritdoc />
