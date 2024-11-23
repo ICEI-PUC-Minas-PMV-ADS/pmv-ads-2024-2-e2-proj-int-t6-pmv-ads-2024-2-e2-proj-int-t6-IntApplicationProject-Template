@@ -34,7 +34,7 @@
 | Rafael Costa         | Sim, tudo de forma bem objetiva.                                          | Dificuldade não, tudo foi bem fluido e de fácil entendimento. | Sim, muito fácil.                      | Muito boa, tive uma execelente experiência com o login desse software.   |
 
 
-### Teste 08 - Cancelamento de reservas pelo administrador
+### Teste 07 - Cancelamento de reservas pelo administrador
 **Data do Teste:** 26 de outubro de 2024  
 **Local:** Testes realizados de forma remota  
 **Versão do Software:** 1.0  
@@ -64,7 +64,7 @@
 | João Souza	    | Sim, embora o botão de cancelamento não fosse muito evidente.	                          | Sim, localizar o botão de cancelamento.	                                                                   | Sim, mas poderia ser mais claro em algumas funções.	                   | Boa, mas o cancelamento poderia ser mais intuitivo.            |
 | Carla Almeida         | Sim, estão excelentes.                                          | Não, o entendimento do sistema está bem claro.	 | Sim, é fácil de usar.	                      | Excelente.   |
 
-### Teste 07 – Cadastrar perfil de usuário  
+### Teste 06 – Cadastrar perfil de usuário  
 **Data do Teste:** 26 de outubro de 2024  
 **Local:** Testes realizados de forma remota  
 **Versão do Software:** 1.0  
@@ -194,3 +194,36 @@
 | Bruno Lima        | Sim.            | Não.                                                   | Sim, no geral é direto.                         | Boa      |
 | Fernanda Almeida     | Sim, todas as informações estavam claras.                                                               | Não.                                                                            | 	Sim, interface muito funcional.                                                       | Excelente, rápida e eficiente.                                                             |
 | Carla Ferreira       | Sim.                                    | Não.                                                                            | Sim, após compreender a interface.                                 | Boa, com pequenas sugestões de usabilidade.                                       |
+
+
+### Teste 08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente
+**Data do Teste:** 22 de novembro de 2024  
+**Local:** Testes realizados de forma remota  
+**Versão do Software:** 1.0  
+**Objetivo do Teste:** Avaliar a facilidade de navegação e usabilidade das funcionalidades de cadastro, edição, visualização e exclusão de perfis de usuários.
+
+**Observação:** O teste foi acompanhado através de gravações de tela e áudio. Os participantes realizaram as seguintes tarefas:
+
+- **Realizar cadastro de reserva**  
+- **Acompanhar a reserva**  
+- **Cancelamento da reserva**  
+
+### Participantes:
+
+- **Usuário 1:** Vanessa Lima, 45 anos, gerente, trabalha em uma empresa farmacêutica.  
+- **Usuário 2:** Samira Couceiro, 26 anos, estudante de enfermagem.  
+- **Usuário 3:** Eduardo Neves, 35 anos, programador, trabalha em uma multinacional.
+
+### Resultados:
+
+- **Vanessa Lima:** Completou todas as tarefas rapidamente e sem dificuldades.  
+- **Samira Couceiro:** Completou todas as tarefas rapidamente e sem dificuldades.   
+- **Eduardo Neves:** Completou todas as tarefas rapidamente e sem dificuldades.   
+
+## Questionário de Satisfação
+
+| Usuário             | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                                  | Você acredita que o acesso ao sistema é fácil?             | Como você avaliaria sua experiência com as funcionalidades testadas? |
+|---------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------|
+| Vanessa Lima         | Sim, tudo estava bem sinalizado.                                   | Não, foi fácil de usar.                                                          | Sim, o sistema é fácil de navegar.                          | Boa.             |
+| Samira Couceiro      |  Sim.                | Não.                      | Sim.            | Boa.                |
+| Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |
