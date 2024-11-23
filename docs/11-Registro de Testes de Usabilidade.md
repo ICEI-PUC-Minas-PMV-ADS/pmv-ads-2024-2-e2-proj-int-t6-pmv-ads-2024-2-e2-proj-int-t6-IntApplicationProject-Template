@@ -218,12 +218,43 @@
 
 - **Vanessa Lima:** Completou todas as tarefas rapidamente e sem dificuldades.  
 - **Samira Couceiro:** Completou todas as tarefas rapidamente e sem dificuldades.   
-- **Eduardo Neves:** Completou todas as tarefas rapidamente e sem dificuldades.   
-
+- **Eduardo Neves:** Completou todas as tarefas rapidamente e sem dificuldades. 
 ## Questionário de Satisfação
 
 | Usuário             | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                                  | Você acredita que o acesso ao sistema é fácil?             | Como você avaliaria sua experiência com as funcionalidades testadas? |
 |---------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------|
 | Vanessa Lima         | Sim, tudo estava bem sinalizado.                                   | Não, foi fácil de usar.                                                          | Sim, o sistema é fácil de navegar.                          | Boa.             |
 | Samira Couceiro      |  Sim.                | Não.                      | Sim.            | Boa.                |
-| Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |
+| Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |  
+
+### Teste 06 - Processar Pagamento no Dia da Reserva
+**Data do Teste:** 22 de novembro de 2024
+**Local:** Testes realizados de forma remota 
+**Versão do Software:** 1.0  
+**Objetivo do Teste:**  Avaliar a funcionalidade de processamento automático de pagamento no dia da reserva, com foco na clareza da confirmação e na eficiência do processo.
+
+**Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram as seguintes tarefas:
+
+- **Verificar o processamento automático de pagamento no dia da reserva.**
+- **Confirmar o recebimento da notificação de pagamento.**
+
+
+### Participantes:
+
+- **Usuário 1:** Ana Lopes, 34 anos, gerente de projetos, trabalha em uma empresa de consultoria.
+- **Usuário 2:** Felipe Andrade, 30 anos, analista de sistemas, trabalha em uma empresa de tecnologia.
+- **Usuário 3:** Lucas Martins, 40 anos, contador, possui experiência com plataformas de gestão financeira.
+
+### Resultados:
+
+- **Ana Lopes:** Verificou a funcionalidade rapidamente e sem dificuldades, achando a confirmação bastante clara.
+- **Felipe Andrade:** Concluiu a tarefa com sucesso, sem dificuldades.
+- **Lucas Martins:** Concluiu a tarefa com sucesso, sem dificuldades.
+
+## Questionário de Satisfação
+
+| Usuário             | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                                  | Você acredita que o acesso ao sistema é fácil?             | Como você avaliaria sua experiência com as funcionalidades testadas? |
+|---------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------|
+| Ana Lopes       | Sim, as mensagens são bem diretas e informativas.            | Não, tudo estava claro e fácil de encontrar.                                                   | Sim, o sistema é bem intuitivo.                         | Excelente, tudo funcionou conforme esperado.      |
+| Felipe Andrade     | Sim, todas as informações estavam claras.                                                               | Não.                                                                            | 	Sim, é fácil de usar.                                                      | Muito boa.                                                             |
+| Lucas Martins       | Sim, as mensagens eram claras e objetivas.                                    | Não.                                                                            | Sim, achei o sistema intuitivo.                                 | Muito boa, a funcionalidade atendeu às expectativas.                                       |

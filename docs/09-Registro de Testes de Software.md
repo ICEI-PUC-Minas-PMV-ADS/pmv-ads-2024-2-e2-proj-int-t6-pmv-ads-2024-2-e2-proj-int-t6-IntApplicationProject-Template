@@ -67,7 +67,6 @@ https://github.com/user-attachments/assets/98b20086-89a2-480f-9bce-39b583633164
 
 Registro de evidência:
 
-
 ![Evidência de Teste](https://github.com/user-attachments/assets/53a3e991-94c4-497a-8011-89c2fcc2f8bf)
 
 | **Caso de Teste** 	| **CT-08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente** 	|
@@ -78,6 +77,20 @@ Registro de evidência:
 | Critério de Êxito | - Ser possível que o cliente realize reserva, acompanhar e cancelar a reserva. |
 
 Registro de evidência:
+
+
+| **Caso de Teste** 	| **CT-06 – Relação Reserva-Pagamento** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-06 - Desenvolver funcionalidade para processamento automático de pagamentos no dia da reserva, debitando o valor do cartão cadastrado. |
+| Objetivo do Teste 	| Verificar se o pagamento é processado automaticamente no dia da reserva. |
+| Passos 	| - R- Confirmar uma reserva de sala para um período futuro <br> - - Verificar o processamento do pagamento no dia da reserva <br> |
+| Critério de Êxito | - O pagamento é processado automaticamente, e o valor é debitado corretamente. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/331f73f3-0e2d-4c3c-b4cf-e97a3e01adcd
+
+
 
 
 
