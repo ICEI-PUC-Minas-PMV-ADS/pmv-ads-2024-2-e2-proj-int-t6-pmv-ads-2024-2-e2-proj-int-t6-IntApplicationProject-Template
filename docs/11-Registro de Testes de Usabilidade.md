@@ -227,7 +227,7 @@
 | Samira Couceiro      |  Sim.                | Não.                      | Sim.            | Boa.                |
 | Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |  
 
-### Teste 05 - Teste 05 - Cadastrar Cartão de Crédito "Relação Reserva-Pagamento"
+### Teste 05 - Cadastrar Cartão de Crédito "Relação Reserva-Pagamento"
 **Data do Teste:** 22 de novembro de 2024
 **Local:** Testes realizados de forma remota 
 **Versão do Software:** 1.0  
