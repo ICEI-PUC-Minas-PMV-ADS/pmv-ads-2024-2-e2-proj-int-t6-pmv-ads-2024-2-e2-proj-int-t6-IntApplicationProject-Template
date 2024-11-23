@@ -1,5 +1,4 @@
 .wrapper {
-    min-width: fit-content;
     background-color: #fff;
     width: 100%;
     min-height: 100vh;
@@ -18,9 +17,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     height: 100vh;
     background-color: var(--sidebar-bg);
+    z-index: 100;
 }
 
 .sidebar nav {
@@ -168,7 +167,6 @@
 .content {
     display: flex;
     flex-direction: column;
-    min-width: min-content;
 }
 
 .content .content__header {
@@ -183,5 +181,4 @@
     width: 100%;
     padding: 20px;
     min-height: calc(100vh - var(--footer-height)*3);
-    min-width: 360px;
 }
