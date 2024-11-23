@@ -231,7 +231,7 @@
 **Data do Teste:** 22 de novembro de 2024
 **Local:** Testes realizados de forma remota 
 **Versão do Software:** 1.0  
-**Objetivo do Teste:**  Cadastrar um cartão de crédito para pagamento. Associar o cartão de crédito cadastrado a reserva de um cliente.
+**Objetivo do Teste:** Cadastrar um cartão de crédito para pagamento. Associar o cartão de crédito cadastrado a reserva de um cliente.
 
 **Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram as seguintes tarefas:
 
