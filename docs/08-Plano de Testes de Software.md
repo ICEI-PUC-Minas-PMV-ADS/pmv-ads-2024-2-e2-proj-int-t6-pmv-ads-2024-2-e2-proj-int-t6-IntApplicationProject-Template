@@ -46,42 +46,28 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 | Critério de Êxito | - O cadastro é realizado com sucesso e o cartão fica associado ao perfil do usuário. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-06 – Processar pagamento no dia da reserva** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-06 - Desenvolver funcionalidade para processamento automático de pagamentos no dia da reserva, debitando o valor do cartão cadastrado. |
-| Objetivo do Teste 	| Verificar se o pagamento é processado automaticamente no dia da reserva. |
-| Passos 	| - Confirmar uma reserva de sala para um período futuro <br> - Verificar o processamento do pagamento no dia da reserva |
-| Critério de Êxito | - O pagamento é processado automaticamente, e o valor é debitado corretamente. |
-|  	|  	|
 
-| **Caso de Teste** 	| **CT-07 – Cadastrar perfil de usuário** 	|
+| **Caso de Teste** 	| **CT-06 – Cadastrar perfil de usuário** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
+|	Requisito Associado 	| RF-06 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste 	| Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
 | Passos 	| - Acessar a funcionalidade de "Cadastro de Usuário" <br> - Preencher os dados obrigatórios (nome, e-mail, etc.) <br> - Confirmar o cadastro |
 | Critério de Êxito | - O cadastro é realizado com sucesso, e o usuário consegue visualizar e editar suas informações posteriormente. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-08 – Cancelamento de reservas pelo administrador** 	|
+| **Caso de Teste** 	| **CT-07 – Cancelamento de reservas pelo administrador** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-08 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
-| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
+|	Requisito Associado 	| RF-07 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
+| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva. |
 | Passos 	| - Acessar o painel administrativo <br> - Selecionar uma reserva existente <br> - Cancelar a reserva <br> - Verificar se o usuário foi notificado sobre o cancelamento |
 | Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-09 – Receber notificação de confirmação de reserva** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-09 - Desenvolver funcionalidade para envio de notificações de confirmação de reservas para os usuários finais. |
-| Objetivo do Teste 	| Verificar se o usuário recebe uma notificação de confirmação após a reserva. |
-| Passos 	| - Realizar uma reserva <br> - Verificar se a notificação de confirmação é enviada ao usuário |
-| Critério de Êxito | - A notificação é recebida corretamente após a confirmação da reserva. |
-|  	|  	|
 
-| **Caso de Teste** 	| **CT-10 – Alterar ou cancelar reservas** 	|
+| **Caso de Teste** 	| **CT-08 – CT-08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-10 - Desenvolver tela que permita aos usuários alterarem ou cancelarem suas reservas com um prazo determinado antes da data da reserva. |
-| Objetivo do Teste 	| Verificar se o usuário consegue alterar ou cancelar uma reserva dentro do prazo permitido. |
+|	Requisito Associado 	| RF-08 - Desenvolver tela do cliente para acompanhamento e/ou cancelamento da reserva pelo cliente. |
+| Objetivo do Teste 	| Verificar se o usuário consegue acompanhar e/ou cancelar uma reserva dentro do prazo permitido. |
 | Passos 	| - Acessar a lista de reservas <br> - Selecionar uma reserva <br> - Realizar a alteração ou cancelamento dentro do prazo permitido |
 | Critério de Êxito | - A reserva é alterada ou cancelada com sucesso dentro do prazo determinado. |
 |  	|  	|

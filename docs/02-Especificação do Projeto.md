@@ -264,22 +264,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
         </tr>
         <tr>
             <td>RF- 06</td>
-             <td>Desenvolver funcionalidade para processamento automático de pagamentos no dia da reserva, debitando o valor do cartão cadastrado.</td>
-            <td>Alta</td>
-        </tr>
-        <tr>
-            <td>RF- 07</td>
             <td>Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis.</td>
             <td>Média</td>
         </tr>
         <tr>
-            <td>RF- 08</td>
-            <td>Desenvolver tela do administrador para gerenciar as reservas das salas.</td>
+            <td>RF- 07</td>
+            <td>Desenvolver tela para que administradores possam cancelar reservas.</td>
             <td>Média</td>
         </tr>
         <tr>
-            <td>RF- 09</td>
-            <td>Desenvolver tela do cliente para acompanhamento e/ou cancelamento da reserva.</td>
+            <td>RF- 08</td>
+            <td>Desenvolver tela para onde o cliente consegue reservar uma sala, acompanhar e/ou cancelar sua reserva.</td>
             <td>Alta</td>
         </tr>
     </tbody>
