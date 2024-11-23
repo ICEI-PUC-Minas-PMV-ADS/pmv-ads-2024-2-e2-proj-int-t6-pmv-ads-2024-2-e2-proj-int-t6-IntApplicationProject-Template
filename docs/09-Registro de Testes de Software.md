@@ -78,6 +78,7 @@ Registro de evidência:
 
 Registro de evidência:
 
+https://github.com/user-attachments/assets/fcb4c287-8ad7-46ab-b1e4-5b70f4b48596
 
 | **Caso de Teste** 	| **CT-06 – Relação Reserva-Pagamento** 	|
 |:---:	|:---:	|
