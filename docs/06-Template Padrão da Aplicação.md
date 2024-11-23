@@ -51,6 +51,21 @@ Essa combinação de cores foi escolhida para proporcionar um ambiente de trabal
 
 *Paleta de cores*
 
+ 
+
+
+# Ícones e Botões
+
+Na área da informática, um ícone é a representação visual de um programa ou de um aplicativo, ou seja, o ícone é um elemento de interface importante de um sistema operacional, já o botão é um elemento de interface gráfica de uma opção ou de um comando que, ao ser pressionado, ativa a opção ou executa o comando a que está associado.
+
+Assim, tanto ícones como os botões são elementos de interface interativos que permitem aos usuários realizar ações e interagir com um aplicativo, site ou sistema, dessa forma, os dois componentes facilitam a identificação do objeto por parte do utilizador e proporciona em uma melhor experiência para o usuário.
+
+Logo abaixo segue os layouts dos ícones e as telas compostas do template Padrão do Aplicativo Personal Cash:
+
+## Ícones utilizados:
+
+![Ícones utilizados](img/IcBaselineArrowBack.png) ![Ícones utilizados](img/IcBaselineDelete.png) ![Ícones utilizados](img/IcBaselineEdit.png) ![Ícones utilizados](img/IcBaselineLogin.png) ![Ícones utilizados](img/IcBaselineSearch.png) ![Ícones utilizados](img/IcBaselineVisibility.png) ![Ícones utilizados](img/IcOutlineAccountBalanceWallet.png) ![Ícones utilizados](img/IcOutlineAccountCircle.png) ![Ícones utilizados](img/IcOutlineAdminPanelSettings.png) ![Ícones utilizados](img/IcOutlineCalendarMonth.png) ![Ícones utilizados](img/IcOutlineCheck.png) ![Ícones utilizados](img/IcOutlineDashboard.png) ![Ícones utilizados](img/IcOutlineEventNote.png) ![Ícones utilizados](img/IcOutlineLockPerson.png) ![Ícones utilizados](img/IcOutlineManageAccounts.png) ![Ícones utilizados](img/IcOutlineMenu.png) ![Ícones utilizados](img/IcOutlineRoomPreferences.png)
+
 <!-- <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.

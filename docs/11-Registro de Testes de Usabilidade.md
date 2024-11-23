@@ -227,16 +227,16 @@
 | Samira Couceiro      |  Sim.                | Não.                      | Sim.            | Boa.                |
 | Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |  
 
-### Teste 06 - Processar Pagamento no Dia da Reserva
-**Data do Teste:** 22 de novembro de 2024
-**Local:** Testes realizados de forma remota 
+### Teste 05 – Cadastrar Cartão de Crédito "Relação Reserva-Pagamento"
+**Data do Teste:** 22 de novembro de 2024  
+**Local:** Testes realizados de forma remota  
 **Versão do Software:** 1.0  
-**Objetivo do Teste:**  Avaliar a funcionalidade de processamento automático de pagamento no dia da reserva, com foco na clareza da confirmação e na eficiência do processo.
+**Objetivo do Teste:** Cadastrar um cartão de crédito para pagamento. Associar o cartão de crédito cadastrado a reserva de um cliente.
 
 **Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram as seguintes tarefas:
 
-- **Verificar o processamento automático de pagamento no dia da reserva.**
-- **Confirmar o recebimento da notificação de pagamento.**
+- **Cadastrar um cartão de crédito.**
+- **Associar o cartão de crédito cadastrado a reserva de um cliente.**
 
 
 ### Participantes:
@@ -258,3 +258,5 @@
 | Ana Lopes       | Sim, as mensagens são bem diretas e informativas.            | Não, tudo estava claro e fácil de encontrar.                                                   | Sim, o sistema é bem intuitivo.                         | Excelente, tudo funcionou conforme esperado.      |
 | Felipe Andrade     | Sim, todas as informações estavam claras.                                                               | Não.                                                                            | 	Sim, é fácil de usar.                                                      | Muito boa.                                                             |
 | Lucas Martins       | Sim, as mensagens eram claras e objetivas.                                    | Não.                                                                            | Sim, achei o sistema intuitivo.                                 | Muito boa, a funcionalidade atendeu às expectativas.                                       |
+
+
