@@ -57,19 +57,19 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 
 | **Caso de Teste** 	| **CT-07 – Cancelamento de reservas pelo administrador** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-07 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
+|	Requisito Associado 	| RF-07 - Desenvolver tela para que administradores possam cancelar reservas. |
 | Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva. |
 | Passos 	| - Acessar o painel administrativo <br> - Selecionar uma reserva existente <br> - Cancelar a reserva <br> - Verificar se o usuário foi notificado sobre o cancelamento |
 | Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
 |  	|  	|
 
 
-| **Caso de Teste** 	| **CT-08 – CT-08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente** 	|
+| **Caso de Teste** 	| **CT-08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-08 - Desenvolver tela do cliente para acompanhamento e/ou cancelamento da reserva pelo cliente. |
-| Objetivo do Teste 	| Verificar se o usuário consegue acompanhar e/ou cancelar uma reserva dentro do prazo permitido. |
-| Passos 	| - Acessar a lista de reservas <br> - Selecionar uma reserva <br> - Realizar a alteração ou cancelamento dentro do prazo permitido |
-| Critério de Êxito | - A reserva é alterada ou cancelada com sucesso dentro do prazo determinado. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar uma reserva, aompanhar e/ou cancelar sua reserva. |
+| Passos 	| - Acessar o sistema <br> - clicar em "Faça sua reserva" <br> - Appós finalização da resera irá gerar um protocolo <br> - Clicar em "Acompanhar reserva" e informe o número do protocolo para visualizar a reserva <br> - Para cancelar a reserva é só clicar no botão "Cancelar" na tela "Acompanhar reserva" |
+| Critério de Êxito | -  Ser possível que o cliente realize reserva, acompanhar e cancelar a reserva.  |
 |  	|  	|
 
 > **Links Úteis**:

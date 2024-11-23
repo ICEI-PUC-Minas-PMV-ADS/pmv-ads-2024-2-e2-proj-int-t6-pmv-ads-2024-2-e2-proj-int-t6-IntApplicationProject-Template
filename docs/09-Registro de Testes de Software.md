@@ -1,6 +1,6 @@
 # Registro de Testes de Software
 
-| Caso de Teste | CT-06 – Cadastrar perfil de usuário |
+| **Caso de Teste** | **CT-06 – Cadastrar perfil de usuário** |
 |---------------|---------------------------------|
 | Requisitos Associado | RF-06 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
@@ -37,10 +37,10 @@ https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
 
 | **Caso de Teste** 	| **CT-07 – Cancelamento de reservas pelo administrador** 	                            |
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-07 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
-| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
-| Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva - Verificar se o usuário foi notificado sobre o cancelamento |
-| Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
+|	Requisito Associado 	| RF-07 - Desenvolver tela para que administradores possam cancelar reservas. |
+| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva. |
+| Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva|
+| Critério de Êxito | - A reserva é cancelada com sucesso. |
 
 Registro de evidência:
 
