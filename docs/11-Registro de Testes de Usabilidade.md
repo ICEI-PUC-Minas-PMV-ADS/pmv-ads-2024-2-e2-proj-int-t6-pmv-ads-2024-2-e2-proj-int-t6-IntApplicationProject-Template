@@ -227,11 +227,11 @@
 | Samira Couceiro      |  Sim.                | Não.                      | Sim.            | Boa.                |
 | Eduardo Neves        | Sim, as instruções estavam bem claras.                            | Não.                                    | Sim, é intuitivo.                                           | Boa, a experiência foi satisfatória. |  
 
-### Teste 06 - Processar Pagamento no Dia da Reserva
+### Teste 05 - Teste 05 - Cadastrar Cartão de Crédito "Relação Reserva-Pagamento"
 **Data do Teste:** 22 de novembro de 2024
 **Local:** Testes realizados de forma remota 
 **Versão do Software:** 1.0  
-**Objetivo do Teste:**  Cadastrar um cartão de crédito para pagamento. Métrica: Tempo gasto no cadastro, erros ao preencher campos, satisfação com a clareza das informações.
+**Objetivo do Teste:**  Cadastrar um cartão de crédito para pagamento. Associar o cartão de crédito cadastrado a reserva de um cliente.
 
 **Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram as seguintes tarefas:
 
