@@ -235,8 +235,8 @@
 
 **Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram as seguintes tarefas:
 
-- **Verificar o processamento automático de pagamento no dia da reserva.**
-- **Confirmar o recebimento da notificação de pagamento.**
+- **Cadastrar um cartão de crédito.**
+- **Associar o cartão de crédito cadastrado a reserva de um cliente.**
 
 
 ### Participantes:
