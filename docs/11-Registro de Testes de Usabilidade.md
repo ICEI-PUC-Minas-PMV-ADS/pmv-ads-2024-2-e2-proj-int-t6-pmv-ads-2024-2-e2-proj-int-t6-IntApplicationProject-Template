@@ -231,7 +231,7 @@
 **Data do Teste:** 22 de novembro de 2024
 **Local:** Testes realizados de forma remota 
 **Versão do Software:** 1.0  
-**Objetivo do Teste:**  Avaliar a funcionalidade de processamento automático de pagamento no dia da reserva, com foco na clareza da confirmação e na eficiência do processo.
+**Objetivo do Teste:**  Cadastrar um cartão de crédito para pagamento. Métrica: Tempo gasto no cadastro, erros ao preencher campos, satisfação com a clareza das informações.
 
 **Observação:** Acompanhamento via gravação de tela e áudio. Os participantes realizaram as seguintes tarefas:
 

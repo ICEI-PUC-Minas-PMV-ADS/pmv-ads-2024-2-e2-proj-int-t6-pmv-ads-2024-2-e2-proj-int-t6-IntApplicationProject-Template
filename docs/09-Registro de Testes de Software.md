@@ -80,14 +80,12 @@ Registro de evidência:
 
 https://github.com/user-attachments/assets/0731d395-ad5a-4aaf-8665-7f654f48dbba
 
-
-
-| **Caso de Teste** 	| **CT-06 – Relação Reserva-Pagamento** 	|
+| **Caso de Teste** 	| **CT-05 – Cadastrar cartão de crédito "Relação Reserva-Pagamento"** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-06 - Desenvolver funcionalidade para processamento automático de pagamentos no dia da reserva, debitando o valor do cartão cadastrado. |
-| Objetivo do Teste 	| Verificar se o pagamento é processado automaticamente no dia da reserva. |
-| Passos 	| - R- Confirmar uma reserva de sala para um período futuro <br> - - Verificar o processamento do pagamento no dia da reserva <br> |
-| Critério de Êxito | - O pagamento é processado automaticamente, e o valor é debitado corretamente. |
+|	Requisito Associado 	| RF-05 - Desenvolver tela para cadastro de cartão de crédito para pagamento diferido no dia da reserva pelos usuários finais. |
+| Objetivo do Teste 	| Verificar se o usuário consegue associar um cartão de crédito a um cliente. |
+| Passos 	| - Logar como admin <br> - Acessar a funcionalidade de "Reservas" <br> - Efetuar uma reserva para determinado cliente <br> - Acessar a funcionalidade de "Pagamento" <br> - Informar os dados do cartão de crédito <br> - Confirmar o cadastro <br> - Associar o cartão cadastrado a reserva de um cliente. |
+| Critério de Êxito | - O cadastro do pagamento é realizado com sucesso e o cartão fica associado a reserva do cliente. |
 
 Registro de evidência:
 
