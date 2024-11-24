@@ -44,7 +44,8 @@ https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
 
 Registro de evidência:
 
-https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
+https://github.com/user-attachments/assets/e2466381-263e-4352-ad3e-4c82450a174a
+
 
 
 | **Caso de Teste** 	| **CT-02 – Gerenciamento de Salas** 	|
