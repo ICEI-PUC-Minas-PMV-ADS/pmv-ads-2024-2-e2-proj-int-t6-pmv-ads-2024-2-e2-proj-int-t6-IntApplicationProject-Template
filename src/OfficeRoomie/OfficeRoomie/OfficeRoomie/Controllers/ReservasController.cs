@@ -5,6 +5,7 @@ using OfficeRoomie.Helpers;
 using OfficeRoomie.Models;
 using OfficeRoomie.Models.ViewModels;
 using OfficeRoomie.Services;
+using Org.BouncyCastle.Utilities;
 
 namespace OfficeRoomie.Controllers
 {
@@ -19,7 +20,7 @@ namespace OfficeRoomie.Controllers
             _emailService = emailService;
         }
 
-        public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter)
+        public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter, string active = "1")
         {
             if (searchString != null) {
                 pageNumber = 1;
@@ -32,12 +33,21 @@ namespace OfficeRoomie.Controllers
             var reservas = _context.Reservas
                 .AsNoTracking()
                 .OrderByDescending(a => a.id)
+                .Include(r => r.cartao)
                 .Include(r => r.cliente)
-                .Include(r => r.sala); ;
+                .Include(r => r.sala);
+
+            var reservasByStatus = !String.IsNullOrEmpty(active) && active == "1"
+                ? reservas.Where(s => !s.status.ToLower().Contains("cancelada"))
+                : reservas.Where(s => s.status.ToLower().Contains("cancelada"));
+
             var reservasFiltradas = !String.IsNullOrEmpty(searchString)
-                ? reservas.Where(s => s.protocolo.ToLower().Contains(searchString.ToLower()))
-                : reservas;
+                ? reservasByStatus.Where(s => s.protocolo.ToLower().Contains(searchString.ToLower()))
+                : reservasByStatus;
+
             var reservasPaginadas = await ModelPaginado<Reserva>.CreateAsync(reservasFiltradas, pageNumber ?? 1, 5);
+
+            ViewBag.active = active;
 
             return View(reservasPaginadas);
         }
@@ -52,6 +62,7 @@ namespace OfficeRoomie.Controllers
             var reserva = await _context.Reserva
                 .Include(r => r.cliente)
                 .Include(r => r.sala)
+                .Include(r => r.cartao)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (reserva == null)
             {
@@ -65,12 +76,14 @@ namespace OfficeRoomie.Controllers
         {
             var salas = await _context.Salas.ToListAsync();
             var clientes = await _context.Clientes.ToListAsync();
+            var cartoes = await _context.Cartoes.ToListAsync();
 
             var viewModel = new ReservaCreate
             {
                 reserva = new Reserva(),
                 salas = salas,
-                clientes = clientes
+                clientes = clientes,
+                cartoes = cartoes
             };
 
             return View(viewModel);
@@ -118,12 +131,14 @@ namespace OfficeRoomie.Controllers
 
             var salas = await _context.Salas.ToListAsync();
             var clientes = await _context.Clientes.ToListAsync();
+            var cartoes = await _context.Cartoes.Where(s => s.cliente_id == reserva.cliente_id).ToListAsync();
 
             var viewModel = new ReservaCreate
             {
                 reserva = reserva,
                 salas = salas,
-                clientes = clientes
+                clientes = clientes,
+                cartoes = cartoes
             };
             return View(viewModel);
         }
@@ -137,6 +152,7 @@ namespace OfficeRoomie.Controllers
                 var reserva = await _context.Reserva
                     .Include(r => r.cliente)
                     .Include(r => r.sala)
+                    .Include(r => r.cartao)
                     .FirstOrDefaultAsync(m => m.id == id);
 
                 if (reserva == null)
@@ -148,14 +164,17 @@ namespace OfficeRoomie.Controllers
                 reserva.hora_fim = dto.reserva.hora_fim;
                 reserva.data_reserva = dto.reserva.data_reserva;
                 reserva.status = dto.reserva.status;
+                reserva.cartao_id = dto.reserva.cartao_id;
+
+                if (dto.reserva.cartao_id != null) {
+                    reserva.cartao_id = dto.reserva.cartao_id;
+                    reserva.status = "confirmada";
+                }
 
                 try
                 {
                     _context.Update(reserva);
                     await _context.SaveChangesAsync();
-
-                    // Se houver cliente smtp configurado, chama essa função pra notificar por email
-                    // await _emailService.SendEmailAsync(reserva.cliente!.email, "OfficeRoomie: Sua reserva foi atualizada", "<p>Conteúdo do email</p>");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -183,6 +202,7 @@ namespace OfficeRoomie.Controllers
             var reserva = await _context.Reserva
                 .Include(r => r.cliente)
                 .Include(r => r.sala)
+                .Include(r => r.cartao)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (reserva == null)
             {

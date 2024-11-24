@@ -39,8 +39,9 @@ public class Reserva
     [ForeignKey("cliente")]
     public int cliente_id { get; set; }
 
+    [Display(Name = "Cartao")]
     [ForeignKey("cartao")]
-    public Nullable<int> cartão_id { get; set; } = null;
+    public int? cartao_id { get; set; }
 
     public Cliente? cliente { get; set; }
     public Sala? sala { get; set; }

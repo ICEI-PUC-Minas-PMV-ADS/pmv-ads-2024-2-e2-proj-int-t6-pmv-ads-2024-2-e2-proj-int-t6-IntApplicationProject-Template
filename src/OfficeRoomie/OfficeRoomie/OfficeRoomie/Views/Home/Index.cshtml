@@ -14,7 +14,6 @@
     }
 
     .home-banner-content {
-        width: 100%;
         min-height: calc(75vh - 60px);
         display: flex;
         flex-direction: column;
@@ -25,10 +24,14 @@
 <div>
     <section class="home-banner">
         <div class="container">
-            <div class="home-banner-content">
-                <div>
-                    <h1 class="display-4 text-white fw-bold w-50 mb-4">Conheça seu novo espaço de trabalho</h1>
+            <div class="home-banner-content row">
+                <div class="col-12 col-md-6">
+                    <h1 class="text-white fw-normal mb-4 display-4">Conheça seu novo espaço de trabalho</h1>
                     <button class="btn btn-success cta-reserva">Faça sua reserva </button>
+                    <a asp-action="Reserva" class="btn btn-info cta-acompanhe">
+                        <span class="iconify" data-icon="ic:baseline-search" data-inline="false"></span>
+                        <span>Acompanhar reserva </span>
+                    </a>
                 </div>
             </div>
         </div>
