@@ -1,8 +1,8 @@
 # Registro de Testes de Software
 
-| Caso de Teste | CT-07 – Cadastrar perfil de usuário |
+| **Caso de Teste** | **CT-06 – Cadastrar perfil de usuário** |
 |---------------|---------------------------------|
-| Requisitos Associado | RF-07 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
+| Requisitos Associado | RF-06 - Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. |
 | Objetivo do Teste | Verificar se o usuário consegue cadastrar e gerenciar seu perfil. |
 | Passos 	| - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Novo Administrador" ou "Novo cliente" <br> - Prencher os campos obrigatórios <br> - Confirmar o cadastro <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Editar" (ícone de caneta) <br> - Alterar dados <br> - Confirmar o edição <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Deletar" (ícone de lixeira) <br> - Acessar a funcionalidade de "Administradores" ou "clientes" <br> - Clicar no botão "Visualizar" (ícone de olho) |
 |Critérios de Êxito| Foi possível realizar o cadastro dos usuários, edição, visualização e exclusão dos mesmos. |
@@ -35,16 +35,17 @@ Registro de evidência:
 https://github.com/user-attachments/assets/fa90c915-27ad-41e3-be51-96f41f33bccb
 
 
-| **Caso de Teste** 	| **CT-08 – Cancelamento de reservas pelo administrador** 	                            |
+| **Caso de Teste** 	| **CT-07 – Cancelamento de reservas pelo administrador** 	                            |
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-08 - Desenvolver tela para que administradores possam cancelar reservas e notificar usuários sobre o cancelamento. |
-| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva e notificar o usuário. |
-| Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva - Verificar se o usuário foi notificado sobre o cancelamento |
-| Critério de Êxito | - A reserva é cancelada com sucesso e o usuário é notificado. |
+|	Requisito Associado 	| RF-07 - Desenvolver tela para que administradores possam cancelar reservas. |
+| Objetivo do Teste 	| Verificar se o administrador consegue cancelar uma reserva. |
+| Passos 	| - Acessar o painel administrativo - Selecionar uma reserva existente - Cancelar a reserva|
+| Critério de Êxito | - A reserva é cancelada com sucesso. |
 
 Registro de evidência:
 
-https://github.com/user-attachments/assets/2e40b2c4-2f4a-424f-b2c4-132c720e9605
+https://github.com/user-attachments/assets/e2466381-263e-4352-ad3e-4c82450a174a
+
 
 
 | **Caso de Teste** 	| **CT-02 – Gerenciamento de Salas** 	|
@@ -67,8 +68,31 @@ https://github.com/user-attachments/assets/98b20086-89a2-480f-9bce-39b583633164
 
 Registro de evidência:
 
-
 ![Evidência de Teste](https://github.com/user-attachments/assets/53a3e991-94c4-497a-8011-89c2fcc2f8bf)
+
+| **Caso de Teste** 	| **CT-08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-08 - Desenvolver tela para onde o cliente consegue reservar uma sala, acompanhar e/ou cancelar sua reserva. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar uma reserva, aompanhar e/ou cancelar sua reserva. |
+| Passos 	| - Acessar o sistema <br> - clicar em "Faça sua reserva" <br> - Appós finalização da resera irá gerar um protocolo <br> - Clicar em "Acompanhar reserva" e informe o número do protocolo para visualizar a reserva <br> - Para cancelar a reserva é só clicar no botão "Cancelar" na tela "Acompanhar reserva"  |
+| Critério de Êxito | - Ser possível que o cliente realize reserva, acompanhar e cancelar a reserva. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/0731d395-ad5a-4aaf-8665-7f654f48dbba
+
+| **Caso de Teste** 	| **CT-05 – Cadastrar cartão de crédito "Relação Reserva-Pagamento"** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-05 - Desenvolver tela para cadastro de cartão de crédito para pagamento diferido no dia da reserva pelos usuários finais. |
+| Objetivo do Teste 	| Verificar se o usuário consegue associar um cartão de crédito a um cliente. |
+| Passos 	| - Logar como admin <br> - Acessar a funcionalidade de "Reservas" <br> - Efetuar uma reserva para determinado cliente <br> - Acessar a funcionalidade de "Pagamento" <br> - Informar os dados do cartão de crédito <br> - Confirmar o cadastro <br> - Associar o cartão cadastrado a reserva de um cliente. |
+| Critério de Êxito | - O cadastro do pagamento é realizado com sucesso e o cartão fica associado a reserva do cliente. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/331f73f3-0e2d-4c3c-b4cf-e97a3e01adcd
+
+
 
 
 

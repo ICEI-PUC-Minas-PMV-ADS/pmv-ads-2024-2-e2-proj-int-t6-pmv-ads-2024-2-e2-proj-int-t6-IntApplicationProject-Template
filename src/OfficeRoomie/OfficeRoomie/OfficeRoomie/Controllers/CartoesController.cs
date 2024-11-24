@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Database;
 using OfficeRoomie.Models;
+using OfficeRoomie.Models.ViewModels;
 
 
 namespace OfficeRoomie.Controllers;
@@ -20,9 +21,12 @@ public class CartoesController : Controller
     // GET: Cartoes
     public async Task<IActionResult> Index()
     {
-        return View(await _context.Cartoes
+        var cartoes = await _context.Cartoes
+            .Include(r => r.cliente)
             .OrderByDescending(c => c.numeroDoCartao)
-            .ToListAsync());
+            .ToListAsync();
+
+        return View(cartoes);
     }
 
     // GET: Cartoes/Details/numeroDoCartao
@@ -44,15 +48,22 @@ public class CartoesController : Controller
     }
 
     // GET: Cartoes/Create
-    public IActionResult Create()
+    async public Task<IActionResult> Create()
     {
-        return View();
+        var clientes = await _context.Clientes.ToListAsync();
+
+        var viewModel = new CartoesCreate
+        {
+            cartao = new Cartao(),
+            clientes = clientes,
+        };
+        return View(viewModel);
     }
 
     // POST: Cartoes/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("numeroDoCartao,nomeDoTitular,validade,cvv")] Cartao cartao)
+    public async Task<IActionResult> Create([Bind("numeroDoCartao,nomeDoTitular,validade,cvv,cliente_id")] Cartao cartao)
     {
         if (ModelState.IsValid)
         {

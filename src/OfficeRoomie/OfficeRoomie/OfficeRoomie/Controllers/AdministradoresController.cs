@@ -18,14 +18,23 @@ public class AdministradoresController : Controller
         _context = context;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? pageNumber, string currentFilter, string searchString)
     {
+        if (searchString != null) {
+            pageNumber = 1;
+        } else {
+            searchString = currentFilter;
+        }
 
-        var dados = await _context.Administradores
-                .OrderByDescending(a => a.id)
-                .ToListAsync();
+        ViewData["CurrentFilter"] = searchString;
 
-        return View(dados);
+        var administradores = _context.Administradores.AsNoTracking().OrderByDescending(a => a.id);
+        var admistradoresFiltrados = !String.IsNullOrEmpty(searchString) 
+            ? administradores.Where(s => s.nome.ToLower().Contains(searchString.ToLower())) 
+            : administradores;
+        var administradoresPaginados = await ModelPaginado<Administrador>.CreateAsync(admistradoresFiltrados, pageNumber ?? 1, 5);
+
+        return View(administradoresPaginados);
     }
 
     public IActionResult Create()

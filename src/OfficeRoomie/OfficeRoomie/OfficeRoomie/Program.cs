@@ -1,5 +1,6 @@
 using OfficeRoomie.Database;
 using OfficeRoomie.Extensions;
+using OfficeRoomie.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>();
+
+builder.Services.AddScoped<EmailService>();
 
 var app = builder.Build();
 
@@ -30,5 +33,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.RegisterRoutes();
+app.SeedDatabase();
 
 app.Run();
+

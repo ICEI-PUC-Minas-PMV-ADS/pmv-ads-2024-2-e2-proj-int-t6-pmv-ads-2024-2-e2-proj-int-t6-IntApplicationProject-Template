@@ -26,7 +26,12 @@ namespace OfficeRoomie.Models
         [Display(Name = "CVV")]
         public int cvv { get; set; }
 
-        public int idUsuario { get; set; }
+        [Required(ErrorMessage = "Preenchimento do Campo [cliente] Obrigatório!")]
+        [Display(Name = "Cliente")]
+        [ForeignKey("cliente")]
+        public int cliente_id { get; set; }
+
+        public Cliente? cliente { get; set; }
 
         public string? created_at { get; set; } = $"{DateTime.Now:yyyy-MM-dd}";
 

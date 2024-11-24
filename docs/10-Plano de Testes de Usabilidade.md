@@ -47,20 +47,14 @@ Métrica: Quantidade de cliques, tempo para reserva, sucesso ou falha no agendam
 ### 5. CT-05 – Cadastrar cartão de crédito
 Tarefa: Cadastrar um cartão de crédito para pagamento.
 Métrica: Tempo gasto no cadastro, erros ao preencher campos, satisfação com a clareza das informações.
-### 6. CT-06 – Processar pagamento no dia da reserva
-Tarefa: Verificar o processamento automático de pagamento.
-Métrica: Tempo de notificação do pagamento, clareza da confirmação, erros no processo.
-### 7. CT-07 – Cadastrar perfil de usuário
+### 6. CT-06 – Cadastrar perfil de usuário
 Tarefa: Criar e editar um perfil.
 Métrica: Quantidade de cliques, tempo para completar o cadastro, erros ao inserir dados.
-### 8. CT-08 – Cancelamento de reservas pelo administrador
+### 7. CT-07 – Cancelamento de reservas pelo administrador
 Tarefa: Administrador cancelar uma reserva.
 Métrica: Tempo para cancelamento, clareza na confirmação, erros ao executar.
-### 9. CT-09 – Receber notificação de confirmação de reserva
-Tarefa: Verificar recebimento de notificação.
-Métrica: Tempo para receber notificação, clareza da notificação, satisfação com o processo.
-### 10. CT-10 – Alterar ou cancelar reservas
-Tarefa: Alterar ou cancelar uma reserva.
+### 8. CT-08 – Reservar a sala, acompanhar e/ou cancelar reservas pelo cliente
+Tarefa: Reservar a sala, acompanhar e/ou cancelar uma reserva.
 Métrica: Número de cliques, tempo para realizar a alteração ou cancelamento, erros durante o processo.
 
 # Etapas do Teste de Usabilidade

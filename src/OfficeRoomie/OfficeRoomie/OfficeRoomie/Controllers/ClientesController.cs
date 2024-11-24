@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OfficeRoomie.Database;
 using OfficeRoomie.Models;
+using OfficeRoomie.Models.ViewModels;
 
 namespace OfficeRoomie.Controllers;
 
@@ -16,15 +17,28 @@ public class ClientesController : Controller
         _context = context;
     }
 
-    // GET: Clientes
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? pageNumber, string searchString, string currentFilter)
     {
-        return View(await _context.Clientes
-            .OrderByDescending(a => a.id)
-            .ToListAsync());
+        if (searchString != null)
+        {
+            pageNumber = 1;
+        }
+        else
+        {
+            searchString = currentFilter;
+        }
+
+        ViewData["CurrentFilter"] = searchString;
+
+        var clientes = _context.Clientes.AsNoTracking().OrderByDescending(a => a.id);
+        var clientesFiltrados = !String.IsNullOrEmpty(searchString)
+            ? clientes.Where(s => s.nome.ToLower().Contains(searchString.ToLower()))
+            : clientes;
+        var clientesPaginados = await ModelPaginado<Cliente>.CreateAsync(clientesFiltrados, pageNumber ?? 1, 5);
+
+        return View(clientesPaginados);
     }
 
-    // GET: Clientes/Details/5
     public async Task<IActionResult> Details(int? id)
     {
         if (id == null)
@@ -42,15 +56,11 @@ public class ClientesController : Controller
         return View(cliente);
     }
 
-    // GET: Clientes/Create
     public IActionResult Create()
     {
         return View();
     }
 
-    // POST: Clientes/Create
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("id,nome,email,cpf,endereco_logradouro,endereco_numero,endereco_complemento,endereco_cep,endereco_bairro,endereco_cidade,endereco_estado,endereco_pais,created_at,updated_at")] Cliente cliente)
@@ -80,9 +90,6 @@ public class ClientesController : Controller
         return View(cliente);
     }
 
-    // POST: Clientes/Edit/5
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, [Bind("id,nome,email,cpf,endereco_logradouro,endereco_numero,endereco_complemento,endereco_cep,endereco_bairro,endereco_cidade,endereco_estado,endereco_pais,created_at,updated_at")] Cliente cliente)
@@ -115,7 +122,6 @@ public class ClientesController : Controller
         return View(cliente);
     }
 
-    // GET: Clientes/Delete/5
     public async Task<IActionResult> Delete(int? id)
     {
         if (id == null)
@@ -133,7 +139,6 @@ public class ClientesController : Controller
         return View(cliente);
     }
 
-    // POST: Clientes/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)
