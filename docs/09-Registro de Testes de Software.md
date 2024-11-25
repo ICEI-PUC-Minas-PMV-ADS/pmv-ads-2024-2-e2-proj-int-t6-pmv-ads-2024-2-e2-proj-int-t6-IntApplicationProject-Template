@@ -92,6 +92,17 @@ Registro de evidência:
 
 https://github.com/user-attachments/assets/331f73f3-0e2d-4c3c-b4cf-e97a3e01adcd
 
+| **Caso de Teste** 	| **CT-04 – Reservar sala para um período específico** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-04 - Desenvolver tela para realização de reservas de salas para períodos específicos, com confirmação imediata. |
+| Objetivo do Teste 	| Verificar se o usuário consegue reservar uma sala para um período específico. |
+| Passos 	| - Acessar a funcionalidade de "Reservar Sala" <br> - Selecionar a sala desejada <br> - Escolher o horário e data da reserva <br> - Confirmar a reserva |
+| Critério de Êxito | - A reserva é realizada com sucesso e uma confirmação imediata é exibida. |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/1b3201a0-38a5-4ab4-a399-e8f4af8d3c4f
+
 
 
 

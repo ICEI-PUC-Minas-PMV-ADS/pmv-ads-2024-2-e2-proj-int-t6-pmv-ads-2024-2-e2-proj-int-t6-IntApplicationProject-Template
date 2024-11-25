@@ -260,3 +260,37 @@
 | Lucas Martins       | Sim, as mensagens eram claras e objetivas.                                    | Não.                                                                            | Sim, achei o sistema intuitivo.                                 | Muito boa, a funcionalidade atendeu às expectativas.                                       |
 
 
+### Teste 04 – Reservar Sala para um Período Específico"
+**Data do Teste:** 22 de novembro de 2024  
+**Local:** Testes realizados de forma remota  
+**Versão do Software:** 1.0  
+**Objetivo do Teste:** Avaliar a facilidade de uso do sistema para reservar uma sala em um período específico. Identificar métricas como quantidade de cliques, tempo necessário para concluir a tarefa e sucesso ou falha na reserva.
+
+**Observação:** Acompanhamento realizado por gravações de tela e áudio. Os participantes realizaram as seguintes tarefas:
+
+- **Criação de sala de reserva.**
+- **Edição de salas de reserva.**
+
+
+### Participantes:
+
+- **Usuário 1:** Mariana Alves, 28 anos, arquiteta, trabalha em uma empresa de design.
+- **Usuário 2:** Paulo Cardoso, 37 anos, administrador, gerencia um coworking
+- **Usuário 3:** Juliana Ribeiro, 45 anos, consultora autônoma, usa plataformas digitais para organização de eventos.
+
+### Resultados:
+
+- **Mariana Alves:** Não encontrou dificuldades.
+- **Paulo Cardoso:** Teve dificuldade em excluir uma reserva.
+- **Juliana Ribeiro:** Não encontrou dificuldades.
+
+## Questionário de Satisfação
+
+| Usuário             | Os campos obrigatórios e instruções estão sinalizados de forma clara? | Teve algo específico que te gerou dificuldade?                                  | Você acredita que o acesso ao sistema é fácil?             | Como você avaliaria sua experiência com as funcionalidades testadas? |
+|---------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------|
+| Mariana Alves       | Sim, foi fácil identificar os campos necessários.            | Não, tudo estava                                                   | Sim, a interface é intuitiva.                         | Muito boa, atendeu às minhas expectativas.      |
+| Paulo Cardoso     | Sim                                                               | Sim, mas pode melhorar.                                                                          | 	Boa, mas precisa de ajustes na usabilidade.                                                      | Muito boa.                                                             |
+| Juliana Ribeiro       | Não, senti falta de orientações para editar .                                    | Não.                                                                            | Sim, achei de facil usabilidade.                                 | Muito boa, a funcionalidade atendeu às expectativas.                                       |
+
+
+
