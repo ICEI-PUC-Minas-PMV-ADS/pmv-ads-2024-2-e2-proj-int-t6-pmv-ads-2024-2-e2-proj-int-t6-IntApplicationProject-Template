@@ -260,7 +260,7 @@
 | Lucas Martins       | Sim, as mensagens eram claras e objetivas.                                    | Não.                                                                            | Sim, achei o sistema intuitivo.                                 | Muito boa, a funcionalidade atendeu às expectativas.                                       |
 
 
-### Teste 04 – Reservar Sala para um Período Específico"
+### Teste 04 – Reservar Sala para um Período Específico
 **Data do Teste:** 22 de novembro de 2024  
 **Local:** Testes realizados de forma remota  
 **Versão do Software:** 1.0  
