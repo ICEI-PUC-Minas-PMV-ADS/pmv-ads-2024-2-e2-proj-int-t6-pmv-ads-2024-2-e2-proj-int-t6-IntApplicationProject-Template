@@ -53,8 +53,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| O sistema deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar os animais. | ALTA |
 |RF-008| O sistema deve permitir o adotante/usuário demonstrar interesse em um animal. | ALTA |
 |RF-009| O sistema deve notificar ao abrigo quando um usuário demonstrar interesse em um animal cadastrado. | ALTA |
-|RF-010| O sistema deverá permitir fazer o acompanhamento do status de adoções: pendentes, em processo ou concluídas. | MEDIA |
-|RF-011| O sistema deve oferecer conteúdo com cuidados aos animais e dicas de adoções. | MEDIA |
+|RF-010| O sistema deve facilitar o contato com a instituição  | MEDIA |
 
 ### Requisitos não Funcionais
 
