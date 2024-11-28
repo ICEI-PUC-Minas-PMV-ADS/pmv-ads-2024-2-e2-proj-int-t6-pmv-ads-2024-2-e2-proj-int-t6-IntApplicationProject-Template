@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace PetMatch.Models
 {
@@ -19,5 +21,8 @@ namespace PetMatch.Models
         [Required]
         [MaxLength(100)]
         public string? Senha { get; set; }
+
+        // Propriedade de navegação para as adoções do usuário
+        public List<Adocao> Adocoes { get; set; } = [];
     }
 }
