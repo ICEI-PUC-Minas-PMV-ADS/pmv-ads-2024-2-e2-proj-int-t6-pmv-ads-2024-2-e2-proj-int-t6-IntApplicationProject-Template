@@ -26,6 +26,9 @@ namespace PetMatch.Models
 
         [Required]
         public PorteEnum Porte { get; set; } // Enum para porte
+
+        [Required]
+        public byte[] Imagem { get; set; }
     }
 
     // Enums
