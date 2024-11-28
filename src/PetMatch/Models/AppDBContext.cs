@@ -13,10 +13,13 @@ namespace PetMatch.Models
         // Tabela para pets cadastrados
         public DbSet<Pet> Pets { get; set; }
 
+        // Tabela para adoções
+        public DbSet<Adocao> Adocoes { get; set; }
+
         // Configuração do modelo com Fluent API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder); // Chame o base para configurar o Identity
+            base.OnModelCreating(modelBuilder); // Chama o base para configurar o Identity
 
             // Configuração da tabela de Usuários personalizados
             modelBuilder.Entity<Usuario>(entity =>
@@ -61,6 +64,29 @@ namespace PetMatch.Models
 
                 entity.Property(p => p.Porte)
                     .IsRequired();
+            });
+
+            // Configuração da tabela de Adoção
+            modelBuilder.Entity<Adocao>(entity =>
+            {
+                entity.ToTable("Adocoes"); // Nome da tabela
+                entity.HasKey(a => a.Id); // Define a chave primária
+
+                entity.Property(a => a.StatusAdocao)
+                    .IsRequired();
+
+                entity.Property(a => a.DataInicio)
+                    .IsRequired();
+
+                entity.Property(a => a.DataFinalizacao)
+                    .IsRequired(false); // Pode ser nulo, caso a adoção não tenha sido finalizada ainda
+
+                                // Relacionamento com o usuário
+                entity.HasOne(a => a.Usuario)  // Cada adoção pertence a um usuário
+                    .WithMany(u => u.Adocoes)   // Um usuário pode ter muitas adoções
+                    .HasForeignKey(a => a.UsuarioId) // A chave estrangeira que faz referência ao usuário
+                    .OnDelete(DeleteBehavior.Cascade); // Se o usuário for excluído, as adoções também são excluídas
+
             });
         }
     }
