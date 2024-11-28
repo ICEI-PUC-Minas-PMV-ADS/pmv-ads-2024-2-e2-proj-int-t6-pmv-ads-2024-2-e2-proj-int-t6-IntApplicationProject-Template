@@ -53,7 +53,7 @@
         <div class="container px-4 px-lg-5">
             <div class="d-flex justify-content-between mb-3">
                 <h2 class="text-center">Amigos para adoção</h2>
-                <a asp-action="Create" class="btn btn-primary btn">
+                <a data-bs-toggle="modal" data-bs-target="#addPetModal" class="btn btn-primary btn">
                     <i class="bi bi-plus-circle"></i> Adicionar Pet
                 </a>
             </div>
@@ -93,6 +93,59 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal para Adicionar Pet -->
+    <!-- Modal para Cadastrar Novo Pet -->
+<div class="modal fade" id="addPetModal" tabindex="-1" aria-labelledby="addPetModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addPetModalLabel">Cadastrar Novo Pet</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="Nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="Nome" name="Nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Idade" class="form-label">Idade</label>
+                        <input type="number" class="form-control" id="Idade" name="Idade" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Raca" class="form-label">Raça</label>
+                        <input type="text" class="form-control" id="Raca" name="Raca" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="TipoPet" class="form-label">Tipo</label>
+                        <input type="text" class="form-control" id="TipoPet" name="TipoPet" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Sexo" class="form-label">Sexo</label>
+                        <select class="form-control" id="Sexo" name="Sexo" required>
+                            <option value="M">Macho</option>
+                            <option value="F">Fêmea</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Porte" class="form-label">Porte</label>
+                        <select class="form-control" id="Porte" name="Porte" required>
+                            <option value="Pequeno">Pequeno</option>
+                            <option value="Médio">Médio</option>
+                            <option value="Grande">Grande</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Imagem" class="form-label">Imagem (20x20)</label>
+                        <input type="file" class="form-control" id="Imagem" name="Imagem" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer class="text-black text-center py-3">
         <div class="container">
