@@ -1,0 +1,58 @@
+﻿@model RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Navegação -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" asp-action="Index" asp-controller="Home">
+            <img src="https://petmatch.ie/wp-content/uploads/2022/05/Logo-1.png" alt="PetMatch" class="default-logo">
+        </a>
+    </div>
+</nav>
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-sm" style="width: 100%; max-width: 400px;">
+        <div class="card-header text-white text-center" style="background-color: #ff9800;">
+            <h2>Cadastro</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Register" method="post">
+                <!-- Campo de Email -->
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" placeholder="Digite seu email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <!-- Campo de Senha -->
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Senha</label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Digite sua senha" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <!-- Campo de Confirmação de Senha -->
+                <div class="mb-3">
+                    <label asp-for="ConfirmPassword" class="form-label">Confirme a Senha</label>
+                    <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirme sua senha" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <!-- Botão de Registro -->
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center">
+            <p>Já tem uma conta? <a asp-action="Login" class="text-primary">Faça login aqui</a>.</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
