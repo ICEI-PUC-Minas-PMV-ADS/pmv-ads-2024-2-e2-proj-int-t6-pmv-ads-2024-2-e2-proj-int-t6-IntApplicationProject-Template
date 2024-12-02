@@ -1,6 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
@@ -8,24 +7,15 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+| João Silva    |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/joaomarques.png)|**Idade:** 60 anos - **Ocupação:**  Designer Gráfico |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Descrição:** João mora em um apartamento e está à procura de um animal de estimação para adoção. Ele prefere cães de porte médio e está preocupado com questões como o comportamento do animal e a compatibilidade com seu estilo de vida. Tem pouca experiência com adoção e busca informações sobre cuidados com animais. |**Necessidades:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Objetivos:** Adotar um animal compatível com seu estilo de vida e acessar uma área informativa com dicas sobre cuidados e adoção.| 
 
-Utilize também como referência o exemplo abaixo:
-
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| Maria Fernandes   |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/claralima.png)|**Idade:** 45 anos - **Ocupação:**  Responsável por um abrigo de animais |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Descrição:** Maria administra um abrigo para animais abandonados. Ela é responsável por gerenciar os perfis dos animais no sistema, cadastrar novos animais e responder aos interessados em adoção. Tem pouco tempo disponível e busca um sistema que facilite o gerenciamento das informações e a comunicação com os adotantes. |**Necessidades:** Cadastrar e editar informações sobre os animais disponíveis, receber notificações quando alguém demonstrar interesse em um animal e facilitar a comunicação com adotantes.|**Objetivos:** Promover a adoção dos animais de maneira rápida e eficiente e gerenciar o abrigo e as informações dos animais de forma simples.| 
 
 ## Histórias de Usuários
 
@@ -33,17 +23,18 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| Jõao Silva| cadastrar-me no site | conseguir acesso a plataforma para adotar.      |
+| Jõao Silva| realizar login no site    | conseguir adotar.      |
+| Maria Fernandes| cadastrar-me no site | conseguir acesso a plataforma e  mostrar os animais disponiveis.    |
+| Maria Fernandes| realizar login no site | conseguir disponibilizar os animais para adoção.   |
+| Usuário | visualizar minhas informações cadastradas   |   possibilitar o acesso as minhas informações.    |
+| Jõao Silva / Maria Fernandes | de um filtro de busca personalisado       | encontrar rapidamente um animal que atenda às minhas preferências.            |
+| Maria Fernandes  | cadastrar animais para adoção    |  possibilitar a adoção dos animais disponíveis e cadastrados       |
+| Maria Fernandes  | editar as informações dos meus animais cadastrados |  possibilitar a edição de informações e cadastro.     |
+| Jõao Silva| conseguir visualizar os animais disponíveis para adoção e suas caracteristicas   |  conseguir escolher a melhor opção para adoção.      |
+| Maria Fernandes| receber notificações quando alguém demonstrar interesse no meu animal cadastrado  |  conseguir contato com o interessado e sanar possiveis dúvidas sobre o animal e a adoção.     |
+|  Jõao Silva | demonstrar interesse no animal atráves de um formulário   |  possibilitar o dono de abrigo de animais saber do interesse na adoção.     |
+| Usuário | de uma área informativa com conteúdos sobre cuidados com animais e dicas de adoção. |  aumentar o conhecimento sobre o assunto.  |
 
 ## Requisitos
 
@@ -53,57 +44,44 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| O sistema deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha. | ALTA |
+|RF-002| O sistema deve permitir ao usuário verificar as informações registradas no cadastro, após fazer seu login. | ALTA |
+|RF-003| O sistema deve fornecer feedback claro para ações do usuário, como confirmações de formulários e mensagens de erro. | ALTA |
+|RF-004| O sistema deve permitir cadastrar animais disponíveis para adoção. | ALTA |
+|RF-005| O Sistema deve permitir editar as informações dos animais cadastrados. | MEDIA |
+|RF-006| O sistema deve ter uma página de perfil detalhada para cada animal como: histórico de saúde, comportamento, características específicas e fotos. | MEDIA |
+|RF-007| O sistema deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar os animais. | ALTA |
+|RF-008| O sistema deve permitir o adotante/usuário demonstrar interesse em um animal. | ALTA |
+|RF-009| O sistema deve notificar ao abrigo quando um usuário demonstrar interesse em um animal cadastrado. | ALTA |
+|RF-010| O sistema deverá permitir fazer o acompanhamento do status de adoções: pendentes, em processo ou concluídas. | MEDIA |
+|RF-011| O sistema deve oferecer conteúdo com cuidados aos animais e dicas de adoções. | MEDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku). | ALTA |
+|RNF-002| A aplicação deve ser responsiva, tendo boas exibições em diversos tamanhos de tela. Como em tablets, celulares e computadores. | ALTA |
+|RNF-003| O código-fonte deve ser de fácil compreensão e seguir as convenções de codificação estabelecidas pela equipe de desenvolvimento. Isso inclui a utilização de comentários claros e descritivos, nomes de variáveis e funções significativos, e a aderência a um estilo de codificação consistente que é documentado e compartilhado entre a equipe. | ALTA |
+|RNF-004| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA |
+|RNF-005| O sistema deve implementar políticas de senha robustas, incluindo requisitos de complexidade, Como um mínimo de 8 caracteres, com pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial. | ALTA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do semestre létivo. |
+|02| O sistema deverá ser desenvolvido utilizando apenas tecnologias open-source ou ferramentas com licenciamento gratuito.  |
+|03| A equipe não pode subcontratar o desenvolvimento do trabalho.      |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+![image info](./img/use_case.png)
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
