@@ -32,8 +32,10 @@ namespace PetMatch.Models
     }
 
     // Enums
-    public enum TipoPetEnum { Cachorro, Gato, Outro }
-    public enum SexoEnum { Macho, Fêmea }
+    public enum TipoPetEnum { Cachorro, Gato, Outro } 
+    public enum SexoEnum { Macho, Fêmea } 
     public enum PorteEnum { Pequeno, Médio, Grande }
+
+    
 }
 
