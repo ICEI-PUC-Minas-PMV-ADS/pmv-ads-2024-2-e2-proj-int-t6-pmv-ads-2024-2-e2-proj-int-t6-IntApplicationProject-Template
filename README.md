@@ -1,33 +1,29 @@
-# TÍTULO DO PROJETO
+# PetMatch
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`2º SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O referido projeto refere-se a uma ferramente que possibilita e facilita a vida de quem quer fazer doações de animais e quem quer adotar um novo animal de forma segura e correta.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* César Ribeiro Dias Monção
+* Danilo Silva de Oliveira
+* Fabio Luiz Moreira Costa
+* Italo de Souza Pereira
+* Laise Farias France
+* Rodrigo Abreu Amorim
 
 ## Orientador
 
-* Nome completo do professor 1
+* Bernardo Jeunon de Alencar 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
-
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Compilar o projeto no localhost e utilizar.(Temporário)
 
 # Documentação
 
