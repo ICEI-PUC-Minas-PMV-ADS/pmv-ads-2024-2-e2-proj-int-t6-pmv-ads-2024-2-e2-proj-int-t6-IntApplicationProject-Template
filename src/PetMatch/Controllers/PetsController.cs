@@ -4,14 +4,9 @@ using PetMatch.Models;
 
 namespace PetMatch.Controllers
 {
-    public class PetsController : Controller
+    public class PetsController(AppDBContext context) : Controller
     {
-        private readonly AppDBContext _context;
-
-        public PetsController( AppDBContext context)
-        {
-            _context = context;
-        }
+        private readonly AppDBContext _context = context;
 
         // GET: Pets
         public async Task<IActionResult> Index()
@@ -45,15 +40,23 @@ namespace PetMatch.Controllers
         // POST: Pets/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Idade,Raca,TipoPet,Sexo,Porte")] Pet pet)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Idade,Raca,TipoPet,Sexo,Porte,Imagem")] Pet pet, IFormFile? imagemUpload)
         {
             if (ModelState.IsValid)
             {
+                // Se uma imagem for carregada, converte para byte[]
+                if (imagemUpload != null)
+                {
+                    using var memoryStream = new MemoryStream();
+                    await imagemUpload.CopyToAsync(memoryStream);
+                    pet.Imagem = memoryStream.ToArray();
+                }
+
                 _context.Add(pet);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); // Redireciona para a página inicial
             }
-            return View(pet);
+            return View(pet); // Se ModelState não for válido, retorna à view de criação
         }
 
         // GET: Pets/Edit/5
@@ -75,7 +78,7 @@ namespace PetMatch.Controllers
         // POST: Pets/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Idade,Raca,TipoPet,Sexo,Porte")] Pet pet)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Idade,Raca,TipoPet,Sexo,Porte,Imagem")] Pet pet, IFormFile? imagemUpload)
         {
             if (id != pet.Id)
             {
@@ -86,6 +89,14 @@ namespace PetMatch.Controllers
             {
                 try
                 {
+                    // Atualiza a imagem apenas se houver um novo upload
+                    if (imagemUpload != null)
+                    {
+                        using var memoryStream = new MemoryStream();
+                        await imagemUpload.CopyToAsync(memoryStream);
+                        pet.Imagem = memoryStream.ToArray();
+                    }
+
                     _context.Update(pet);
                     await _context.SaveChangesAsync();
                 }
@@ -100,9 +111,9 @@ namespace PetMatch.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); // Redireciona para a página inicial
             }
-            return View(pet);
+            return View(pet); // Se ModelState não for válido, retorna à view de edição
         }
 
         // GET: Pets/Delete/5
@@ -133,9 +144,10 @@ namespace PetMatch.Controllers
                 _context.Pets.Remove(pet);
                 await _context.SaveChangesAsync();
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index)); // Redireciona para a página inicial
         }
 
+        // Método auxiliar para verificar se o pet existe
         private bool PetExists(int id)
         {
             return _context.Pets.Any(e => e.Id == id);

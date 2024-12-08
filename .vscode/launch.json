@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "C#: PetMatch [https]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/src/PetMatch/PetMatch.csproj",
+            "launchConfigurationId": "TargetFramework=;https"
+        }     
+    ]
+}
