@@ -16,10 +16,7 @@
                     <li>Autenticar no sistema.</li>
                     <li>Gerenciar a disponibilidade das salas (reservas, horários, manutenção).</li>
                     <li>Informar pagamento da sala no sistema.</li>
-                    <li>Gerenciar o sistema de pagamento diferido, garantindo que os valores sejam descontados no dia da reserva.</li>
-                    <li>Gerenciar a comunicação com os usuários (avisos sobre regras, manutenção, etc).</li>
-                    <li>Personalizar o ambiente e as regras de uso das salas.</li>
-                    <li>Acompanhar o feedback dos usuários para melhorias.</li>
+                    <li>Gerenciar o pagamento no sistema.</li>
                 </ol> 
             </td>
         </tr>
@@ -39,14 +36,10 @@
             <td><b>Necessidades</b></td>
             <td>
                 <ol>
-                    <li>Autenticar no sistema.</li>
                     <li>Visualizar a disponibilidade das salas e escolher a mais adequada. </li>
                     <li>Reservar salas para períodos específicos.</li>
-                    <li>Realizar cadastro de cartão de crédito como forma de pagamento.</li>
-                    <li>Receber confirmações de reservas (voucher).</li>
-                    <li>Visualizar e gerenciar suas reservas (alterações, cancelamentos).</li>
-                    <li>Avaliar as salas e serviços após o uso.</li>
-                    <li>Receber suporte em caso de problemas ou dúvidas.</li>
+                    <li>Receber confirmações de reservas (número de Protocolo).</li>
+                    <li>Visualizar e gerenciar suas reservas (visualização ou cancelamentos).</li>
                 </ol> 
             </td>
         </tr>
@@ -75,7 +68,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
         </tr>
         <tr>
             <td>Objetivos: João precisa frequentemente reservar salas para reuniões de equipe, apresentações para clientes e sessões de planejamento de projetos. Ele valoriza a facilidade e rapidez na reserva e precisa de ferramentas para agendar reuniões recorrentes.</td>
-            <td>Frustrações: Encontrar salas disponíveis em horários de pico e a dificuldade de gerenciar alterações de última hora nas reservas.</td>
+            <td>Frustrações: Encontrar salas disponíveis em horários de pico e a dificuldade de visualizar ou cancelar a reserva.</td>
         </tr>
         <tr>
             <td>Tecnologia: Usuário avançado de ferramentas de produtividade, usa principalmente o computador para gerenciar seu trabalho.</td>
@@ -108,11 +101,10 @@ As personas levantadas durante o processo de entendimento do problema são apres
         </tr>
         <tr>
             <td>Tecnologia: Usuária de smartphone, utiliza o sistema principalmente por aplicativos móveis.</td>
-            <td>Necessidades: Interface intuitiva, fácil navegação, opção de busca por proximidade e disponibilidade em tempo real.</td>
+            <td>Necessidades: Interface intuitiva, fácil navegação e disponibilidade em tempo real.</td>
         </tr>
     </tbody>
 </table>
-
 
 
 <table>
@@ -120,34 +112,6 @@ As personas levantadas durante o processo de entendimento do problema são apres
         <tr>
             <th>Persona</th>        
             <th>3</th>              
-        </tr>
-    </thead>
-    <tbody>
-     <tr>
-            <td>Carlos</td>
-            <td></td>
-        </tr>
-     <tr>
-            <td>Idade: 28 anos</td>
-            <td>Ocupação: Designer Gráfico Freelancer</td>
-        </tr>
-        <tr>
-            <td>Objetivos: Carlos precisa de um espaço para trabalhar em projetos de design, realizar videochamadas com clientes, e conduzir workshops. Ele valoriza salas com boa iluminação e equipamento audiovisual de qualidade.</td>
-            <td>Frustrações: Dificuldade em encontrar salas equipadas e problemas com a qualidade da conexão de internet nas salas.</td>
-        </tr>
-        <tr>
-            <td>Tecnologia: Usuário de laptop e smartphone, utiliza o sistema em ambas as plataformas.</td>
-            <td>Necessidades: Filtragem de salas por equipamentos disponíveis, acesso fácil ao histórico de reservas e suporte a reservas de última hora.</td>
-        </tr>
-    </tbody>
-</table>
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Persona</th>        
-            <th>4</th>              
         </tr>
     </thead>
     <tbody>
@@ -160,12 +124,12 @@ As personas levantadas durante o processo de entendimento do problema são apres
             <td>Ocupação: Secretária Executiva em uma empresa de consultoria</td>
         </tr>
         <tr>
-            <td>Objetivos: Ana é responsável por agendar reuniões para os executivos da empresa, coordenar videoconferências, e garantir que as salas estejam preparadas para eventos. Ela precisa de um sistema confiável que permita gerenciar várias reservas ao mesmo tempo.</td>
-            <td>Frustrações: Inconsistências na disponibilidade das salas e falta de informações detalhadas sobre os recursos das salas.</td>
+            <td>Objetivos: Ana é responsável por agendar reuniões para os executivos da empresa, coordenar videoconferências, e garantir que as salas estejam preparadas para eventos. Ela precisa de um sistema confiável que permita gerenciar a reserva sem precisar realizar contato telefônico.</td>
+            <td>Frustrações: Inconsistências na disponibilidade das salas.</td>
         </tr>
         <tr>
             <td>Tecnologia: Usuária de desktop, usa o sistema principalmente em um computador no escritório.</td>
-            <td>Necessidades: Acesso rápido a todas as reservas, opção de gerenciamento de múltiplas reservas e notificações para atualizações de última hora.</td>
+            <td>Necessidades: Acesso rápido a reserva, opção de gerenciamento de reserva.</td>
         </tr>
     </tbody>
 </table>
@@ -176,7 +140,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
     <thead>
         <tr>
             <th>Persona</th>        
-            <th>5</th>              
+            <th>4</th>              
         </tr>
     </thead>
     <tbody>
@@ -194,7 +158,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
         </tr>
         <tr>
             <td>Tecnologia: Usuário de laptop e tablet, prefere usar o sistema em dispositivos que possa levar para suas reuniões.</td>
-            <td>Necessidades: Reserva de longos períodos, opção de bloqueio de horário para atividades contínuas, e filtragem de salas por recursos específicos.</td>
+            <td>Necessidades: Reserva de longos período.</td>
         </tr>
     </tbody>
 </table>
@@ -205,14 +169,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João       | Como gerente de projetos, preciso reservar salas de reunião de forma rápida e eficiente.Ele deseja receber notificações sobre alterações nas reservas e integrar essas reservas com seu calendário para melhor organização.                  | Garantir que sua equipe tenha um espaço adequado para reuniões de planejamento e apresentações para clientes. |
+|João       | Como gerente de projetos, preciso reservar salas de reunião de forma rápida e eficiente.                 | Garantir que sua equipe tenha um espaço adequado para reuniões de planejamento e apresentações para clientes. |
 |Mariana       | Precisa reservar salas de estudo silenciosas e bem equipadas.                 | Para trabalhos em grupo e sessões de revisão antes das provas. |
-|Carlos       | Precisa de um espaço de trabalho com boa iluminação e equipamento audiovisual de qualidade.                  | Para realizar videochamadas com clientes e conduzir workshops. |
-|Ana       | Precisa agendar reuniões para os executivos da empresa e coordenar videoconferências.                  | Garantir que as salas estejam preparadas para eventos. Ela quer um sistema confiável que permita gerenciar múltiplas reservas ao mesmo tempo e receber notificações para atualizações de última hora |
+|Ana       | Precisa agendar reuniões para os executivos da empresa e coordenar videoconferências.                  | Garantir que as salas estejam preparadas para eventos. Ela quer um sistema confiável que permita gerenciar as reservas |
 |Lucas       | Precisa reservar salas para seminários, grupos de discussão e reuniões com colaboradores de pesquisa.                  | Ele valoriza a privacidade e a disponibilidade de recursos para apresentações acadêmicas e deseja reservar salas por longos períodos. |
 
-
-
+<!--
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
@@ -221,6 +183,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+-->
 
 ## Requisitos
 
@@ -249,7 +212,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
         </tr>
         <tr>
             <td>RF- 03</td>
-            <td>Desenvolver tela para visualização da disponibilidade das salas em tempo real pelos usuários finais.</td>
+            <td>Desenvolver tela para visualização da disponibilidade das salas em tempo real pelo usuário.</td>
             <td>Alta</td>
         </tr>
         <tr>
@@ -259,7 +222,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
         </tr>
         <tr>
             <td>RF- 05</td>
-            <td>Desenvolver tela para cadastro de cartão de crédito para pagamento diferido no dia da reserva pelos usuários finais.</td>
+            <td>Desenvolver tela para cadastro de cartão de crédito para pagamento.</td>
             <td>Alta</td>
         </tr>
         <tr>
@@ -274,7 +237,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
         </tr>
         <tr>
             <td>RF- 08</td>
-            <td>Desenvolver tela para onde o cliente consegue reservar uma sala, acompanhar e/ou cancelar sua reserva.</td>
+            <td>Desenvolver tela onde o cliente consegue reservar uma sala, acompanhar e/ou cancelar sua reserva.</td>
             <td>Alta</td>
         </tr>
     </tbody>
@@ -348,6 +311,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 <p>As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.</p>
 
+<!--
 <p><strong>Links Úteis:</strong></p>
 <ul>
     <li><a href="https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases">Criando Casos de Uso</a></li>
@@ -357,4 +321,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
     <li><a href="https://app.diagrams.net/">Diagrams</a></li>
 </ul>
 
-
+-->
