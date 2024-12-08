@@ -1,3 +1,7 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Vídeo de apresentação da solução do Office Roomie:
+
+https://github.com/user-attachments/assets/4b3acbc3-d35e-43a9-b0b4-d3b9ec85697f
+
+

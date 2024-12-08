@@ -1,43 +1,26 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No contexto atual de transformação digital e mudanças nas dinâmicas de trabalho, o modelo de coworking e as salas de reunião têm ganhado destaque como soluções flexíveis e econômicas para empresas e profissionais. Com a adoção crescente do sistema híbrido de trabalho, que combina o trabalho remoto com o presencial, a demanda por espaços compartilhados tem crescido exponencialmente em todo o mundo. Este sistema oferece um ambiente propício para networking, inovação e colaboração entre profissionais de diversas áreas, sem os altos custos de manutenção de um escritório tradicional.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Com o aumento da demanda por salas de coworking e reuniões, surge a necessidade de um sistema eficiente que facilite o processo de reserva desses espaços. Atualmente, muitos desses processos são feitos de forma manual ou através de sistemas descentralizados, o que pode causar problemas como overbooking, falta de organização e dificuldade em gerenciar a disponibilidade de salas. Esse cenário cria desafios para tanto as empresas que oferecem esses serviços quanto para os usuários que precisam de uma solução ágil e confiável.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um sistema de reservas de salas para coworking e reuniões que permita aos usuários visualizar a disponibilidade, realizar reservas de forma prática e segura, e oferecer uma gestão centralizada para os administradores dos espaços.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo. Ou, o grupo poderá consultar e justificar o impacto do problema para o público-alvo por meio de pesquisas em outras fontes. Neste caso, é essencial que todos os dados apresentados estejam acompanhados de suas fontes (conforme padrão ABNT).
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O crescimento expressivo na procura por espaços de coworking, que registrou um aumento de 93% globalmente e 97% no Brasil, conforme relatado pela International Workplace Group, reflete a relevância e a urgência de uma solução eficiente para a gestão desses espaços. O mercado brasileiro, em particular, tem visto um aumento significativo na demanda por salas de reunião, com um crescimento de 216% no primeiro trimestre de 2022 em comparação ao mesmo período de 2021. Esse contexto justifica a necessidade de desenvolver um sistema que não só atenda a essa demanda crescente, mas que também traga inovação, eficiência e praticidade tanto para os administradores quanto para os usuários.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O sistema de reservas de salas para coworking e reuniões é direcionado a uma variedade de perfis de usuários e organizações que se beneficiam do modelo de trabalho flexível e colaborativo. O público-alvo principal inclui:
+1.	Profissionais Liberais e Autônomos: Advogados, consultores, designers, freelancers, entre outros, que necessitam de um ambiente profissional para atender clientes, realizar reuniões ou simplesmente trabalhar em um espaço mais estruturado do que o home office.
+2.	Pequenas e Médias Empresas (PMEs): Empresas que buscam reduzir custos operacionais optando por não manter um escritório fixo e preferem alugar salas conforme a demanda, especialmente em locais estratégicos para atender seus clientes.
+3.	Empresas em Regime de Trabalho Híbrido: Organizações que adotaram o modelo híbrido de trabalho, onde os colaboradores trabalham parte do tempo de forma remota e parte no escritório, utilizando salas de coworking e reuniões para encontros presenciais, alinhamentos de equipe e outras atividades que requerem interação face a face.
+4.	Startups: Empresas em fase de crescimento que necessitam de flexibilidade tanto em termos de espaço quanto de custos, optando por salas de coworking para economizar e concentrar recursos no desenvolvimento de seus produtos e serviços.
+5.	Organizações Corporativas: Grandes empresas que buscam espaços para eventos, treinamentos, workshops e reuniões fora de suas sedes, aproveitando a flexibilidade e a praticidade dos coworkings.
+6.	Cidades Menores e Regiões Metropolitanas: Profissionais e empresas localizados em cidades menores ou regiões metropolitanas onde a oferta de espaços de coworking ainda é emergente, mas em crescimento, beneficiando-se da expansão desse mercado para acesso a infraestrutura moderna e a oportunidades de networking.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Este sistema, portanto, atende tanto a indivíduos que precisam de um espaço de trabalho temporário quanto a empresas que desejam flexibilidade, praticidade e redução de custos em suas operações diárias.

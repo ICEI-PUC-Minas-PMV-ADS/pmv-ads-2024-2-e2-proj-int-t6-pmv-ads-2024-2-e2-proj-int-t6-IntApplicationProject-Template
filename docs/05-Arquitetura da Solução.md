@@ -8,6 +8,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
+![Texto alternativo](img/diagrama_de_classes.png)
+
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
 
 > - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
@@ -19,15 +21,26 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
 
-A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
+![Texto alternativo](img/diagrama_relacional.png)
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+# Esquema Relacional 
 
-## Projeto da Base de Dados
+O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária. 
+
+Assim, o Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa, logo abaixo o
+Modelo ER do projeto Personal Cash.
+
+![Texto alternativo](img/esquema_relacional.png)
+
+## Projeto da Base de Dados 
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
+
+Link para acessar os scripts das tabelas do banco de dados: 
+
+[officeroomie.sql](../src/DB/officieroomie.sql)
 
 ## Tecnologias Utilizadas
 

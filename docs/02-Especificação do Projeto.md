@@ -1,31 +1,167 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+<table>
+    <tbody>
+        <tr align=center>
+            <th colspan="2">Perfil 1: Administrador dos Espaços / Dono das Salas</th>
+        </tr>
+        <tr>
+            <td width="150px"><b>Descrição</b></td>
+            <td width="600px">Responsável pela gestão dos espaços de coworking e salas de reunião. Este perfil pode pertencer ao proprietário dos espaços ou a um gestor designado para administrar o uso, manutenção e a rentabilidade das salas. O administrador tem a responsabilidade de gerenciar a disponibilidade das salas, processar reservas, lidar com pagamentos e manter a qualidade do ambiente para os usuários.</td>
+        </tr>
+        <tr>
+            <td><b>Necessidades</b></td>
+            <td>
+                <ol>
+                    <li>Autenticar no sistema.</li>
+                    <li>Gerenciar a disponibilidade das salas (reservas, horários, manutenção).</li>
+                    <li>Informar pagamento da sala no sistema.</li>
+                    <li>Gerenciar o pagamento no sistema.</li>
+                </ol> 
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+<table>
+    <tbody>
+        <tr align=center>
+            <th colspan="2">Perfil 2: Usuário Final</th>
+        </tr>
+        <tr>
+            <td width="150px"><b>Descrição</b></td>
+            <td width="600px">Profissionais, empresas ou freelancers que necessitam alugar salas de coworking ou reuniões por períodos específicos. Este perfil representa o cliente que busca um espaço para trabalhar ou realizar reuniões, com a expectativa de facilidade na reserva, conforto e qualidade do ambiente.</td>
+        </tr>
+        <tr>
+            <td><b>Necessidades</b></td>
+            <td>
+                <ol>
+                    <li>Visualizar a disponibilidade das salas e escolher a mais adequada. </li>
+                    <li>Reservar salas para períodos específicos.</li>
+                    <li>Receber confirmações de reservas (número de Protocolo).</li>
+                    <li>Visualizar e gerenciar suas reservas (visualização ou cancelamentos).</li>
+                </ol> 
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+As personas levantadas durante o processo de entendimento do problema são apresentadas nas tabelas que se seguem:
 
-Utilize também como referência o exemplo abaixo:
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>1</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>João</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 35 anos</td>
+            <td>Ocupação: Gerente de Projetos em uma empresa de tecnologião</td>
+        </tr>
+        <tr>
+            <td>Objetivos: João precisa frequentemente reservar salas para reuniões de equipe, apresentações para clientes e sessões de planejamento de projetos. Ele valoriza a facilidade e rapidez na reserva e precisa de ferramentas para agendar reuniões recorrentes.</td>
+            <td>Frustrações: Encontrar salas disponíveis em horários de pico e a dificuldade de visualizar ou cancelar a reserva.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuário avançado de ferramentas de produtividade, usa principalmente o computador para gerenciar seu trabalho.</td>
+            <td>Necessidades: Notificações de alterações nas reservas, integração com calendário, e opção de reserva antecipada.</td> 
+        </tr>
+    </tbody>
+</table>
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>2</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Mariana</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 22 anos</td>
+            <td>Ocupação: Estudante de engenharia</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Mariana precisa reservar salas de estudo para trabalhos em grupo, sessões de revisão antes de provas, e apresentações de projetos. Ela valoriza a disponibilidade de salas silenciosas e bem equipadas.</td>
+            <td>Frustrações: Dificuldade em encontrar salas disponíveis durante a época de provas e em locais próximos ao campus.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuária de smartphone, utiliza o sistema principalmente por aplicativos móveis.</td>
+            <td>Necessidades: Interface intuitiva, fácil navegação e disponibilidade em tempo real.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>3</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Ana</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 42 anos</td>
+            <td>Ocupação: Secretária Executiva em uma empresa de consultoria</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Ana é responsável por agendar reuniões para os executivos da empresa, coordenar videoconferências, e garantir que as salas estejam preparadas para eventos. Ela precisa de um sistema confiável que permita gerenciar a reserva sem precisar realizar contato telefônico.</td>
+            <td>Frustrações: Inconsistências na disponibilidade das salas.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuária de desktop, usa o sistema principalmente em um computador no escritório.</td>
+            <td>Necessidades: Acesso rápido a reserva, opção de gerenciamento de reserva.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Persona</th>        
+            <th>4</th>              
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+            <td>Lucas</td>
+            <td></td>
+        </tr>
+     <tr>
+            <td>Idade: 45 anos</td>
+            <td>Ocupação: Pesquisador em uma universidade</td>
+        </tr>
+        <tr>
+            <td>Objetivos: Lucas precisa de salas para conduzir seminários, grupos de discussão e reuniões com colaboradores de pesquisa. Ele valoriza a privacidade e a disponibilidade de recursos para apresentações acadêmicas.</td>
+            <td>Frustrações: Concorrência pelas salas de seminários e dificuldade em agendar salas para períodos prolongados.</td>
+        </tr>
+        <tr>
+            <td>Tecnologia: Usuário de laptop e tablet, prefere usar o sistema em dispositivos que possa levar para suas reuniões.</td>
+            <td>Necessidades: Reserva de longos período.</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Histórias de Usuários
 
@@ -33,9 +169,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|João       | Como gerente de projetos, preciso reservar salas de reunião de forma rápida e eficiente.                 | Garantir que sua equipe tenha um espaço adequado para reuniões de planejamento e apresentações para clientes. |
+|Mariana       | Precisa reservar salas de estudo silenciosas e bem equipadas.                 | Para trabalhos em grupo e sessões de revisão antes das provas. |
+|Ana       | Precisa agendar reuniões para os executivos da empresa e coordenar videoconferências.                  | Garantir que as salas estejam preparadas para eventos. Ela quer um sistema confiável que permita gerenciar as reservas |
+|Lucas       | Precisa reservar salas para seminários, grupos de discussão e reuniões com colaboradores de pesquisa.                  | Ele valoriza a privacidade e a disponibilidade de recursos para apresentações acadêmicas e deseja reservar salas por longos períodos. |
 
+<!--
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
@@ -44,6 +183,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+-->
 
 ## Requisitos
 
@@ -51,59 +191,134 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>        
+            <th>Descrição</th>        
+            <th>Prioridade</th>        
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RF- 01</td>
+            <td>Desenvolver tela de autenticação do usuário administrador.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 02</td>
+            <td>Desenvolver tela de gerenciamento de Salas, permitindo cadastro, edição, visualização e exclusão de informações.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 03</td>
+            <td>Desenvolver tela para visualização da disponibilidade das salas em tempo real pelo usuário.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 04</td>
+            <td>Desenvolver tela para realização de reservas de salas para períodos específicos, com confirmação imediata.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 05</td>
+            <td>Desenvolver tela para cadastro de cartão de crédito para pagamento.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RF- 06</td>
+            <td>Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis.</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RF- 07</td>
+            <td>Desenvolver tela para que administradores possam cancelar reservas.</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RF- 08</td>
+            <td>Desenvolver tela onde o cliente consegue reservar uma sala, acompanhar e/ou cancelar sua reserva.</td>
+            <td>Alta</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>        
+            <th>Descrição</th>        
+            <th>Prioridade</th>        
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RNF-01</td>
+            <td>Desenvolver mecanismos para garantir a segurança dos dados dos usuários.</td>
+            <td>Alta</td>
+        </tr>
+        <tr>
+            <td>RNF-02</td>
+            <td>Desenvolver interface do usuário intuitiva e de fácil utilização.</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RNF-03</td>
+            <td>Desenvolver sistema compatível com diferentes dispositivos e navegadores web.</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>RNF-04</td>
+            <td>Desenvolver código bem estruturado e documentado para fácil manutenção.</td>
+            <td>Média</td>
+        </tr>
+    </tbody>
+</table>
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+**Prioridade: Alta / Média / Baixa. 
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>        
+            <th>Descrição</th>              
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RE-01</td>
+            <td>A aplicação deve ser entregue de forma plenamente funcional até 08/12/2024.</td>
+        </tr>
+        <tr>
+            <td>RE-02</td>
+            <td>Cada integrante da equipe ficará responsável pelo desenvolvimento completo (Back-End e Front-End) das funcionalidades pelas quais ficou responsável.</td>
+        </tr>
+    </tbody>
+</table>
 
+<h2>Diagrama de Casos de Uso</h2>
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+<p>O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.</p>
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+<p><img src="/docs/img/diagrama_caso_uso.PNG" alt="Diagrama de Caso de Uso"></p>
 
-## Diagrama de Casos de Uso
+<p>As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.</p>
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+<!--
+<p><strong>Links Úteis:</strong></p>
+<ul>
+    <li><a href="https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases">Criando Casos de Uso</a></li>
+    <li><a href="https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/">Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo</a></li>
+    <li><a href="https://www.lucidchart.com/">Lucidchart</a></li>
+    <li><a href="https://astah.net/">Astah</a></li>
+    <li><a href="https://app.diagrams.net/">Diagrams</a></li>
+</ul>
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+-->

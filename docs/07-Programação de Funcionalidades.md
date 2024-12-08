@@ -1,25 +1,37 @@
 # Programação de Funcionalidades
 
+<!--
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
 Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Nesta seção, é essencial relacionar os requisitos atendidos com os artefatos criados (código fonte) e com o(s) responsável(is) pelo desenvolvimento de cada artefato a cada etapa. Nesta seção também deverão ser apresentadas, se necessário, as instruções para acesso e verificação da **implementação que deve estar funcional no ambiente de hospedagem obrigatoriamente a partir da Etapa 03**.
 
 Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
+-->
+
 
 |ID    | Descrição do Requisito  | Artefatos produzidos | Aluno(a) responsável |
 |------|-----------------------------------------|----|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência|  |  |
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio     |  |  |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
+|RF-01| Desenvolver tela de autenticação do usuário administrador.| tela de login  | Farley |
+|RF-02| Desenvolver tela de gerenciamento de Salas, permitindo cadastro, edição, visualização e exclusão de informações. | Tela de salas | Fernando |
+|RF-03| Desenvolver tela para visualização da disponibilidade das salas em tempo real pelos usuários finais. | visualização das salas pelo cliente | Caio |
+|RF-04| Desenvolver tela para realização de reservas de salas para períodos específicos, com confirmação imediata. | Tela de reserva de salas | Caio e Marcelly |
+|RF-05| Desenvolver tela para cadastro de cartão de crédito para pagamento. | Tela de pagamento | Kevin |
+|RF-06| Desenvolver tela de Usuários, permitindo cadastro, edição, visualização e exclusão de perfis. | Tela de cadastro, edição e exclusão de usuaário | Marcelly |
+|RF-07| Desenvolver tela para que administradores possam cancelar reservas. | Cancelamento de reserva pelo Administrador | Brena |
+|RF-08| Desenvolver tela onde o cliente consegue reservar uma sala, acompanhar e/ou cancelar sua reserva.| tela do cliente - reserva de sala, acompanhamento e/ou exclusão da reserva | Marcelly |
 
 
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+Link de acesso:  https://marcellyfreitas-001-site1.qtempurl.com/ 
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+Usuário teste Administrador: 
+e-mail: email@email.com
+senha: 123 
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Usuário final (cliente): Não realiza autenticação. A tela inicial já é destinada a ele.
+
+<!--
 
 > **Links Úteis**:
 >
@@ -28,3 +40,5 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 > - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+
+-->
