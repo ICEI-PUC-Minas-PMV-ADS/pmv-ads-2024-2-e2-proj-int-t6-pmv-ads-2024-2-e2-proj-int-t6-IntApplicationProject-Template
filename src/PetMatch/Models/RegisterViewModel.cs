@@ -5,7 +5,7 @@ namespace PetMatch.Models
     public class RegisterViewModel
     {
         [Required (ErrorMessage =" O Campo Nome é obrigatorio")]
-        public int? Nome { get; set; }
+        public string? UserName { get; set; }
 
         [Required (ErrorMessage ="O campo Email é obrigatório")]
         [EmailAddress]

@@ -3,9 +3,7 @@
 namespace PetMatch.Models
 {
     public class LoginViewModel
-    {   
-        [Required]
-        public int? Nome { get; set; }
+    { 
 
         [Required(ErrorMessage =" O Campo Email é obrigatório")]
         [EmailAddress(ErrorMessage ="Insira um endereço de email válido")]

@@ -20,6 +20,12 @@
         </div>
         <div class="card-body">
             <form asp-action="Register" method="post">
+                 <!-- Campo de Nome -->
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label">Nome</label>
+                    <input asp-for="UserName" class="form-control" placeholder="Digite seu Nome" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
                 <!-- Campo de Email -->
                 <div class="mb-3">
                     <label asp-for="Email" class="form-label">Email</label>

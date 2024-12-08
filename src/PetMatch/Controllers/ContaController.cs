@@ -35,7 +35,7 @@ public class ContaController : Controller
     {
         if (!ModelState.IsValid) return View(model);
 
-        var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+        var user = new IdentityUser { UserName = model.Email, Email = model.Email,  };
         var result = await _userManager.CreateAsync(user, model.Password!);
 
         if (result.Succeeded)
@@ -63,6 +63,7 @@ public class ContaController : Controller
         var result = await _signInManager.PasswordSignInAsync(model.Email!, model.Password!, false, false);
         if (result.Succeeded)
         {
+            HttpContext.Session.SetString("logado", "true");
             return RedirectToAction("Index", "Home");
         }
 
