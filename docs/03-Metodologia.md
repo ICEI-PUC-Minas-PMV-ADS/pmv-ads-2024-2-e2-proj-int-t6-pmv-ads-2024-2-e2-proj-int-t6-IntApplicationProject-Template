@@ -1,9 +1,36 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+## Gerenciamento de Projeto
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia escolhida para o gerenciamento e desenvolvimento deste projeto foi a ágil. Dentre as metodologias ágeis existentes no mercado, escolhemos a mais usada atualmente que é o SCRUM.
+Foi escolhida essa metodologia pois, as práticas do Scrum permitem que as equipes promovam o autogerenciamento, aprendam com base nas experiências e se adaptem às mudanças.
+Além de solucionar problemas complexos de maneira econômica e sustentavel.
+
+### Divisão de Papéis
+
+A divisão de papéis do grupo baseada na divisão do SCRUM (Scrum Master, Product Owner e Equipe de Desenvolvimento) ficou da seguinte forma:
+<ul>
+<li>Scrum Master: Rodrigo Amorim;</li>
+<li>Product Owner: Danilo Oliveira;</li>
+<li>Equipe de Desenvolvimento: Rodrigo Amorim, Fabio Luiz, Laise Farias France, Italo de Souza Pereira, Danilo Oliveira e César Ribeiro.</li>
+</ul>
+
+### Processo
+
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas:
+<ul>
+<li>Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista. </li>
+<li>To do: esta lista representa o Sprint Backlog que está sendo trabalhado.</li>
+<li>In progress: lista das tarefas iniciadas.</li>
+<li>Done: nesta lista são colocadas as tarefas finalizadas.</li>
+</ul>
+O quadro kanban do grupo no GitHub está presente no link: https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1445  e esta apresentado no estado atual da seguinte forma:
+<figure>
+    <img src="img/Kanban.png">
+    <figcaption> Figura 1 - Tela do kanban do GitHub utilizada pelo grupo</figcaption>
+</figure>
+
 
 ## Controle de Versão
 
@@ -24,37 +51,7 @@ etiquetas:
 - `documentation`: melhorias ou acréscimos à documentação
 - `bug`: uma funcionalidade encontra-se com problemas
 - `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
-## Gerenciamento de Projeto
-
-### Divisão de Papéis
-
-Apresente a divisão de papéis entre os membros do grupo.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
-### Processo
-
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+- `help wanted`: funcionalidade precisa de atenção extra.
 
 ### Ferramentas
 
@@ -70,8 +67,10 @@ integração semelhante e por isso foram selecionadas. Por fim, para criar
 diagramas utilizamos essa ferramenta por melhor captar as
 necessidades da nossa solução.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub apresentadas com seu propósito na tabela que se segue.
+| AMBIENTE | PLATAFORMA |LINK DE ACESSO                 |
+|--------------------|--------------------------------------------------------------------------------|----------------------------------------|
+|Repositório de código fonte | GitHub |  |
+|Documentos do projeto  | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-pet/tree/main/docs |
+|Gerenciamento do projeto  | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1445 |
+|Projeto de interface e wireframes  | MarvelApp | |
