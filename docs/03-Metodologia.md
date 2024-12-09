@@ -1,15 +1,11 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+O projeto utiliza a metodologia ágil Scrum, que fornece uma estrutura baseada em iterações curtas, feedback constante e adaptação às mudanças, visando a melhoria contínua do projeto e a comunicação constante por meio de reuniões diárias, com entregas no final de cada sprint.
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+O versionamento é realizado pelo GitHub Desktop, que está sendo utilizado para gerenciar o repositório hospedado no GitHub.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
@@ -21,57 +17,60 @@ O projeto segue a seguinte convenção para o nome de branches:
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+- `bug`: Indica problemas identificados no código que precisam ser corrigidos
+- `design`: Para atividades relacionadas ao design de interfaces de usuário ou arquitetura de software
+- `development`: Para tarefas relacionadas ao desenvolvimento de novos recursos ou funcionalidades
+- `discontinued`: Indica que uma tarefa foi descontinuada ou não será mais prosseguida
+- `documentation`: Tarefas envolvendo a criação ou atualização de documentos, manuais ou outras informações
+- `enhancement`: Para tarefas relacionadas a melhoria de funcionalidades existentes ou otimização de código
+- `infrastructure`: Tarefas relacionadas à configuração, manutenção ou atualização da infraestrutura de software
+- `project management`: Para atividades relacionadas ao planejamento, coordenação e gerenciamento do projeto
+- `tests`: Para atividades relacionadas a elaboração e execução de testes de software
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+Na configuração do projeto, optamos por utilizar a branch principal para simplificar o fluxo de trabalho. Cada integrante da equipe é responsável por suas respectivas páginas, o que facilita a divisão de tarefas e evita conflitos.
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+A gerência de commits e merges é feita de forma cuidadosa: os desenvolvedores realizam commits frequentes com mensagens claras que descrevem as alterações. Antes de realizar um merge na branch principal, é feita uma revisão dos códigos, garantindo que todas as mudanças sejam consistentes e estejam em conformidade com os padrões do projeto.
 
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A divisão dos papéis foi determinada seguindo a metodologia Scrum:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- Scrum Master: Nicolas Gabriel
+- Product Owner: Daianne Paula
+- Equipe de Desenvolvimento: Daianne Paula, Felipe Kutschera, Junio Flausino, Larissa Tribst, Letícia Moreira, Nicolas Gabriel
+- Equipe de Design: Larissa Tribst
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+A equipe está organizando e distribuindo as tarefas por meio do quadro [Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1506) disponível no GitHub. Essa abordagem otimiza a visualização do progresso e a gestão das atividades, permitindo que todos os membros acompanhem o fluxo de trabalho e colaborem de maneira mais integrada:
  
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+![Captura de tela 2024-09-28 232639](https://github.com/user-attachments/assets/ce6bad06-15d5-4deb-80e8-1f40bab8bd9f)
+
+
+O quadro segue a seguinte distribuição:
+
+- **Product Backlog:** Esta coluna marca o início de todas as tarefas das etapas que o grupo irá trabalhar, servindo como um repositório de ideias e requisitos.
+
+- **A Fazer:** Representa as tarefas que serão abordadas na sprint atual, oferecendo uma visão clara das prioridades a serem executadas.
+
+- **Em Progresso:** Aqui estão as tarefas que a equipe já iniciou, acompanhando o desenvolvimento em tempo real.
+
+- **Feito:** Esta seção contém as tarefas que passaram com sucesso pelos testes e estão prontas para serem entregues ao usuário final.
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Visual Studio Code :heavy_check_mark:
+- Teams :heavy_check_mark:
+- Figma e Lucidchart :heavy_check_mark:
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+- O Visual Studio Code oferece integração nativa com o GitHub, permitindo gerenciar repositórios, realizar commits e resolver conflitos diretamente do editor, facilitando o fluxo de trabalho de desenvolvimento.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+- O Microsoft Teams centraliza comunicação, colaboração e compartilhamento de arquivos em uma plataforma segura e acessível, otimizando o trabalho em equipe.
+
+- Figma e Lucidchart permitem colaboração em tempo real, tornando o trabalho em equipe mais eficiente; Figma se foca na criação de wireframes interativos e designs responsivos, enquanto Lucidchart se especializa em diagramas com uma interface intuitiva e recursos pré-definidos, facilitando a visualização de ideias.
+
+A seção de **Projetos** do GitHub está sendo utilizada para aprimorar a gestão e o planejamento, facilitando a colaboração e o acompanhamento de tarefas por meio de quadros Kanban e automações eficientes. Essa abordagem otimiza o fluxo de trabalho e proporciona maior transparência nas atividades da equipe.
