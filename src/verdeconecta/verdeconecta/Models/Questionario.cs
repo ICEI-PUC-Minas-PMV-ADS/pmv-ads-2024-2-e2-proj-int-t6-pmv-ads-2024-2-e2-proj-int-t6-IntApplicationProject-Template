@@ -14,9 +14,11 @@ namespace verdeconecta.Models
         public TipoDieta? TipoDieta { get; set; }
 
         [Display(Name = "Restrições alimentares")]
-        public bool TemRestricaoAlimentar { get; set; }
+        public string TemRestricaoAlimentar { get; set; }
+        
+        [Display(Name = "Descreva mais sobre suas restrições alimentares")]
         public string RestricaoDetalhes { get; set; }
-
+        
         [Display(Name = "Nível de atividade física")]
         public NivelAtividadeFisica NivelAtividadeFisica { get; set; }
 
@@ -26,14 +28,15 @@ namespace verdeconecta.Models
         [Display(Name = "Número de refeições por dia")]
         public int RefeicoesPorDia { get; set; }
 
-        [Display(Name = "Horário das principais refeições")]
-        public string HorarioRefeicoes { get; set; }
+        [Display(Name = "Horário das Refeições")]
+        public int HorarioRefeicoes { get; set; }
 
         [Display(Name = "Consumo de frutas e vegetais")]
         public ConsumoFrutasVegetais ConsumoFrutasVegetais { get; set; }
 
         [Display(Name = "Usuário")]
         public int UsuarioId { get; set; }
+        [Display(Name = "Usuário")]
 
         [ForeignKey("UsuarioId")]
         public Usuario Usuario { get; set; }
