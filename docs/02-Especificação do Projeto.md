@@ -1,31 +1,27 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+1. Julia, 30 anos, Designer Gráfica: 
 
-Utilize também como referência o exemplo abaixo:
+   Julia é uma jovem profissional que se preocupa com o impacto ambiental de suas escolhas. Ela decidiu se tornar vegetariana há dois anos por motivos éticos e ambientais. Ela adora cozinhar e experimenta novas receitas vegetarianas nos finais de semana. Para ela, a dieta é uma extensão de seu compromisso com a sustentabilidade. 
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+2. Andressa, 34 anos, Professora de Yoga: 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+   Andressa adotou o vegetarianismo na adolescência como uma forma de alinhar sua alimentação com sua filosofia de vida holística e espiritual. Para ela, ser vegetariana está profundamente conectado com seu estilo de vida e prática de yoga. Ela ensina aos seus alunos sobre os benefícios de uma dieta à base de plantas para o corpo e a mente. 
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3. Lucas, 40 anos, Chef de Cozinha Vegetariana: 
+
+   Lucas é um chef especializado em pratos vegetarianos e veganos. Ele dirige um restaurante premiado que se destaca por suas criações inovadoras e saborosas. Ele também oferece workshops e cursos de culinária para ensinar outros chefs e entusiastas a cozinhar pratos sem carne. A paixão de Lucas pela comida e pela filosofia vegetariana é evidente em cada prato que prepara. 
+
+4. Ana, 32 anos, Nutricionista e Consultora de Alimentação Vegetariana: 
+
+   Ana é uma nutricionista especializada em dietas vegetarianas. Ela trabalha com clientes para ajudá-los a adotar e manter uma alimentação equilibrada e saudável. Além de consultas individuais, Ana oferece palestras e escreve artigos sobre os benefícios da alimentação à base de plantas e como planejar uma dieta nutricionalmente completa. 
+
+5. João, 27 anos, Blogger e Influenciador de Alimentação Vegetariana: 
+
+   João é um influenciador digital que se dedica a criar conteúdo sobre receitas, dicas e estilo de vida vegetariano. Suas redes sociais são repletos de receitas criativas, análises de produtos e informações sobre o impacto do vegetarianismo na saúde e no meio ambiente. Ele também colabora com marcas de produtos vegetais para promover uma alimentação mais sustentável. 
 
 ## Histórias de Usuários
 
@@ -33,17 +29,19 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Cliente   | Registrar diariamente refeições        | Controlar nutrientes               |
+|Cliente       | Acompanhar nutrientes                  | Controlar nutrientes  |
+|Cliente       | Monitorar progresso com gráficos e relatórios               | Acompanhar o progresso   |
+|Cliente       | Definir metas                  | Controlar ingestão de alimentos   |
+|Cliente       | Ter contato com o nutricionista que está me acompanhando                  |Ajustes rápidos no plano alimentar, respostas a dúvidas imediatas etc   |
+|Nutricionista        | Desejo postar dicas nutricionais                  | Ajudar os clientes em seus objetivos   |
+|Nutricionista        | Visualizar relatórios detalhados do consumo de nutrientes dos meus pacientes                   |Poder fazer recomendações mais precisas e eficazes    |
+|Nutricionista        | Ter contato com o cliente que estou acompanhando                  | Identificação precoce de desvios, adaptação contínua do plano alimentar,     |
+|Administrador         | Controle com todos os perfis de usuários                  | Gerenciar contas e solucionar problemas    |
+|Administrador         | Gerenciamento de conteúdo                   | Para que o conteúdo do site esteja sempre atualizado e relevante     |
+|Administrador         | Monitoramento de Atividade                  | Para entender o comportamento dos usuários     |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -53,31 +51,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001|  Gerenciar cadastro de usuário | Alta  | 
+|RF-002| Login de usuários     | Alta  |
+|RF-003| Redefinição de senha  | Alta  |
+|RF-004| Registro de refeições   | Média   |
+|RF-005| Cálculo de nutrientes  | Média   |
+|RF-006| Gerar relatórios de consumo   | Média   |
+|RF-007| Dicas nutricionais   | Média   |
+|RF-008| Permitir o usuário criar metas e acompanhar o progresso   | Baixa   |
+|RF-009| Perfil do usuário com informações importantes como alergias.   | Baixa   |
+|RF-010| Permitir a criação de notas em cada relatório   | Baixa   |
+|RF-011| Avaliar dicas nutricionais    | Baixa   |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Compatível com diversos navegadores   | Alta  | 
+|RNF-002| O site deve possuir interface intuitiva  |  Alta  | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -86,24 +80,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Deve ser desenvolvido um módulo de backend e frontend        |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+![WhatsApp Image 2024-09-18 at 15 57 31](https://github.com/user-attachments/assets/fa79e77e-b33e-4568-b711-313ba81b1176)

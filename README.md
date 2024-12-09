@@ -1,29 +1,32 @@
-# TÍTULO DO PROJETO
+# VerdeConecta 
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa - 2024/2`
 
-`SEMESTRE`
+`Eixo 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O site busca resolver é a dificuldade que vegetarianos têm em manter uma dieta equilibrada e nutritiva. Eles enfrentam desafios na ingestão adequada de nutrientes essenciais, o que pode levar a deficiências nutricionais.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-
+* Daianne Paula Moreira Pinto 
+* Junio Flausino Rocha 
+* Larissa Moreira Tribst 
+* Letícia Moreira Pinto 
+* Felipe Soares Kutschera 
+* Nicolas Gabriel Neres Alexandre 
 ## Orientador
 
-* Nome completo do professor 1
+* Bernardo Jeunon de Alencar 
 
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
 Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/
 
 Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
 
